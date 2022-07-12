@@ -1,0 +1,345 @@
+öffne website "youtube" in suchleiste
+
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 444202
+RuleName          : -
+UtcTime           : 2022-07-11 00:40:25.118
+ProcessGuid       : {5ce29752-7179-62cb-bd6b-108b29560000}
+ProcessId         : 3051
+Image             : /usr/lib/firefox/firefox
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : /usr/lib/firefox/firefox -contentproc -childID 6 
+                    -isForBrowser -prefsLen 37652 -prefMapSize 218300 
+                    -jsInitLen 277276 -parentBuildID 20220623063721 -appDir 
+                    /usr/lib/firefox/browser 2642 true tab
+CurrentDirectory  : /home/linuxuser
+User              : linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000000000000}
+LogonId           : 1000
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-6e57-62cb-bd6b-16c16f550000}
+ParentProcessId   : 2642
+ParentImage       : /usr/lib/firefox/firefox
+ParentCommandLine : /usr/lib/firefox/firefox -new-window
+ParentUser        : linuxuser
+
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 444322
+RuleName          : -
+UtcTime           : 2022-07-11 00:40:30.698
+ProcessGuid       : {5ce29752-717e-62cb-bdbb-a564a2550000}
+ProcessId         : 3077
+Image             : /usr/lib/firefox/firefox
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : /usr/lib/firefox/firefox -contentproc -childID 7 
+                    -isForBrowser -prefsLen 37652 -prefMapSize 218300 
+                    -jsInitLen 277276 -parentBuildID 20220623063721 -appDir 
+                    /usr/lib/firefox/browser 2642 true tab
+CurrentDirectory  : /home/linuxuser
+User              : linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000000000000}
+LogonId           : 1000
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-6e57-62cb-bd6b-16c16f550000}
+ParentProcessId   : 2642
+ParentImage       : /usr/lib/firefox/firefox
+ParentCommandLine : /usr/lib/firefox/firefox -new-window
+ParentUser        : linuxuser
+
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 444364
+RuleName          : -
+UtcTime           : 2022-07-11 00:40:35.948
+ProcessGuid       : {5ce29752-7183-62cb-bd1b-45ace0550000}
+ProcessId         : 3102
+Image             : /usr/lib/firefox/firefox
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : /usr/lib/firefox/firefox -contentproc -childID 8 
+                    -isForBrowser -prefsLen 37652 -prefMapSize 218300 
+                    -jsInitLen 277276 -parentBuildID 20220623063721 -appDir 
+                    /usr/lib/firefox/browser 2642 true tab
+CurrentDirectory  : /home/linuxuser
+User              : linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000000000000}
+LogonId           : 1000
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {00000000-0000-0000-0000-000000000000}
+ParentProcessId   : 2642
+ParentImage       : -
+ParentCommandLine : -
+ParentUser        : -
+
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 444377
+RuleName          : -
+UtcTime           : 2022-07-11 00:40:40.354
+ProcessGuid       : {5ce29752-7188-62cb-bdcb-a60daa550000}
+ProcessId         : 3119
+Image             : /usr/lib/firefox/firefox
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : /usr/lib/firefox/firefox -contentproc -parentBuildID 
+                    20220623063721 -prefsLen 37652 -prefMapSize 218300 -appDir 
+                    /usr/lib/firefox/browser 2642 true rdd
+CurrentDirectory  : /home/linuxuser
+User              : linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000000000000}
+LogonId           : 1000
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {00000000-0000-0000-0000-000000000000}
+ParentProcessId   : 2642
+ParentImage       : -
+ParentCommandLine : -
+ParentUser        : -
+
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 444385
+RuleName          : -
+UtcTime           : 2022-07-11 00:40:40.666
+ProcessGuid       : {5ce29752-7188-62cb-bd4b-2a01de550000}
+ProcessId         : 3138
+Image             : /usr/lib/firefox/firefox
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : /usr/lib/firefox/firefox -contentproc -parentBuildID 
+                    20220623063721 -sandboxingKind 1 -prefsLen 37652 
+                    -prefMapSize 218300 -appDir /usr/lib/firefox/browser 2642 
+                    true utility
+CurrentDirectory  : /home/linuxuser
+User              : linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000000000000}
+LogonId           : 1000
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {00000000-0000-0000-0000-000000000000}
+ParentProcessId   : 2642
+ParentImage       : -
+ParentCommandLine : -
+ParentUser        : -
+
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 444411
+RuleName          : -
+UtcTime           : 2022-07-11 00:40:42.085
+ProcessGuid       : {5ce29752-718a-62cb-bdab-fdc172550000}
+ProcessId         : 3150
+Image             : /usr/lib/firefox/firefox
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : /usr/lib/firefox/firefox -contentproc -childID 9 
+                    -isForBrowser -prefsLen 37652 -prefMapSize 218300 
+                    -jsInitLen 277276 -parentBuildID 20220623063721 -appDir 
+                    /usr/lib/firefox/browser 2642 true tab
+CurrentDirectory  : /home/linuxuser
+User              : linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000000000000}
+LogonId           : 1000
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {00000000-0000-0000-0000-000000000000}
+ParentProcessId   : 2642
+ParentImage       : -
+ParentCommandLine : -
+ParentUser        : -
+
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 444520
+RuleName          : -
+UtcTime           : 2022-07-11 00:41:05.777
+ProcessGuid       : {5ce29752-71a1-62cb-c532-c3d197550000}
+ProcessId         : 3170
+Image             : /usr/lib/NetworkManager/nm-dispatcher
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : /usr/lib/NetworkManager/nm-dispatcher
+CurrentDirectory  : /
+User              : root
+LogonGuid         : {5ce29752-0000-0000-0000-000000000000}
+LogonId           : 0
+TerminalSessionId : 4294967295
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-67f5-62cb-65ee-5ebff9550000}
+ParentProcessId   : 1
+ParentImage       : /usr/lib/systemd/systemd
+ParentCommandLine : /sbin/init splash
+ParentUser        : root
+
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 444521
+RuleName          : -
+UtcTime           : 2022-07-11 00:41:05.820
+ProcessGuid       : {5ce29752-71a1-62cb-f5f7-039eaf550000}
+ProcessId         : 3173
+Image             : /usr/bin/dash
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : /bin/sh -e /etc/NetworkManager/dispatcher.d/01-ifupdown  
+                    connectivity-change
+CurrentDirectory  : /
+User              : root
+LogonGuid         : {5ce29752-0000-0000-0000-000000000000}
+LogonId           : 0
+TerminalSessionId : 4294967295
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-71a1-62cb-c532-c3d197550000}
+ParentProcessId   : 3170
+ParentImage       : /usr/lib/NetworkManager/nm-dispatcher
+ParentCommandLine : /usr/lib/NetworkManager/nm-dispatcher
+ParentUser        : root
+
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 444528
+RuleName          : -
+UtcTime           : 2022-07-11 00:41:06.546
+ProcessGuid       : {5ce29752-71a2-62cb-f5a7-e8ae02560000}
+ProcessId         : 3176
+Image             : /usr/bin/dash
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : /bin/sh -e /etc/NetworkManager/dispatcher.d/01-ifupdown  
+                    connectivity-change
+CurrentDirectory  : /
+User              : root
+LogonGuid         : {5ce29752-0000-0000-0000-000000000000}
+LogonId           : 0
+TerminalSessionId : 4294967295
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-71a1-62cb-c532-c3d197550000}
+ParentProcessId   : 3170
+ParentImage       : /usr/lib/NetworkManager/nm-dispatcher
+ParentCommandLine : /usr/lib/NetworkManager/nm-dispatcher
+ParentUser        : root
+
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 444697
+RuleName          : -
+UtcTime           : 2022-07-11 00:44:46.444
+ProcessGuid       : {5ce29752-727e-62cb-bddb-f4cfc3550000}
+ProcessId         : 3235
+Image             : /usr/lib/firefox/firefox
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : /usr/lib/firefox/firefox -contentproc -childID 10 
+                    -isForBrowser -prefsLen 37652 -prefMapSize 218300 
+                    -jsInitLen 277276 -parentBuildID 20220623063721 -appDir 
+                    /usr/lib/firefox/browser 2642 true tab
+CurrentDirectory  : /home/linuxuser
+User              : linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000000000000}
+LogonId           : 1000
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-6e57-62cb-bd6b-16c16f550000}
+ParentProcessId   : 2642
+ParentImage       : /usr/lib/firefox/firefox
+ParentCommandLine : /usr/lib/firefox/firefox -new-window
+ParentUser        : linuxuser
+
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 444728
+RuleName          : -
+UtcTime           : 2022-07-11 00:44:50.842
+ProcessGuid       : {5ce29752-7282-62cb-bddb-770bb5550000}
+ProcessId         : 3259
+Image             : /usr/lib/firefox/firefox
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : /usr/lib/firefox/firefox -contentproc -childID 11 
+                    -isForBrowser -prefsLen 37652 -prefMapSize 218300 
+                    -jsInitLen 277276 -parentBuildID 20220623063721 -appDir 
+                    /usr/lib/firefox/browser 2642 true tab
+CurrentDirectory  : /home/linuxuser
+User              : linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000000000000}
+LogonId           : 1000
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-6e57-62cb-bd6b-16c16f550000}
+ParentProcessId   : 2642
+ParentImage       : /usr/lib/firefox/firefox
+ParentCommandLine : /usr/lib/firefox/firefox -new-window
+ParentUser        : linuxuser

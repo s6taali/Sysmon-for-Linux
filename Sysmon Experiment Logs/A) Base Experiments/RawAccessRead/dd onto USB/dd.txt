@@ -1,0 +1,422 @@
+linuxuser@linuxuser-VirtualBox:~$ lsblk %%suche USB
+
+NAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
+[...]
+sdb      8:16   1   7,5G  0 disk 
+├─sdb1   8:17   1   200M  0 part 
+└─sdb2   8:18   1   7,2G  0 part /media/linuxuser/9EC0-0044
+sr0     11:0    1  58,3M  0 rom  /media/linuxuser/VBox_GAs_6.1.26 
+
+linuxuser@linuxuser-VirtualBox:~$ ll -h 		%%liste files
+total 144K
+[...]
+-rw-rw-r--  1 linuxuser linuxuser  12K Jul  8 16:16 Tux.png 
+[...]
+
+linuxuser@linuxuser-VirtualBox:~$ sudo dd status=progress if=Tux.png of=/dev/sdb 
+							%% Create bootable USB Image with the dd command
+[sudo] password for linuxuser: 
+23+1 records in
+23+1 records out
+11913 bytes (12 kB, 12 KiB) copied, 0,0359144 s, 332 kB/s
+linuxuser@linuxuser-VirtualBox:~$ 
+---------------------------------------------------
+---------------------------------------------------
+
+EventId       : 9
+Version       : 2
+EventType     : FileDelete		%%jeder Eventtyp
+Computer      : linuxuser-VirtualBox
+EventRecordID : 329571
+RuleName      : -
+UtcTime       : 2022-07-08 18:43:16.013
+ProcessGuid   : {5ce29752-7ac2-62c8-81f1-10c315560000}
+ProcessId     : 104586
+Image         : /usr/lib/systemd/systemd-udevd
+Device        : /dev/sdb 		%% USB disk  (sdb, sdb1, sdb2)
+User          : root
+
+EventId       : 9
+Version       : 2
+EventType     : FileDelete
+Computer      : linuxuser-VirtualBox
+EventRecordID : 329572
+RuleName      : -
+UtcTime       : 2022-07-08 18:43:16.028
+ProcessGuid   : {5ce29752-7ac2-62c8-81f1-10c315560000}
+ProcessId     : 104586
+Image         : /usr/lib/systemd/systemd-udevd
+Device        : /dev/sdb
+User          : root
+
+EventId       : 9
+Version       : 2
+EventType     : FileDelete
+Computer      : linuxuser-VirtualBox
+EventRecordID : 329577
+RuleName      : -
+UtcTime       : 2022-07-08 18:43:16.806
+ProcessGuid   : {5ce29752-7ac2-62c8-81f1-10c315560000}
+ProcessId     : 104586
+Image         : /usr/lib/systemd/systemd-udevd
+Device        : /dev/sdb 	
+User          : root
+
+EventId       : 9
+Version       : 2
+EventType     : FileDelete
+Computer      : linuxuser-VirtualBox
+EventRecordID : 329602
+RuleName      : -
+UtcTime       : 2022-07-08 18:43:16.878
+ProcessGuid   : {5ce29752-0b30-62c8-a523-84324e560000}
+ProcessId     : 645
+Image         : /usr/lib/udisks2/udisksd
+Device        : /dev/sdb
+User          : root
+
+EventId       : 9
+Version       : 2
+EventType     : FileDelete
+Computer      : linuxuser-VirtualBox
+EventRecordID : 329603
+RuleName      : -
+UtcTime       : 2022-07-08 18:43:16.886
+ProcessGuid   : {5ce29752-7ac2-62c8-81f1-10c315560000}
+ProcessId     : 104575
+Image         : /usr/lib/systemd/systemd-udevd
+Device        : /dev/sdb
+User          : root
+
+EventId       : 9
+Version       : 2
+EventType     : FileDelete
+Computer      : linuxuser-VirtualBox
+EventRecordID : 329604
+RuleName      : -
+UtcTime       : 2022-07-08 18:43:16.894
+ProcessGuid   : {5ce29752-7ac2-62c8-81f1-10c315560000}
+ProcessId     : 104586
+Image         : /usr/lib/systemd/systemd-udevd
+Device        : /dev/sdb
+User          : root
+
+EventId       : 9
+Version       : 2
+EventType     : FileDelete
+Computer      : linuxuser-VirtualBox
+EventRecordID : 329605
+RuleName      : -
+UtcTime       : 2022-07-08 18:43:16.902
+ProcessGuid   : {5ce29752-0b30-62c8-a523-84324e560000}
+ProcessId     : 645
+Image         : /usr/lib/udisks2/udisksd
+Device        : /dev/sdb
+User          : root
+
+EventId       : 9
+Version       : 2
+EventType     : FileDelete
+Computer      : linuxuser-VirtualBox
+EventRecordID : 329606
+RuleName      : -
+UtcTime       : 2022-07-08 18:43:16.910
+ProcessGuid   : {5ce29752-7ac2-62c8-81f1-10c315560000}
+ProcessId     : 104575
+Image         : /usr/lib/systemd/systemd-udevd
+Device        : /dev/sdb2
+User          : root
+
+EventId       : 9
+Version       : 2
+EventType     : FileDelete
+Computer      : linuxuser-VirtualBox
+EventRecordID : 329607
+RuleName      : -
+UtcTime       : 2022-07-08 18:43:16.929
+ProcessGuid   : {5ce29752-7ac2-62c8-81f1-10c315560000}
+ProcessId     : 104586
+Image         : /usr/lib/systemd/systemd-udevd
+Device        : /dev/sdb1
+User          : root
+
+EventId       : 9
+Version       : 2
+EventType     : FileDelete
+Computer      : linuxuser-VirtualBox
+EventRecordID : 329608
+RuleName      : -
+UtcTime       : 2022-07-08 18:43:17.873
+ProcessGuid   : {5ce29752-7ac2-62c8-81f1-10c315560000}
+ProcessId     : 104575
+Image         : /usr/lib/systemd/systemd-udevd
+Device        : /dev/sdb
+User          : root
+
+EventId       : 9
+Version       : 2
+EventType     : FileDelete
+Computer      : linuxuser-VirtualBox
+EventRecordID : 329609
+RuleName      : -
+UtcTime       : 2022-07-08 18:43:17.946
+ProcessGuid   : {5ce29752-7ac2-62c8-81f1-10c315560000}
+ProcessId     : 104586
+Image         : /usr/lib/systemd/systemd-udevd
+Device        : /dev/sdb
+User          : root
+
+EventId       : 9
+Version       : 2
+EventType     : FileDelete
+Computer      : linuxuser-VirtualBox
+EventRecordID : 329610
+RuleName      : -
+UtcTime       : 2022-07-08 18:43:17.948
+ProcessGuid   : {5ce29752-7ac2-62c8-81f1-10c315560000}
+ProcessId     : 104586
+Image         : /usr/lib/systemd/systemd-udevd
+Device        : /dev/sdb1
+User          : root
+
+EventId       : 9
+Version       : 2
+EventType     : FileDelete
+Computer      : linuxuser-VirtualBox
+EventRecordID : 329611
+RuleName      : -
+UtcTime       : 2022-07-08 18:43:17.951
+ProcessGuid   : {5ce29752-7ac2-62c8-81f1-10c315560000}
+ProcessId     : 104575
+Image         : /usr/lib/systemd/systemd-udevd
+Device        : /dev/sdb2
+User          : root
+
+EventId       : 9
+Version       : 2
+EventType     : FileDelete
+Computer      : linuxuser-VirtualBox
+EventRecordID : 329638
+RuleName      : -
+UtcTime       : 2022-07-08 18:43:18.503
+ProcessGuid   : {5ce29752-0b30-62c8-a523-84324e560000}
+ProcessId     : 645
+Image         : /usr/lib/udisks2/udisksd
+Device        : /dev/sdb
+User          : root
+
+EventId       : 9
+Version       : 2
+EventType     : FileDelete
+Computer      : linuxuser-VirtualBox
+EventRecordID : 329639
+RuleName      : -
+UtcTime       : 2022-07-08 18:43:18.528
+ProcessGuid   : {5ce29752-0b30-62c8-a523-84324e560000}
+ProcessId     : 645
+Image         : /usr/lib/udisks2/udisksd
+Device        : /dev/sda
+User          : root
+
+EventId       : 9
+Version       : 2
+EventType     : FileDelete
+Computer      : linuxuser-VirtualBox
+EventRecordID : 329642
+RuleName      : -
+UtcTime       : 2022-07-08 18:43:18.589
+ProcessGuid   : {5ce29752-7ac6-62c8-a55f-a3b04e560000}
+ProcessId     : 104628
+Image         : /usr/sbin/dumpe2fs
+Device        : /dev/sda5
+User          : root
+
+EventId       : 9
+Version       : 2
+EventType     : FileDelete
+Computer      : linuxuser-VirtualBox
+EventRecordID : 329646
+RuleName      : -
+UtcTime       : 2022-07-08 18:43:18.625
+ProcessGuid   : {5ce29752-0b30-62c8-a523-84324e560000}
+ProcessId     : 645
+Image         : /usr/lib/udisks2/udisksd
+Device        : /dev/sda
+User          : root
+
+EventId       : 9
+Version       : 2
+EventType     : FileDelete
+Computer      : linuxuser-VirtualBox
+EventRecordID : 329880
+RuleName      : -
+UtcTime       : 2022-07-08 18:49:25.405
+ProcessGuid   : {5ce29752-7c35-62c8-8161-9b2de6550000}
+ProcessId     : 104722
+Image         : /usr/bin/dd
+Device        : /dev/sdb
+User          : root
+
+EventId       : 9
+Version       : 2
+EventType     : FileDelete
+Computer      : linuxuser-VirtualBox
+EventRecordID : 329883
+RuleName      : -
+UtcTime       : 2022-07-08 18:49:25.449
+ProcessGuid   : {5ce29752-0b2a-62c8-81f1-10c315560000}
+ProcessId     : 252
+Image         : /usr/lib/systemd/systemd-udevd
+Device        : /dev/sdb
+User          : root
+
+EventId       : 9
+Version       : 2
+EventType     : FileDelete
+Computer      : linuxuser-VirtualBox
+EventRecordID : 329884
+RuleName      : -
+UtcTime       : 2022-07-08 18:49:25.465
+ProcessGuid   : {5ce29752-7c35-62c8-81f1-10c315560000}
+ProcessId     : 104723
+Image         : /usr/lib/systemd/systemd-udevd
+Device        : /dev/sdb
+User          : root
+
+EventId       : 9
+Version       : 2
+EventType     : FileDelete
+Computer      : linuxuser-VirtualBox
+EventRecordID : 329886
+RuleName      : -
+UtcTime       : 2022-07-08 18:49:25.481
+ProcessGuid   : {5ce29752-7c35-62c8-81f1-10c315560000}
+ProcessId     : 104723
+Image         : /usr/lib/systemd/systemd-udevd
+Device        : /dev/sdb
+User          : root
+
+EventId       : 9
+Version       : 2
+EventType     : FileDelete
+Computer      : linuxuser-VirtualBox
+EventRecordID : 329887
+RuleName      : -
+UtcTime       : 2022-07-08 18:49:26.233
+ProcessGuid   : {5ce29752-0b30-62c8-a523-84324e560000}
+ProcessId     : 645
+Image         : /usr/lib/udisks2/udisksd
+Device        : /dev/sdb
+User          : root
+
+EventId       : 9
+Version       : 2
+EventType     : FileDelete
+Computer      : linuxuser-VirtualBox
+EventRecordID : 329888
+RuleName      : -
+UtcTime       : 2022-07-08 18:49:26.245
+ProcessGuid   : {5ce29752-0b30-62c8-a523-84324e560000}
+ProcessId     : 645
+Image         : /usr/lib/udisks2/udisksd
+Device        : /dev/sdb
+User          : root
+
+EventId       : 9
+Version       : 2
+EventType     : FileDelete
+Computer      : linuxuser-VirtualBox
+EventRecordID : 329889
+RuleName      : -
+UtcTime       : 2022-07-08 18:49:26.253
+ProcessGuid   : {5ce29752-7c35-62c8-81f1-10c315560000}
+ProcessId     : 104723
+Image         : /usr/lib/systemd/systemd-udevd
+Device        : /dev/sdb
+User          : root
+
+EventId       : 9
+Version       : 2
+EventType     : FileDelete
+Computer      : linuxuser-VirtualBox
+EventRecordID : 329891
+RuleName      : -
+UtcTime       : 2022-07-08 18:49:26.273
+ProcessGuid   : {5ce29752-7c36-62c8-81f1-10c315560000}
+ProcessId     : 104724
+Image         : /usr/lib/systemd/systemd-udevd
+Device        : /dev/sdb
+User          : root
+
+EventId       : 9
+Version       : 2
+EventType     : FileDelete
+Computer      : linuxuser-VirtualBox
+EventRecordID : 329893
+RuleName      : -
+UtcTime       : 2022-07-08 18:49:26.287
+ProcessGuid   : {5ce29752-7c35-62c8-81f1-10c315560000}
+ProcessId     : 104723
+Image         : /usr/lib/systemd/systemd-udevd
+Device        : /dev/sdb1
+User          : root
+
+EventId       : 9
+Version       : 2
+EventType     : FileDelete
+Computer      : linuxuser-VirtualBox
+EventRecordID : 329894
+RuleName      : -
+UtcTime       : 2022-07-08 18:49:26.289
+ProcessGuid   : {5ce29752-7c36-62c8-81f1-10c315560000}
+ProcessId     : 104724
+Image         : /usr/lib/systemd/systemd-udevd
+Device        : /dev/sdb2
+User          : root
+
+EventId       : 9
+Version       : 2
+EventType     : FileDelete
+Computer      : linuxuser-VirtualBox
+EventRecordID : 329895
+RuleName      : -
+UtcTime       : 2022-07-08 18:49:27.086
+ProcessGuid   : {5ce29752-7c35-62c8-81f1-10c315560000}
+ProcessId     : 104723
+Image         : /usr/lib/systemd/systemd-udevd
+Device        : /dev/sdb
+User          : root
+
+EventId       : 9
+Version       : 2
+EventType     : FileDelete
+Computer      : linuxuser-VirtualBox
+EventRecordID : 329900
+RuleName      : -
+UtcTime       : 2022-07-08 18:49:27.174
+ProcessGuid   : {5ce29752-7c36-62c8-81f1-10c315560000}
+ProcessId     : 104724
+Image         : /usr/lib/systemd/systemd-udevd
+Device        : /dev/sdb
+User          : root
+
+EventId       : 9
+Version       : 2
+EventType     : FileDelete
+Computer      : linuxuser-VirtualBox
+EventRecordID : 329930
+RuleName      : -
+UtcTime       : 2022-07-08 18:53:21.704
+ProcessGuid   : {5ce29752-0b30-62c8-a523-84324e560000}
+ProcessId     : 645
+Image         : /usr/lib/udisks2/udisksd
+Device        : /dev/sdb
+User          : root
+
+
+
+
+
+
+PS /home/linuxuser> 
+

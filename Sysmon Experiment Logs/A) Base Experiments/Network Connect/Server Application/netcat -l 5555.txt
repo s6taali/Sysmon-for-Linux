@@ -1,0 +1,146 @@
+linuxuser@linuxuser-VirtualBox:~$ nc -l 5555
+
+//listening to port
+// no records in sysmon found
+
+--------------------------------------
+--------------------------------------
+
+Listen to Port 5555 auf Windows:
+C:\Users\s6taa>ncat -nvlp 5555
+listening ....
+
+Ncat: Version 7.92 ( https://nmap.org/ncat )
+Ncat: Listening on :::5555
+Ncat: Listening on 0.0.0.0:5555
+Ncat: Connection from 192.168.56.1.
+Ncat: Connection from 192.168.56.1:1043. // Verbindung über Linux 
+
+
+--> linuxuser@linuxuser-VirtualBox:~$ netcat -nv 192.168.56.1 5555 // windows IP + port
+Connection to 192.168.56.1 5555 port [tcp/*] succeeded!
+
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 326656
+RuleName            : -
+UtcTime             : 2022-07-08 15:04:19.810
+ProcessGuid         : {5ce29752-4773-62c8-05f7-246054560000}
+ProcessId           : 102912
+Image               : /usr/bin/nc.openbsd
+User                : linuxuser
+Protocol            : tcp
+Initiated           : true
+SourceIsIpv6        : false
+SourceIp            : 127.0.0.1
+SourceHostname      : -
+SourcePort          : 41808
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 127.0.0.1
+DestinationHostname : -
+DestinationPort     : 5555
+DestinationPortName : -
+-----------------------------------
+-----------------------------------
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 326657
+RuleName            : -
+UtcTime             : 2022-07-08 15:04:19.810
+ProcessGuid         : {5ce29752-4757-62c8-0557-558bd5550000}
+ProcessId           : 102899
+Image               : /usr/bin/nc.openbsd
+User                : linuxuser
+Protocol            : tcp
+Initiated           : false
+SourceIsIpv6        : false
+SourceIp            : 127.0.0.1
+SourceHostname      : -
+SourcePort          : 41808
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 127.0.0.1
+DestinationHostname : -
+DestinationPort     : 5555
+DestinationPortName : -
+-----------------------------------
+-----------------------------------
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 326789
+RuleName            : -
+UtcTime             : 2022-07-08 15:13:53.413
+ProcessGuid         : {5ce29752-49b1-62c8-0598-c2e390550000}
+ProcessId           : 102980
+Image               : /usr/bin/telnet.netkit
+User                : linuxuser
+Protocol            : tcp
+Initiated           : true
+SourceIsIpv6        : false
+SourceIp            : 127.0.0.1
+SourceHostname      : -
+SourcePort          : 41812
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 127.0.0.1
+DestinationHostname : -
+DestinationPort     : 5555
+DestinationPortName : -
+-----------------------------------
+-----------------------------------
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 326790
+RuleName            : -
+UtcTime             : 2022-07-08 15:13:53.413
+ProcessGuid         : {5ce29752-4999-62c8-0507-734675550000}
+ProcessId           : 102975
+Image               : /usr/bin/nc.openbsd
+User                : linuxuser
+Protocol            : tcp
+Initiated           : false
+SourceIsIpv6        : false
+SourceIp            : 127.0.0.1
+SourceHostname      : -
+SourcePort          : 41812
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 127.0.0.1
+DestinationHostname : -
+DestinationPort     : 5555
+DestinationPortName : -
+-----------------------------------
+-----------------------------------
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 327005
+RuleName            : -
+UtcTime             : 2022-07-08 15:34:36.817
+ProcessGuid         : {5ce29752-4e8c-62c8-0537-c4e363550000}
+ProcessId           : 103086
+Image               : /usr/bin/nc.openbsd
+User                : linuxuser
+Protocol            : tcp
+Initiated           : true
+SourceIsIpv6        : false
+SourceIp            : 10.0.2.15
+SourceHostname      : -
+SourcePort          : 45004
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 192.168.56.1 // WINDOWS HOST IP
+DestinationHostname : -
+DestinationPort     : 5555 //OPEN PORT 
+DestinationPortName : -

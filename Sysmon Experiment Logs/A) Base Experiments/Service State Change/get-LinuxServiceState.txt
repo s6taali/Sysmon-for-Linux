@@ -1,0 +1,15 @@
+Event ID 4: Sysmon service state changed
+The service state change event reports the state of the Sysmon service (started or stopped).
+
+
+PS /home/linuxuser> Get-SysmonLinuxState                 
+
+EventId       : 4
+Version       : 1.0.2
+EventType     : SysmonState
+Computer      : linuxuser-VirtualBox
+EventRecordID : 48130
+UtcTime       : 2022-07-08 10:47:50.061
+State         : Started %% <<<<<-----
+SchemaVersion : 4.81
+
