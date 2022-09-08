@@ -1,0 +1,65 @@
+$$$ Befehl: sudo chmod +x NeueDatei2.txt
+[sudo] password for linuxuser: ....
+
+PROCESS CREATE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ (typisch für sudo anfragen: 2 Einträge, aufgeteilt in bash , root)
+
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 464642
+RuleName          : -
+UtcTime           : 2022-07-31 12:55:02.600
+ProcessGuid       : {5ce29752-7ba6-62e6-d58b-550438560000}
+ProcessId         : 6475
+Image             : /usr/bin/sudo		    %%image root (sudo)
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : sudo chmod +x NeueDatei2.txt    %% Befehl in cmd
+CurrentDirectory  : /home/linuxuser
+User              : linuxuser			    %% user: normal user
+LogonGuid         : {5ce29752-0000-0000-e803-000000000000}
+LogonId           : 1000
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-7b26-62e6-d536-7409b8550000}
+ParentProcessId   : 6453
+ParentImage       : /usr/bin/bash		    %%parentimage: bash
+ParentCommandLine : bash			    %%parentcommantline: normal user
+ParentUser        : linuxuser			    
+-------------------------------------------------------
+-------------------------------------------------------
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 464643
+RuleName          : -
+UtcTime           : 2022-07-31 12:55:07.007
+ProcessGuid       : {5ce29752-7bab-62e6-51a9-a99e94550000}
+ProcessId         : 6476
+Image             : /usr/bin/chmod    %% chmod in image statt sudo
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : chmod +x NeueDatei2.txt    %% Befehl in cmd		
+CurrentDirectory  : /home/linuxuser
+User              : root			    %% user: sudo statt linuxuser
+LogonGuid         : {5ce29752-0000-0000-0000-000000000000}
+LogonId           : 0
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-7ba6-62e6-d58b-550438560000}
+ParentProcessId   : 6475
+ParentImage       : /usr/bin/sudo		%%sudo statt bash
+ParentCommandLine : sudo			%%parentcommandline: sudo
+ParentUser        : linuxuser			
+

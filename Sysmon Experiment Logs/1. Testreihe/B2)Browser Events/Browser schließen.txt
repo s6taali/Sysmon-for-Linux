@@ -1,0 +1,111 @@
+firefox schließen
+--process terminate----
+
+EventId       : 5
+Version       : 3
+EventType     : ProcessTerminate
+Computer      : linuxuser-VirtualBox
+EventRecordID : 446818
+RuleName      : -
+UtcTime       : 2022-07-11 01:21:25.368
+ProcessGuid   : {5ce29752-6e57-62cb-bd6b-16c16f550000}
+ProcessId     : 2642
+Image         : /usr/lib/firefox/firefox
+User          : linuxuser
+
+EventId       : 5
+Version       : 3
+EventType     : ProcessTerminate
+Computer      : linuxuser-VirtualBox
+EventRecordID : 446819
+RuleName      : -
+UtcTime       : 2022-07-11 01:21:25.368
+ProcessGuid   : {5ce29752-6e57-62cb-bd6b-16c16f550000}
+ProcessId     : 2642
+Image         : /usr/lib/firefox/firefox
+User          : linuxuser
+
+EventId       : 5
+Version       : 3
+EventType     : ProcessTerminate
+Computer      : linuxuser-VirtualBox
+EventRecordID : 446820
+RuleName      : -
+UtcTime       : 2022-07-11 01:21:25.368
+ProcessGuid   : {5ce29752-6e57-62cb-bd6b-16c16f550000}
+ProcessId     : 2642
+Image         : /usr/lib/firefox/firefox
+User          : linuxuser
+
+EventId       : 5
+Version       : 3
+EventType     : ProcessTerminate
+Computer      : linuxuser-VirtualBox
+EventRecordID : 446821
+RuleName      : -
+UtcTime       : 2022-07-11 01:21:25.368
+ProcessGuid   : {5ce29752-6e57-62cb-bd6b-16c16f550000}
+ProcessId     : 2642
+Image         : /usr/lib/firefox/firefox
+User          : linuxuser
+
+EventId       : 5
+Version       : 3
+EventType     : ProcessTerminate
+Computer      : linuxuser-VirtualBox
+EventRecordID : 446822
+RuleName      : -
+UtcTime       : 2022-07-11 01:21:25.369
+ProcessGuid   : {5ce29752-6e57-62cb-bd6b-16c16f550000}
+ProcessId     : 2642
+Image         : /usr/lib/firefox/firefox
+User          : linuxuser
+
+EventId       : 5
+Version       : 3
+EventType     : ProcessTerminate
+Computer      : linuxuser-VirtualBox
+EventRecordID : 446823
+RuleName      : -
+UtcTime       : 2022-07-11 01:21:25.369
+ProcessGuid   : {5ce29752-6e57-62cb-bd6b-16c16f550000}
+ProcessId     : 2642
+Image         : /usr/lib/firefox/firefox
+User          : linuxuser
+
+EventId       : 5
+Version       : 3
+EventType     : ProcessTerminate
+Computer      : linuxuser-VirtualBox
+EventRecordID : 446824
+RuleName      : -
+UtcTime       : 2022-07-11 01:21:25.369
+ProcessGuid   : {5ce29752-6e57-62cb-bd6b-16c16f550000}
+ProcessId     : 2642
+Image         : /usr/lib/firefox/firefox
+User          : linuxuser
+
+EventId       : 5
+Version       : 3
+EventType     : ProcessTerminate
+Computer      : linuxuser-VirtualBox
+EventRecordID : 446825
+RuleName      : -
+UtcTime       : 2022-07-11 01:21:25.369
+ProcessGuid   : {5ce29752-6e57-62cb-bd6b-16c16f550000}
+ProcessId     : 2642
+Image         : /usr/lib/firefox/firefox
+User          : linuxuser
+
+EventId       : 5
+Version       : 3
+EventType     : ProcessTerminate
+Computer      : linuxuser-VirtualBox
+EventRecordID : 446826
+RuleName      : -
+UtcTime       : 2022-07-11 01:21:25.389
+ProcessGuid   : {5ce29752-6e57-62cb-bd6b-16c16f550000}
+ProcessId     : 2642
+Image         : /usr/lib/firefox/firefox
+User          : linuxuser
+

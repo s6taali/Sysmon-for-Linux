@@ -1,0 +1,52 @@
+wget https://www.google.de/
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 324925
+RuleName            : -
+UtcTime             : 2022-07-08 14:23:58.631
+ProcessGuid         : {5ce29752-3dfe-62c8-95b5-0d19b6550000}
+ProcessId           : 102080
+Image               : /usr/bin/wget
+User                : linuxuser
+Protocol            : udp
+Initiated           : true
+SourceIsIpv6        : false
+SourceIp            : 127.0.0.1
+SourceHostname      : -
+SourcePort          : 45304
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 127.0.0.53
+DestinationHostname : -
+DestinationPort     : 53
+DestinationPortName : -
+-------------------------------------------------
+-------------------------------------------------
+
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 324929
+RuleName            : -
+UtcTime             : 2022-07-08 14:23:58.686
+ProcessGuid         : {5ce29752-3dfe-62c8-95b5-0d19b6550000}
+ProcessId           : 102080
+Image               : /usr/bin/wget
+User                : linuxuser
+Protocol            : tcp
+Initiated           : true
+SourceIsIpv6        : false
+SourceIp            : 10.0.2.15
+SourceHostname      : -
+SourcePort          : 56060
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 216.58.213.195
+DestinationHostname : -
+DestinationPort     : 443
+DestinationPortName : -

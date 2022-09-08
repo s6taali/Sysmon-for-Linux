@@ -1,0 +1,37 @@
+?? logge nur einen Abschnitt 
+---------------------------------
+
+
+Filter für Sysmon: (nach inhalt)
+"How to Tune Windows System Monitor (Sysmon)"
+https://www.whatsupgold.com/blog/how-to-tune-windows-system-monitor-sysmon
+
+
+
+Sysmon events can be filtered by adjusting the configuration in the config.xml file
+
+>>> momentate config.xml ist für die tabellarische form zuständig
+
+
+Begin: <Sysmon schemaversion="4.1">
+<EventFiltering>
+
+
+
+$$$  inhalt filter bsp: 
+
+<Sysmon schemaversion=”4.1”>
+  <EventFiltering>
+    <ProcessCreate onmatch=”exclude”/>  	%%log ALL ProcessCreate events
+    <FileCreateTime onmatch=”include”/>		%%log NO FileCreateTime 
+  </EventFiltering>
+</Sysmon>
+
+
+
+
+$$$  Filter based on commandline bsp:
+
+<CommandLine condition="contains">C:\Windows\system32\wbem\wmiprvse.exe -secured -Embedding</CommandLine>
+
+<ParentCommandLine condition="contains">C:\Windows\system32\SearchIndexer.exe /Embedding</ParentCommandLine>

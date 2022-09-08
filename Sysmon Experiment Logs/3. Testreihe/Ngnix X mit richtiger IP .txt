@@ -1,0 +1,180 @@
+2. nginX experiment mit überarbeiter IP; erfolgreiche Verbindung
+
+find IP with ifconfig
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::fe70:7b50:bdfd:19b9  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:0c:96:61  txqueuelen 1000  (Ethernet)
+        RX packets 330376  bytes 481952626 (481.9 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 38450  bytes 2602152 (2.6 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 1269  bytes 152158 (152.1 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 1269  bytes 152158 (152.1 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+- Machine ip is 10.0.2.15
+
+in browser http://10.0.2.15
+
+-> öffnet website: 
+Welcome to nginx!
+
+If you see this page, the nginx web server is successfully installed and working. Further configuration is required.
+
+For online documentation and support please refer to nginx.org.
+Commercial support is available at nginx.com.
+
+Thank you for using nginx.
+
+
+
+NETWORK CONNECT: 
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 560783
+RuleName            : -
+UtcTime             : 2022-08-28 17:22:50.705
+ProcessGuid         : {5ce29752-a44c-630b-bd6d-102f82550000}
+ProcessId           : 6897
+Image               : /opt/microsoft/powershell/7/pwsh
+User                : linuxuser
+Protocol            : tcp
+Initiated           : true
+SourceIsIpv6        : true
+SourceIp            : 0:0:0:0:0:ffff:a00:20f
+SourceHostname      : -
+SourcePort          : 60114
+SourcePortName      : -
+DestinationIsIpv6   : true
+DestinationIp       : 0:0:0:0:0:ffff:d45:6ad8
+DestinationHostname : -
+DestinationPort     : 443
+DestinationPortName : -
+---------------------------------------------------
+--------------------------------------------------- nach eingabe der IP im browser http://10.0.2.15
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 560787
+RuleName            : -
+UtcTime             : 2022-08-28 17:23:10.872
+ProcessGuid         : {5ce29752-61b2-630b-91a3-579723560000}
+ProcessId           : 555
+Image               : /usr/lib/systemd/systemd-resolved
+User                : systemd-resolve
+Protocol            : udp
+Initiated           : true
+SourceIsIpv6        : false
+SourceIp            : 10.0.2.15
+SourceHostname      : -
+SourcePort          : 49216
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 193.162.153.164
+DestinationHostname : -
+DestinationPort     : 53
+DestinationPortName : -
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 560788
+RuleName            : -
+UtcTime             : 2022-08-28 17:23:11.065
+ProcessGuid         : {5ce29752-61b2-630b-754a-c1f6c6550000}
+ProcessId           : 599
+Image               : /usr/sbin/NetworkManager
+User                : -
+Protocol            : tcp
+Initiated           : true
+SourceIsIpv6        : false
+SourceIp            : 10.0.2.15
+SourceHostname      : -
+SourcePort          : 57744
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 35.224.170.84
+DestinationHostname : -
+DestinationPort     : 80  %%%%%%%% Port 80 is the port number assigned to commonly used internet communication protocol http
+DestinationPortName : -
+
+
+PS /home/linuxuser> 
+
+
+PROCESS CREATE:
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 560721
+RuleName          : -
+UtcTime           : 2022-08-28 17:22:20.288
+ProcessGuid       : {5ce29752-a44c-630b-bd6d-102f82550000}
+ProcessId         : 6897
+Image             : /opt/microsoft/powershell/7/pwsh
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : pwsh 	%%sysmon powershell fenster
+CurrentDirectory  : /home/linuxuser
+User              : linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000002000000}
+LogonId           : 1000
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-a44a-630b-d5a6-f67f49560000}
+ParentProcessId   : 6891
+ParentImage       : /usr/bin/bash
+ParentCommandLine : bash
+ParentUser        : linuxuser
+---------------------------------------------------
+--------------------------------------------------- nach eingabe der IP im browser http://10.0.2.15
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 560757
+RuleName          : -
+UtcTime           : 2022-08-28 17:22:32.655
+ProcessGuid       : {5ce29752-a458-630b-bd3b-876cb2550000}
+ProcessId         : 6924
+Image             : /usr/lib/firefox/firefox
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : /usr/lib/firefox/firefox -contentproc -childID 10 -isForBrowser -prefsLen 32640 -prefMapSize 223918 -jsInitLen 267752 -parentBuildID 20220718155818 -appDir 
+                    /usr/lib/firefox/browser 5473 true tab
+CurrentDirectory  : /home/linuxuser
+User              : linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000000000000}
+LogonId           : 1000
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {00000000-0000-0000-0000-000000000000}
+ParentProcessId   : 5473
+ParentImage       : -
+ParentCommandLine : -
+ParentUser        : -
+
+
+PS /home/linuxuser> 
+

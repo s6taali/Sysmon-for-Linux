@@ -1,0 +1,33 @@
+cat newfile > newfile2  %%Inhalt von newfile kopiert in neue datei 
+
+ProcessCreate  %%%%%%% nur infos zur kopierten datei, nicht zur neuen
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 468335
+RuleName          : -
+UtcTime           : 2022-07-31 17:10:27.638
+ProcessGuid       : {5ce29752-b783-62e6-31a4-a72719560000}
+ProcessId         : 3036
+Image             : /usr/bin/cat   	%%image cat
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : cat newfile		%%befehl +zu kopierende datei, aber das wars
+CurrentDirectory  : /home/linuxuser
+User              : linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000000000000}
+LogonId           : 1000
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-b6f8-62e6-d586-a76b18560000}
+ParentProcessId   : 2923
+ParentImage       : /usr/bin/bash
+ParentCommandLine : bash
+ParentUser        : linuxuser
+
+Keine logs in FILECREATE %%%%%%%%%%%%

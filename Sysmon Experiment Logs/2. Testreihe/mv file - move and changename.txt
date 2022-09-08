@@ -1,0 +1,70 @@
+move file to another directory 
+
+$ mv NeueDatei.txt ~/Documents/
+
+FileCreate: keine einträge
+
+ProcessCreate ENTRY %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 469092
+RuleName          : -
+UtcTime           : 2022-07-31 17:44:23.664
+ProcessGuid       : {5ce29752-bf77-62e6-c164-d88b83550000}
+ProcessId         : 3562
+Image             : /usr/bin/mv			%%move command im image
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : mv NeueDatei.txt /home/linuxuser/Documents/	%%ganzer befehl + zielort
+CurrentDirectory  : /home/linuxuser			%%ursprüngliches directory
+User              : linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000000000000}
+LogonId           : 1000
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-b6f8-62e6-d586-a76b18560000}
+ParentProcessId   : 2923
+ParentImage       : /usr/bin/bash
+ParentCommandLine : bash
+ParentUser        : linuxuser
+
+
+change filename with mv
+$ mv newfile umbenanntefile
+
+ProcessCreate ENTRY %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 469282
+RuleName          : -
+UtcTime           : 2022-07-31 17:49:58.698
+ProcessGuid       : {5ce29752-c0c6-62e6-c154-4c3c93550000}
+ProcessId         : 3671
+Image             : /usr/bin/mv
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : mv newfile umbenanntefile	%%befehl zur umbennenung
+CurrentDirectory  : /home/linuxuser
+User              : linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000000000000}
+LogonId           : 1000
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-b6f8-62e6-d586-a76b18560000}
+ParentProcessId   : 2923
+ParentImage       : /usr/bin/bash
+ParentCommandLine : bash
+ParentUser        : linuxuser

@@ -1,0 +1,104 @@
+sudo VS normaler user
+(keine logs filecreate)
+
+%% sudo copy datei
+
+- PROCESS CREATE:  
+>> FILEEVENTS TEILEN SICH IN 2 EINTRÄGE AUF!! 
+
+1. Eintrag: 
+
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 449871
+RuleName          : -
+UtcTime           : 2022-07-30 19:50:54.068
+ProcessGuid       : {5ce29752-8b9e-62e5-d5fb-00594c560000}
+ProcessId         : 2903
+Image             : /usr/bin/sudo  	%%%1. image: SUDO 
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : sudo cp NeueDatei.txt SudoDatei.txt  %%sudo in commandline
+CurrentDirectory  : /home/linuxuser
+User              : linuxuser     	%%User=linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000000000000}
+LogonId           : 1000
+TerminalSessionId : 4
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-860f-62e5-d5f6-92828a550000}
+ParentProcessId   : 2314
+ParentImage       : /usr/bin/bash
+ParentCommandLine : bash  
+ParentUser        : linuxuser 		%%user linuxuser
+
+2. Eintrag
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 449872
+RuleName          : -
+UtcTime           : 2022-07-30 19:50:57.195
+ProcessGuid       : {5ce29752-8ba1-62e5-0124-b4e554560000}
+ProcessId         : 2904
+Image             : /usr/bin/cp  	%%2. image CP
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : cp NeueDatei.txt SudoDatei.txt   %%eingabe 
+CurrentDirectory  : /home/linuxuser
+User              : root 		%% user=root statt linuxuser
+LogonGuid         : {5ce29752-0000-0000-0000-000000000000}
+LogonId           : 0
+TerminalSessionId : 4
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-8b9e-62e5-d5fb-00594c560000}
+ParentProcessId   : 2903
+ParentImage       : /usr/bin/sudo   	%%!! user = sudo statt 
+ParentCommandLine : sudo    	 	%%!! sudo statt bash
+ParentUser        : linuxuser		%%user linuxuser
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% copy datei ohne rootrechte
+%% nur ein Eintrag !! 
+
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 449902
+RuleName          : -
+UtcTime           : 2022-07-30 19:51:24.169
+ProcessGuid       : {5ce29752-8bbc-62e5-01e4-d35502560000}
+ProcessId         : 2933
+Image             : /usr/bin/cp			%%image = cp
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : cp NeueDatei.txt NormalerUserDatei.txt
+CurrentDirectory  : /home/linuxuser
+User              : linuxuser  			%%user
+LogonGuid         : {5ce29752-0000-0000-e803-000000000000}
+LogonId           : 1000
+TerminalSessionId : 4
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-860f-62e5-d5f6-92828a550000}
+ParentProcessId   : 2314
+ParentImage       : /usr/bin/bash
+ParentCommandLine : bash
+ParentUser        : linuxuser
+
+
+

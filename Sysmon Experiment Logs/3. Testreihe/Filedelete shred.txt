@@ -1,0 +1,300 @@
+shred NeueDatei.txt
+
+NOTIZ: Neues Experiment mit:
+shred -fu
+shred -fuz
+
+PROCESS CREATE %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 464876
+RuleName          : -
+UtcTime           : 2022-07-31 13:15:17.732
+ProcessGuid       : {5ce29752-8065-62e6-e1ff-cb24d5550000}
+ProcessId         : 6658
+Image             : /usr/bin/shred		%% shred in image
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : shred NeueDatei.txt		%%exact entry in cmd, file name
+CurrentDirectory  : /home/linuxuser
+User              : linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000000000000}
+LogonId           : 1000
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-7b26-62e6-d536-7409b8550000}
+ParentProcessId   : 6453
+ParentImage       : /usr/bin/bash
+ParentCommandLine : bash
+ParentUser        : linuxuser
+
+
+FILE DELETE %%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%alle ausgaben nach 13:15:17 ; filename nicht .txt aber womöglich zusammenhängend??
+
+
+EventId        : 23
+Version        : 5
+EventType      : FileDelete
+Computer       : linuxuser-VirtualBox
+EventRecordID  : 464881
+RuleName       : -
+UtcTime        : 2022-07-31 13:15:18.185
+ProcessGuid    : {5ce29752-8066-62e6-8586-2a5c71550000}
+ProcessId      : 6667
+User           : linuxuser
+Image          : /usr/libexec/tracker-extract
+TargetFilename : /tmp/tracker-extract-files.1000/1-2b6b88cbcc2f7bb6379ee4beae0db0a6
+Hashes         : -
+IsExecutable   : -
+Archived       : -
+
+EventId        : 23
+Version        : 5
+EventType      : FileDelete
+Computer       : linuxuser-VirtualBox
+EventRecordID  : 464901
+RuleName       : -
+UtcTime        : 2022-07-31 13:15:28.785
+ProcessGuid    : {5ce29752-592e-62e6-5597-245d2d560000}
+ProcessId      : 226
+User           : root
+Image          : /usr/lib/systemd/systemd-journald
+TargetFilename : /run/systemd/journal/streams/8:123812
+Hashes         : -
+IsExecutable   : -
+Archived       : -
+
+EventId        : 23
+Version        : 5
+EventType      : FileDelete
+Computer       : linuxuser-VirtualBox
+EventRecordID  : 464902
+RuleName       : -
+UtcTime        : 2022-07-31 13:15:28.786
+ProcessGuid    : {5ce29752-5956-62e6-65be-a29ce5550000}
+ProcessId      : 1436
+User           : linuxuser
+Image          : /usr/lib/systemd/systemd
+TargetFilename : /run/user/1000/systemd/units/invocation:tracker-extract.service
+Hashes         : -
+IsExecutable   : -
+Archived       : -
+
+EventId        : 23
+Version        : 5
+EventType      : FileDelete
+Computer       : linuxuser-VirtualBox
+EventRecordID  : 464912
+RuleName       : -
+UtcTime        : 2022-07-31 13:15:48.741
+ProcessGuid    : {5ce29752-8065-62e6-153d-28598f550000}
+ProcessId      : 6660
+User           : linuxuser
+Image          : /usr/libexec/tracker-store
+TargetFilename : /home/linuxuser/.local/share/tracker/data/.meta.isrunning
+Hashes         : -
+IsExecutable   : -
+Archived       : -
+
+EventId        : 23
+Version        : 5
+EventType      : FileDelete
+Computer       : linuxuser-VirtualBox
+EventRecordID  : 464918
+RuleName       : -
+UtcTime        : 2022-07-31 13:15:48.782
+ProcessGuid    : {5ce29752-592e-62e6-5597-245d2d560000}
+ProcessId      : 226
+User           : root
+Image          : /usr/lib/systemd/systemd-journald
+TargetFilename : /run/systemd/journal/streams/8:123762
+Hashes         : -
+IsExecutable   : -
+Archived       : -
+
+EventId        : 23
+Version        : 5
+EventType      : FileDelete
+Computer       : linuxuser-VirtualBox
+EventRecordID  : 464919
+RuleName       : -
+UtcTime        : 2022-07-31 13:15:48.783
+ProcessGuid    : {5ce29752-5956-62e6-65be-a29ce5550000}
+ProcessId      : 1436
+User           : linuxuser
+Image          : /usr/lib/systemd/systemd
+TargetFilename : /run/user/1000/systemd/units/invocation:tracker-store.service
+Hashes         : -
+IsExecutable   : -
+Archived       : -
+
+
+----------------------------------------
+additional experiments shred -fu, -fuz
+
+
+shred -fu newfile2
+
+ProcessCreate %%%%%%%%%%%%%%%%%%%%% Eintrag analog zu shred command experiment
+
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 562398
+RuleName          : -
+UtcTime           : 2022-08-28 19:50:03.554
+ProcessGuid       : {5ce29752-c6eb-630b-e1af-316af0550000}
+ProcessId         : 7564
+Image             : /usr/bin/shred
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : shred -fu newfile2
+CurrentDirectory  : /home/linuxuser
+User              : linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000001000000}
+LogonId           : 1000
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-a07d-630b-d526-a2e8f9550000}
+ParentProcessId   : 5443
+ParentImage       : /usr/bin/bash
+ParentCommandLine : bash
+ParentUser        : linuxuser
+
+
+File Delete %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Eintrag für shred -fu ! kein eintrag für only "shred" command
+
+EventId        : 23
+Version        : 5
+EventType      : FileDelete
+Computer       : linuxuser-VirtualBox
+EventRecordID  : 562399
+RuleName       : -
+UtcTime        : 2022-08-28 19:50:03.572
+ProcessGuid    : {5ce29752-c6eb-630b-e1af-316af0550000}
+ProcessId      : 7564
+User           : linuxuser
+Image          : /usr/bin/shred		%%shred 
+TargetFilename : /home/linuxuser/0	%%location aber name=newfile2
+Hashes         : -
+IsExecutable   : -
+Archived       : -
+
+
+
+
+shred -fuz newfile2
+
+ProcessCreate %%%%%%%%%%%%%%%%%%%%% Eintrag analog zu shred command experiment
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 562694
+RuleName          : -
+UtcTime           : 2022-08-28 20:02:03.770
+ProcessGuid       : {5ce29752-c9bb-630b-e1df-5eaff2550000}
+ProcessId         : 7764
+Image             : /usr/bin/shred
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : shred -fuz umbenanntefile
+CurrentDirectory  : /home/linuxuser
+User              : linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000001000000}
+LogonId           : 1000
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-a07d-630b-d526-a2e8f9550000}
+ParentProcessId   : 5443
+ParentImage       : /usr/bin/bash
+ParentCommandLine : bash
+ParentUser        : linuxuser
+
+
+File Delete %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Eintrag für shred -fu ! kein eintrag für only "shred" command
+EventId        : 23
+Version        : 5
+EventType      : FileDelete
+Computer       : linuxuser-VirtualBox
+EventRecordID  : 562695
+RuleName       : -
+UtcTime        : 2022-08-28 20:02:03.810
+ProcessGuid    : {5ce29752-c9bb-630b-e1df-5eaff2550000}
+ProcessId      : 7764
+User           : linuxuser
+Image          : /usr/bin/shred		%%shred 
+TargetFilename : /home/linuxuser/0	%%location aber name=umbenanntefile
+Hashes         : -
+IsExecutable   : -
+Archived       : -
+
+ 
+
+
+
+shred -u NormalerUserDatei.txt
+
+FILE DELETE %%%%%%%%%%%%%%%%%%%%%%%%%%%
+EventId        : 23
+Version        : 5
+EventType      : FileDelete
+Computer       : linuxuser-VirtualBox
+EventRecordID  : 563482
+RuleName       : -
+UtcTime        : 2022-08-28 20:40:54.155
+ProcessGuid    : {5ce29752-d2d6-630b-e19f-f3052a560000}
+ProcessId      : 8165
+User           : linuxuser
+Image          : /usr/bin/shred
+TargetFilename : /home/linuxuser/0
+Hashes         : -
+IsExecutable   : -
+Archived       : -
+
+ProcessCreate %%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 563481
+RuleName          : -
+UtcTime           : 2022-08-28 20:40:54.111
+ProcessGuid       : {5ce29752-d2d6-630b-e19f-f3052a560000}
+ProcessId         : 8165
+Image             : /usr/bin/shred
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : shred -u NormalerUserDatei.txt
+CurrentDirectory  : /home/linuxuser
+User              : linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000001000000}
+LogonId           : 1000
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-a07d-630b-d526-a2e8f9550000}
+ParentProcessId   : 5443
+ParentImage       : /usr/bin/bash
+ParentCommandLine : bash
+ParentUser        : linuxuser

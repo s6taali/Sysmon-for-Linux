@@ -1,0 +1,587 @@
+$$fdisk -l, liest partitionsdatei ein und gibt liste aus
+
+linuxuser@linuxuser-VirtualBox:~$ sudo fdisk -l
+Disk /dev/loop0: 4 KiB, 4096 bytes, 8 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop1: 61,98 MiB, 64970752 bytes, 126896 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop2: 55,58 MiB, 58261504 bytes, 113792 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop3: 55,55 MiB, 58232832 bytes, 113736 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop4: 61,95 MiB, 64933888 bytes, 126824 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop5: 219 MiB, 229638144 bytes, 448512 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop6: 218,102 MiB, 229629952 bytes, 448496 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop7: 400,82 MiB, 420265984 bytes, 820832 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/sda: 16 GiB, 17179869184 bytes, 33554432 sectors
+Disk model: VBOX HARDDISK   
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: dos
+Disk identifier: 0xcd5b121e
+
+Device     Boot   Start      End  Sectors  Size Id Type
+/dev/sda1  *       2048  1050623  1048576  512M  b W95 FAT32
+/dev/sda2       1052670 33554431 32501762 15,5G  5 Extended
+/dev/sda5       1052672 33552383 32499712 15,5G 83 Linux
+
+
+Disk /dev/loop8: 64,79 MiB, 67915776 bytes, 132648 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop9: 91,7 MiB, 96141312 bytes, 187776 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop10: 51,4 MiB, 53522432 bytes, 104536 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop11: 54,24 MiB, 56872960 bytes, 111080 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop12: 46,98 MiB, 49233920 bytes, 96160 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop13: 46,98 MiB, 49242112 bytes, 96176 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+-----------------------------------------------------
+-----------------------------------------------------
+loop0 - loop13
+
+RAW ACCESS $$$$$$$$$$$$$$$$$$$
+
+EventId       : 9
+Version       : 2
+EventType     : FileDelete			%%falscher eventtype (should be rawaccess)
+Computer      : linuxuser-VirtualBox
+EventRecordID : 527464
+RuleName      : -
+UtcTime       : 2022-08-02 13:54:04.090
+ProcessGuid   : {5ce29752-2c7c-62e9-710f-f118c5550000}
+ProcessId     : 2456
+Image         : /usr/sbin/fdisk			%% fdisk im image
+Device        : /dev/sr0			%%sr0: /media/linuxuser/VBox_GAs_6.1.26 (sichtbar mit lsblk)
+User          : linuxuser
+-------------------------------------------
+
+EventId       : 9
+Version       : 2
+EventType     : FileDelete
+Computer      : linuxuser-VirtualBox
+EventRecordID : 527476
+RuleName      : -
+UtcTime       : 2022-08-02 13:54:12.225
+ProcessGuid   : {5ce29752-2c84-62e9-714f-df3bf2550000}
+ProcessId     : 2460
+Image         : /usr/sbin/fdisk			%%fdisk im image
+Device        : /dev/loop0			%%device: loop0 - 13
+User          : root				%%superuser
+
+EventId       : 9
+Version       : 2
+EventType     : FileDelete
+Computer      : linuxuser-VirtualBox
+EventRecordID : 527477
+RuleName      : -
+UtcTime       : 2022-08-02 13:54:12.225
+ProcessGuid   : {5ce29752-2c84-62e9-714f-df3bf2550000}
+ProcessId     : 2460
+Image         : /usr/sbin/fdisk
+Device        : /dev/loop0
+User          : root
+
+EventId       : 9
+Version       : 2
+EventType     : FileDelete
+Computer      : linuxuser-VirtualBox
+EventRecordID : 527478
+RuleName      : -
+UtcTime       : 2022-08-02 13:54:12.226
+ProcessGuid   : {5ce29752-2c84-62e9-714f-df3bf2550000}
+ProcessId     : 2460
+Image         : /usr/sbin/fdisk
+Device        : /dev/loop1
+User          : root
+
+EventId       : 9
+Version       : 2
+EventType     : FileDelete
+Computer      : linuxuser-VirtualBox
+EventRecordID : 527479
+RuleName      : -
+UtcTime       : 2022-08-02 13:54:12.227
+ProcessGuid   : {5ce29752-2c84-62e9-714f-df3bf2550000}
+ProcessId     : 2460
+Image         : /usr/sbin/fdisk
+Device        : /dev/loop1
+User          : root
+
+EventId       : 9
+Version       : 2
+EventType     : FileDelete
+Computer      : linuxuser-VirtualBox
+EventRecordID : 527480
+RuleName      : -
+UtcTime       : 2022-08-02 13:54:12.227
+ProcessGuid   : {5ce29752-2c84-62e9-714f-df3bf2550000}
+ProcessId     : 2460
+Image         : /usr/sbin/fdisk
+Device        : /dev/loop2
+User          : root
+
+EventId       : 9
+Version       : 2
+EventType     : FileDelete
+Computer      : linuxuser-VirtualBox
+EventRecordID : 527481
+RuleName      : -
+UtcTime       : 2022-08-02 13:54:12.228
+ProcessGuid   : {5ce29752-2c84-62e9-714f-df3bf2550000}
+ProcessId     : 2460
+Image         : /usr/sbin/fdisk
+Device        : /dev/loop2
+User          : root
+
+EventId       : 9
+Version       : 2
+EventType     : FileDelete
+Computer      : linuxuser-VirtualBox
+EventRecordID : 527482
+RuleName      : -
+UtcTime       : 2022-08-02 13:54:12.229
+ProcessGuid   : {5ce29752-2c84-62e9-714f-df3bf2550000}
+ProcessId     : 2460
+Image         : /usr/sbin/fdisk
+Device        : /dev/loop3
+User          : root
+
+EventId       : 9
+Version       : 2
+EventType     : FileDelete
+Computer      : linuxuser-VirtualBox
+EventRecordID : 527483
+RuleName      : -
+UtcTime       : 2022-08-02 13:54:12.230
+ProcessGuid   : {5ce29752-2c84-62e9-714f-df3bf2550000}
+ProcessId     : 2460
+Image         : /usr/sbin/fdisk
+Device        : /dev/loop3
+User          : root
+
+EventId       : 9
+Version       : 2
+EventType     : FileDelete
+Computer      : linuxuser-VirtualBox
+EventRecordID : 527484
+RuleName      : -
+UtcTime       : 2022-08-02 13:54:12.232
+ProcessGuid   : {5ce29752-2c84-62e9-714f-df3bf2550000}
+ProcessId     : 2460
+Image         : /usr/sbin/fdisk
+Device        : /dev/loop4
+User          : root
+
+EventId       : 9
+Version       : 2
+EventType     : FileDelete
+Computer      : linuxuser-VirtualBox
+EventRecordID : 527485
+RuleName      : -
+UtcTime       : 2022-08-02 13:54:12.238
+ProcessGuid   : {5ce29752-2c84-62e9-714f-df3bf2550000}
+ProcessId     : 2460
+Image         : /usr/sbin/fdisk
+Device        : /dev/loop4
+User          : root
+
+EventId       : 9
+Version       : 2
+EventType     : FileDelete
+Computer      : linuxuser-VirtualBox
+EventRecordID : 527486
+RuleName      : -
+UtcTime       : 2022-08-02 13:54:12.239
+ProcessGuid   : {5ce29752-2c84-62e9-714f-df3bf2550000}
+ProcessId     : 2460
+Image         : /usr/sbin/fdisk
+Device        : /dev/loop5
+User          : root
+
+EventId       : 9
+Version       : 2
+EventType     : FileDelete
+Computer      : linuxuser-VirtualBox
+EventRecordID : 527487
+RuleName      : -
+UtcTime       : 2022-08-02 13:54:12.240
+ProcessGuid   : {5ce29752-2c84-62e9-714f-df3bf2550000}
+ProcessId     : 2460
+Image         : /usr/sbin/fdisk
+Device        : /dev/loop5
+User          : root
+
+EventId       : 9
+Version       : 2
+EventType     : FileDelete
+Computer      : linuxuser-VirtualBox
+EventRecordID : 527488
+RuleName      : -
+UtcTime       : 2022-08-02 13:54:12.241
+ProcessGuid   : {5ce29752-2c84-62e9-714f-df3bf2550000}
+ProcessId     : 2460
+Image         : /usr/sbin/fdisk
+Device        : /dev/loop6
+User          : root
+
+EventId       : 9
+Version       : 2
+EventType     : FileDelete
+Computer      : linuxuser-VirtualBox
+EventRecordID : 527489
+RuleName      : -
+UtcTime       : 2022-08-02 13:54:12.246
+ProcessGuid   : {5ce29752-2c84-62e9-714f-df3bf2550000}
+ProcessId     : 2460
+Image         : /usr/sbin/fdisk
+Device        : /dev/loop6
+User          : root
+
+EventId       : 9
+Version       : 2
+EventType     : FileDelete
+Computer      : linuxuser-VirtualBox
+EventRecordID : 527490
+RuleName      : -
+UtcTime       : 2022-08-02 13:54:12.248
+ProcessGuid   : {5ce29752-2c84-62e9-714f-df3bf2550000}
+ProcessId     : 2460
+Image         : /usr/sbin/fdisk
+Device        : /dev/loop7
+User          : root
+
+EventId       : 9
+Version       : 2
+EventType     : FileDelete
+Computer      : linuxuser-VirtualBox
+EventRecordID : 527491
+RuleName      : -
+UtcTime       : 2022-08-02 13:54:12.248
+ProcessGuid   : {5ce29752-2c84-62e9-714f-df3bf2550000}
+ProcessId     : 2460
+Image         : /usr/sbin/fdisk
+Device        : /dev/loop7
+User          : root
+
+EventId       : 9
+Version       : 2
+EventType     : FileDelete
+Computer      : linuxuser-VirtualBox
+EventRecordID : 527492
+RuleName      : -
+UtcTime       : 2022-08-02 13:54:12.251
+ProcessGuid   : {5ce29752-2c84-62e9-714f-df3bf2550000}
+ProcessId     : 2460
+Image         : /usr/sbin/fdisk
+Device        : /dev/sr0
+User          : root
+
+EventId       : 9
+Version       : 2
+EventType     : FileDelete
+Computer      : linuxuser-VirtualBox
+EventRecordID : 527493
+RuleName      : -
+UtcTime       : 2022-08-02 13:54:12.252
+ProcessGuid   : {5ce29752-2c84-62e9-714f-df3bf2550000}
+ProcessId     : 2460
+Image         : /usr/sbin/fdisk
+Device        : /dev/sda
+User          : root
+
+EventId       : 9
+Version       : 2
+EventType     : FileDelete
+Computer      : linuxuser-VirtualBox
+EventRecordID : 527494
+RuleName      : -
+UtcTime       : 2022-08-02 13:54:12.252
+ProcessGuid   : {5ce29752-2c84-62e9-714f-df3bf2550000}
+ProcessId     : 2460
+Image         : /usr/sbin/fdisk
+Device        : /dev/sda
+User          : root
+
+EventId       : 9
+Version       : 2
+EventType     : FileDelete
+Computer      : linuxuser-VirtualBox
+EventRecordID : 527495
+RuleName      : -
+UtcTime       : 2022-08-02 13:54:12.255
+ProcessGuid   : {5ce29752-2c84-62e9-714f-df3bf2550000}
+ProcessId     : 2460
+Image         : /usr/sbin/fdisk
+Device        : /dev/loop8
+User          : root
+
+EventId       : 9
+Version       : 2
+EventType     : FileDelete
+Computer      : linuxuser-VirtualBox
+EventRecordID : 527496
+RuleName      : -
+UtcTime       : 2022-08-02 13:54:12.255
+ProcessGuid   : {5ce29752-2c84-62e9-714f-df3bf2550000}
+ProcessId     : 2460
+Image         : /usr/sbin/fdisk
+Device        : /dev/loop8
+User          : root
+
+EventId       : 9
+Version       : 2
+EventType     : FileDelete
+Computer      : linuxuser-VirtualBox
+EventRecordID : 527497
+RuleName      : -
+UtcTime       : 2022-08-02 13:54:12.256
+ProcessGuid   : {5ce29752-2c84-62e9-714f-df3bf2550000}
+ProcessId     : 2460
+Image         : /usr/sbin/fdisk
+Device        : /dev/loop9
+User          : root
+
+EventId       : 9
+Version       : 2
+EventType     : FileDelete
+Computer      : linuxuser-VirtualBox
+EventRecordID : 527498
+RuleName      : -
+UtcTime       : 2022-08-02 13:54:12.262
+ProcessGuid   : {5ce29752-2c84-62e9-714f-df3bf2550000}
+ProcessId     : 2460
+Image         : /usr/sbin/fdisk
+Device        : /dev/loop9
+User          : root
+
+EventId       : 9
+Version       : 2
+EventType     : FileDelete
+Computer      : linuxuser-VirtualBox
+EventRecordID : 527499
+RuleName      : -
+UtcTime       : 2022-08-02 13:54:12.263
+ProcessGuid   : {5ce29752-2c84-62e9-714f-df3bf2550000}
+ProcessId     : 2460
+Image         : /usr/sbin/fdisk
+Device        : /dev/loop10
+User          : root
+
+EventId       : 9
+Version       : 2
+EventType     : FileDelete
+Computer      : linuxuser-VirtualBox
+EventRecordID : 527500
+RuleName      : -
+UtcTime       : 2022-08-02 13:54:12.263
+ProcessGuid   : {5ce29752-2c84-62e9-714f-df3bf2550000}
+ProcessId     : 2460
+Image         : /usr/sbin/fdisk
+Device        : /dev/loop10
+User          : root
+
+EventId       : 9
+Version       : 2
+EventType     : FileDelete
+Computer      : linuxuser-VirtualBox
+EventRecordID : 527501
+RuleName      : -
+UtcTime       : 2022-08-02 13:54:12.267
+ProcessGuid   : {5ce29752-2c84-62e9-714f-df3bf2550000}
+ProcessId     : 2460
+Image         : /usr/sbin/fdisk
+Device        : /dev/loop11
+User          : root
+
+EventId       : 9
+Version       : 2
+EventType     : FileDelete
+Computer      : linuxuser-VirtualBox
+EventRecordID : 527502
+RuleName      : -
+UtcTime       : 2022-08-02 13:54:12.268
+ProcessGuid   : {5ce29752-2c84-62e9-714f-df3bf2550000}
+ProcessId     : 2460
+Image         : /usr/sbin/fdisk
+Device        : /dev/loop11
+User          : root
+
+EventId       : 9
+Version       : 2
+EventType     : FileDelete
+Computer      : linuxuser-VirtualBox
+EventRecordID : 527503
+RuleName      : -
+UtcTime       : 2022-08-02 13:54:12.268
+ProcessGuid   : {5ce29752-2c84-62e9-714f-df3bf2550000}
+ProcessId     : 2460
+Image         : /usr/sbin/fdisk
+Device        : /dev/loop12
+User          : root
+
+EventId       : 9
+Version       : 2
+EventType     : FileDelete
+Computer      : linuxuser-VirtualBox
+EventRecordID : 527504
+RuleName      : -
+UtcTime       : 2022-08-02 13:54:12.269
+ProcessGuid   : {5ce29752-2c84-62e9-714f-df3bf2550000}
+ProcessId     : 2460
+Image         : /usr/sbin/fdisk
+Device        : /dev/loop12
+User          : root
+
+EventId       : 9
+Version       : 2
+EventType     : FileDelete
+Computer      : linuxuser-VirtualBox
+EventRecordID : 527505
+RuleName      : -
+UtcTime       : 2022-08-02 13:54:12.269
+ProcessGuid   : {5ce29752-2c84-62e9-714f-df3bf2550000}
+ProcessId     : 2460
+Image         : /usr/sbin/fdisk
+Device        : /dev/loop13
+User          : root
+
+EventId       : 9
+Version       : 2
+EventType     : FileDelete
+Computer      : linuxuser-VirtualBox
+EventRecordID : 527506
+RuleName      : -
+UtcTime       : 2022-08-02 13:54:12.269
+ProcessGuid   : {5ce29752-2c84-62e9-714f-df3bf2550000}
+ProcessId     : 2460
+Image         : /usr/sbin/fdisk
+Device        : /dev/loop13
+User          : root
+
+-------------------------------------------------
+-------------------------------------------------
+
+$$$$$$$$$$$$$$$ PROCESS CREATE
+
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 527474
+RuleName          : -
+UtcTime           : 2022-08-02 13:54:12.201
+ProcessGuid       : {5ce29752-2c84-62e9-d59b-78417b550000}
+ProcessId         : 2459
+Image             : /usr/bin/sudo
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : sudo fdisk -l
+CurrentDirectory  : /home/linuxuser
+User              : linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000000000000}
+LogonId           : 1000
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-283e-62e9-d5d6-7c7801560000}
+ParentProcessId   : 1996
+ParentImage       : /usr/bin/bash
+ParentCommandLine : bash
+ParentUser        : linuxuser
+
+----------------------------------
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 527475
+RuleName          : -
+UtcTime           : 2022-08-02 13:54:12.214
+ProcessGuid       : {5ce29752-2c84-62e9-714f-df3bf2550000}
+ProcessId         : 2460
+Image             : /usr/sbin/fdisk
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : fdisk -l
+CurrentDirectory  : /home/linuxuser
+User              : root
+LogonGuid         : {5ce29752-0000-0000-0000-000000000000}
+LogonId           : 0
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-2c84-62e9-d59b-78417b550000}
+ParentProcessId   : 2459
+ParentImage       : /usr/bin/sudo
+ParentCommandLine : sudo
+ParentUser        : linuxuser
+----------------------------------

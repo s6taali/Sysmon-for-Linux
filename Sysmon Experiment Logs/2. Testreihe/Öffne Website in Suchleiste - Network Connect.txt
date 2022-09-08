@@ -1,0 +1,40 @@
+Öffne Website in Suchleiste - Network Connect
+> website: youtube.de
+Es gibt keine Anzeichen dafür, dass 
+
+
+öffne browser:
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 471775
+RuleName            : -
+UtcTime             : 2022-08-01 09:53:47.790
+ProcessGuid         : {5ce29752-a2a6-62e7-bd2b-adb572550000}
+ProcessId           : 2089
+Image               : /usr/lib/firefox/firefox
+User                : linuxuser
+Protocol            : udp
+Initiated           : true
+SourceIsIpv6        : false
+SourceIp            : 127.0.0.1
+SourceHostname      : -
+SourcePort          : 41947
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 127.0.0.53
+DestinationHostname : -
+DestinationPort     : 53
+DestinationPortName : -
+
+---> bei wechsel der website wiederholt sich dieser eintrag analog
+---> jedoch gibts es keinerlei anzeichen auf welche website genau zugegriffen wurde
+
+Abgleich aller DestinationIps mit gängigen IPs für Youtube, 
+Ips tauchen in NETWORK CONNECT NICHT auf
+208.65.153.238
+208.65.153.251
+208.65.153.253
+208.117.236.69
+

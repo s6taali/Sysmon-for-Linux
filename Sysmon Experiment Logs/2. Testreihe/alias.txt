@@ -1,0 +1,126 @@
+%% cp filename.txt newfilename.txt
+
+
+%%%%%%   ProcessCreate
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 448697
+RuleName          : -
+UtcTime           : 2022-07-30 19:27:42.174
+ProcessGuid       : {5ce29752-862e-62e5-0174-e9ffdd550000}
+ProcessId         : 2327
+Image             : /usr/bin/cp		%%cp command
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : cp NeueDatei.txt NeueDatei2.txt  %%Eingabe; 
+CurrentDirectory  : /home/linuxuser
+User              : linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000000000000}
+LogonId           : 1000
+TerminalSessionId : 4
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-860f-62e5-d5f6-92828a550000}
+ParentProcessId   : 2314
+ParentImage       : /usr/bin/bash
+ParentCommandLine : bash
+ParentUser        : linuxuser
+
+%% Kein Eintrag in "FileCreate"
+
+
+%% setzte:  alias copy="cp"  ; keine Spuren zur Aktion in sysmon logs
+%% copy NeueDatei.txt NeueDatei3.txt !!!! 
+
+%%%%%%   ProcessCreate
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 449631
+RuleName          : -
+UtcTime           : 2022-07-30 19:35:27.104
+ProcessGuid       : {5ce29752-87ff-62e5-01a4-5c69a5550000}
+ProcessId         : 2754
+Image             : /usr/bin/cp   %%cp command; analog cp Befehl
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : cp NeueDatei.txt NeueDatei3.txt  %%Eingabe cp, obwohl COPY alias genutzt wurde
+CurrentDirectory  : /home/linuxuser
+User              : linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000000000000}
+LogonId           : 1000
+TerminalSessionId : 4
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-860f-62e5-d5f6-92828a550000}
+ParentProcessId   : 2314
+ParentImage       : /usr/bin/bash
+ParentCommandLine : bash
+ParentUser        : linuxuser
+
+%% Kein Eintrag in "FileCreate"
+---------------------------------------------------
+---------------------------------------------------
+
+$ alias delete="rm"
+$ delete NeueDatei3.txt //lösche datei mit delete statt rm
+
+%%%%%%   ProcessCreate
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 449806
+RuleName          : -
+UtcTime           : 2022-07-30 19:46:41.210
+ProcessGuid       : {5ce29752-8aa1-62e5-e184-252934560000}
+ProcessId         : 2868
+Image             : /usr/bin/rm  %% analog zu cp
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : rm NeueDatei3.txt     %% "falsche" commandline, rm statt delete
+CurrentDirectory  : /home/linuxuser
+User              : linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000000000000}
+LogonId           : 1000
+TerminalSessionId : 4
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-860f-62e5-d5f6-92828a550000}
+ParentProcessId   : 2314
+ParentImage       : /usr/bin/bash
+ParentCommandLine : bash
+ParentUser        : linuxuser
+
+
+%%Eintrag in "FileDelete"
+EventId        : 23
+Version        : 5
+EventType      : FileDelete
+Computer       : linuxuser-VirtualBox
+EventRecordID  : 449807
+RuleName       : -
+UtcTime        : 2022-07-30 19:46:41.213
+ProcessGuid    : {5ce29752-8aa1-62e5-e184-252934560000}
+ProcessId      : 2868
+User           : linuxuser
+Image          : /usr/bin/rm 			%%wieder RM statt alas=DELETE
+TargetFilename : /home/linuxuser/NeueDatei3.txt
+Hashes         : -
+IsExecutable   : -
+Archived       : -
+
+
+

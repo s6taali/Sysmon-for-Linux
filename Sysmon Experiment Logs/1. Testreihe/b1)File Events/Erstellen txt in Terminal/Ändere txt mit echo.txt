@@ -1,0 +1,15 @@
+linuxuser@linuxuser-VirtualBox:~$ ls
+Desktop        packages-microsoft-prod.deb
+Documents      Pictures
+Downloads      Public
+index.html     sysmonlinux.util.0.0.3
+Music          Templates
+NeueDatei.txt  Videos
+linuxuser@linuxuser-VirtualBox:~$ cat NeueDatei.txt
+Das ist eine neue Datei. :)linuxusecho 'Diese Datei wurde veraendert! :(' > NeueDatei.txt  %%MODIFY
+linuxuser@linuxuser-VirtualBox:~$ cat NeueDatei.txt
+Diese Datei wurde veraendert! :(							%%ENTRY MODIFIED
+linuxuser@linuxuser-VirtualBox:~$
+
+
+// ECHO WIRD NICHT GELOGGT - siehe Experimentreihe 1 

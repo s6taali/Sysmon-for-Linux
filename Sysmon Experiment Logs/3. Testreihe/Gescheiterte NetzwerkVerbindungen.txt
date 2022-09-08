@@ -1,0 +1,412 @@
+NETWORK CONNECT Experiment: gescheiterte Verbindungen (fake IP, closed port) erzeugen keinen eintrag in NetworkConnect
+
+
+
+
+NETCAT:
+Using nc command to test TCP port connectivity
+The syntax to use nc command for testing TCP post connectivity is as follows:
+# nc -z -v [hostname/IP address] [port number]
+
+
+1. Versuch: nc -z -v 0.42.42.42 42 
+nc: connect to 0.42.42.42 port 42 (tcp) failed: Network is unreachable
+
+
+PROCESS CREATE:
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 557943
+RuleName          : -
+UtcTime           : 2022-08-28 16:40:43.273
+ProcessGuid       : {5ce29752-9a8b-630b-0527-f2147d550000}
+ProcessId         : 5271
+Image             : /usr/bin/nc.openbsd
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : nc -z -v 0.42.42.42 42
+CurrentDirectory  : /home/linuxuser
+User              : linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000000000000}
+LogonId           : 1000
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-6231-630b-d596-16f2df550000}
+ParentProcessId   : 2044
+ParentImage       : /usr/bin/bash
+ParentCommandLine : bash
+ParentUser        : linuxuser
+------------------------------------------------------------------- zum vergleich 
+-------------------------------------------------------------------
+
+NETWORK CONNECT LOG:
+
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 557898
+RuleName            : -
+UtcTime             : 2022-08-28 16:39:31.061
+ProcessGuid         : {5ce29752-9a24-630b-bd1d-cddfb9550000}
+ProcessId           : 5211
+Image               : /opt/microsoft/powershell/7/pwsh
+User                : linuxuser
+Protocol            : tcp
+Initiated           : true
+SourceIsIpv6        : true
+SourceIp            : 0:0:0:0:0:ffff:a00:20f
+SourceHostname      : -
+SourcePort          : 58144
+SourcePortName      : -
+DestinationIsIpv6   : true
+DestinationIp       : 0:0:0:0:0:ffff:34ec:bad9
+DestinationHostname : -
+DestinationPort     : 443
+DestinationPortName : -
+------------------------------------------------ PWSH bewusst vor experiment aktiviert
+LOGS nach Experiment
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 557961
+RuleName            : -
+UtcTime             : 2022-08-28 16:41:57.921			%%% processcreate timestamp 16:40:43.273
+ProcessGuid         : {5ce29752-61b2-630b-6509-5908a2550000}
+ProcessId           : 556
+Image               : /usr/lib/systemd/systemd-timesyncd
+User                : systemd-timesync
+Protocol            : udp
+Initiated           : true
+SourceIsIpv6        : false
+SourceIp            : 10.0.2.15
+SourceHostname      : -
+SourcePort          : 55851
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 91.189.94.4
+DestinationHostname : -
+DestinationPort     : 123
+DestinationPortName : -
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 557976
+RuleName            : -
+UtcTime             : 2022-08-28 16:42:30.324
+ProcessGuid         : {5ce29752-61b2-630b-91a3-579723560000}
+ProcessId           : 555
+Image               : /usr/lib/systemd/systemd-resolved
+User                : systemd-resolve
+Protocol            : udp
+Initiated           : true
+SourceIsIpv6        : false
+SourceIp            : 10.0.2.15
+SourceHostname      : -
+SourcePort          : 55401
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 193.162.153.164
+DestinationHostname : -
+DestinationPort     : 53
+DestinationPortName : -
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 557977
+RuleName            : -
+UtcTime             : 2022-08-28 16:42:30.347
+ProcessGuid         : {5ce29752-61b2-630b-754a-c1f6c6550000}
+ProcessId           : 599
+Image               : /usr/sbin/NetworkManager
+User                : -
+Protocol            : udp
+Initiated           : true
+SourceIsIpv6        : false
+SourceIp            : 127.0.0.1
+SourceHostname      : -
+SourcePort          : 58561
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 127.0.0.53
+DestinationHostname : -
+DestinationPort     : 53
+DestinationPortName : -
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 557978
+RuleName            : -
+UtcTime             : 2022-08-28 16:42:30.348
+ProcessGuid         : {5ce29752-61b2-630b-91a3-579723560000}
+ProcessId           : 555
+Image               : /usr/lib/systemd/systemd-resolved
+User                : systemd-resolve
+Protocol            : udp
+Initiated           : true
+SourceIsIpv6        : false
+SourceIp            : 10.0.2.15
+SourceHostname      : -
+SourcePort          : 35240
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 193.162.153.164
+DestinationHostname : -
+DestinationPort     : 53
+DestinationPortName : -
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 557979
+RuleName            : -
+UtcTime             : 2022-08-28 16:42:30.377
+ProcessGuid         : {5ce29752-61b2-630b-91a3-579723560000}
+ProcessId           : 555
+Image               : /usr/lib/systemd/systemd-resolved
+User                : systemd-resolve
+Protocol            : udp
+Initiated           : true
+SourceIsIpv6        : false
+SourceIp            : 127.0.0.53
+SourceHostname      : -
+SourcePort          : 53
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 127.0.0.1
+DestinationHostname : -
+DestinationPort     : 58561
+DestinationPortName : -
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 557980
+RuleName            : -
+UtcTime             : 2022-08-28 16:42:30.378
+ProcessGuid         : {5ce29752-61b2-630b-754a-c1f6c6550000}
+ProcessId           : 599
+Image               : /usr/sbin/NetworkManager
+User                : root
+Protocol            : udp
+Initiated           : false
+SourceIsIpv6        : false
+SourceIp            : 127.0.0.53
+SourceHostname      : -
+SourcePort          : 53
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 127.0.0.1
+DestinationHostname : -
+DestinationPort     : 59662
+DestinationPortName : -
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 557981
+RuleName            : -
+UtcTime             : 2022-08-28 16:42:30.378
+ProcessGuid         : {5ce29752-61b2-630b-754a-c1f6c6550000}
+ProcessId           : 599
+Image               : /usr/sbin/NetworkManager
+User                : root
+Protocol            : udp
+Initiated           : true
+SourceIsIpv6        : false
+SourceIp            : 127.0.0.1
+SourceHostname      : -
+SourcePort          : 59662
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 127.0.0.53
+DestinationHostname : -
+DestinationPort     : 53
+DestinationPortName : -
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 557982
+RuleName            : -
+UtcTime             : 2022-08-28 16:42:30.378
+ProcessGuid         : {5ce29752-61b2-630b-91a3-579723560000}
+ProcessId           : 555
+Image               : /usr/lib/systemd/systemd-resolved
+User                : systemd-resolve
+Protocol            : udp
+Initiated           : true
+SourceIsIpv6        : false
+SourceIp            : 10.0.2.15
+SourceHostname      : -
+SourcePort          : 52896
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 193.162.153.164
+DestinationHostname : -
+DestinationPort     : 53
+DestinationPortName : -
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 557983
+RuleName            : -
+UtcTime             : 2022-08-28 16:42:30.423
+ProcessGuid         : {5ce29752-61b2-630b-91a3-579723560000}
+ProcessId           : 555
+Image               : /usr/lib/systemd/systemd-resolved
+User                : systemd-resolve
+Protocol            : udp
+Initiated           : true
+SourceIsIpv6        : false
+SourceIp            : 127.0.0.53
+SourceHostname      : -
+SourcePort          : 53
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 127.0.0.1
+DestinationHostname : -
+DestinationPort     : 59662
+DestinationPortName : -
+
+
+###########################################################################################
+
+2. Versuch (analog zum 1. netcat experiment, ohne Öffnung des Windows ports)
+
+linuxuser@linuxuser-VirtualBox:~$ netcat -nv 192.168.56.1 5555
+netcat: connect to 192.168.56.1 port 5555 (tcp) failed: Connection refused
+
+
+ProcessCreate
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 558064
+RuleName          : -
+UtcTime           : 2022-08-28 16:50:57.750
+ProcessGuid       : {5ce29752-9cf1-630b-0567-fe6b4e560000}
+ProcessId         : 5344
+Image             : /usr/bin/nc.openbsd
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : netcat -nv 192.168.56.1 5555
+CurrentDirectory  : /home/linuxuser
+User              : linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000000000000}
+LogonId           : 1000
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-6231-630b-d596-16f2df550000}
+ParentProcessId   : 2044
+ParentImage       : /usr/bin/bash
+ParentCommandLine : bash
+ParentUser        : linuxuser
+
+---------------------------------------------------------- 16:50:57.750
+LOGS nach Experiment
+
+NETWORK CONNECT: failed connect: keine ausgaben zu nc.openbsd
+s.u. letzte 3 logs in NetworkConnect ; zeitstempel vor experiment
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 558047
+RuleName            : -
+UtcTime             : 2022-08-28 16:47:30.374
+ProcessGuid         : {5ce29752-61b2-630b-85de-d6dd9e550000}
+ProcessId           : 591
+Image               : /usr/sbin/avahi-daemon
+User                : avahi
+Protocol            : udp
+Initiated           : false
+SourceIsIpv6        : true
+SourceIp            : 0:0:0:0:0:0:0:0
+SourceHostname      : -
+SourcePort          : 0
+SourcePortName      : -
+DestinationIsIpv6   : true
+DestinationIp       : 0:0:0:0:0:0:0:0
+DestinationHostname : -
+DestinationPort     : 5353
+DestinationPortName : -
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 558048
+RuleName            : -
+UtcTime             : 2022-08-28 16:47:30.381
+ProcessGuid         : {5ce29752-61b2-630b-85de-d6dd9e550000}
+ProcessId           : 591
+Image               : /usr/sbin/avahi-daemon
+User                : avahi
+Protocol            : udp
+Initiated           : false
+SourceIsIpv6        : false
+SourceIp            : 0.0.0.0
+SourceHostname      : -
+SourcePort          : 0
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 0.0.0.0
+DestinationHostname : -
+DestinationPort     : 5353
+DestinationPortName : -
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 558049
+RuleName            : -
+UtcTime             : 2022-08-28 16:47:30.401
+ProcessGuid         : {5ce29752-61b2-630b-91a3-579723560000}
+ProcessId           : 555
+Image               : /usr/lib/systemd/systemd-resolved
+User                : systemd-resolve
+Protocol            : udp
+Initiated           : true
+SourceIsIpv6        : false
+SourceIp            : 127.0.0.53
+SourceHostname      : -
+SourcePort          : 53
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 127.0.0.1
+DestinationHostname : -
+DestinationPort     : 46298
+DestinationPortName : -
+
+
+
+

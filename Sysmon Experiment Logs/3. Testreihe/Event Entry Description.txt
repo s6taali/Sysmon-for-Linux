@@ -1,0 +1,78 @@
+Event ID 1 - Process Creation - Event data fields and description
+Field			Description
+__________________________________________________________________________________________________________
+UtcTime			Time in UTC when event was created
+ProcessGuid		ProcessGuid of the process that got spawned/created (child)
+ProcessId		Process ID used by the OS to identify the created process (child)
+Image			File path of the process being spawned/created. Considered also the child or source process
+FileVersion		Version of the image associated with the main process (child)
+Description		Description of the image associated with the main process (child)
+Product			Product name the image associated with the main process (child) belongs to
+OriginalFileName	OriginalFileName from the PE header, added on compilation
+Company			Company name the image associated with the main process (child) belongs to
+CommandLine		Arguments which were passed to the executable associated with the main process
+CurrentDirectory	The path without the name of the image associated with the process
+User			Name of the account that created the process (child) . It usually contains domain name and username
+LogonGuid		Logon GUID of the user who created the new process. Value that can help you correlate this event with others that contain the same Logon GUID
+LogonId			Login ID of the user who created the new process. Value that can help you correlate this event with others that contain the same Logon ID
+TerminalSessionId	ID of the session the user belongs to
+IntegrityLevel		Integrity label assigned to a process
+Hashes			Full hash of the file with the algorithms in the HashType field
+ParentProcessGuid	ProcessGUID of the process that spawned/created the main process (child)
+ParentProcessId		Process ID of the process that spawned/created the main process (child)
+ParentImage		File path that spawned/created the main process
+ParentCommandLine	Arguments which were passed to the executable associated with the parent process
+ParentUser		Name of the account that created the parent process. It usually contains domain name and username
+
+
+
+
+Event ID 3 - Network connection - Event data fields and description
+
+Field			Description
+__________________________________________________________________________________________________________
+UtcTime			Time in UTC when event was created
+ProcessGuid		Process GUID of the process that made the network connection
+ProcessId		Process ID used by the OS to identify the process that made the network connection
+Image			File path of the process that made the network connection
+User			Name of the account who made the network connection
+Protocol		Protocol being used for the network connection
+Initiated		Indicates whether the process initiated the TCP connection
+SourceIsIpv6		True/False (If the source IP an Ipv6 address)
+SourceIp		Source IP address that made the network connection
+SourceHostname		DNS name of the host that made the network connection
+SourcePort		Source port number
+SourcePortName		Name of the source port being used
+DestinationIsIpv6	True/False (If the destination IP an Ipv6 address)
+DestinationIp		IP address destination
+DestinationHostname	DNS name of the host that is contacted
+DestinationPort		Destination port number
+DestinationPortName	Name of the destination port
+
+
+
+Event ID 9 - Raw access read - Event data fields and description
+
+Field			Description
+_______________________________________________________________________________________________________
+UtcTime			Time in UTC when event was created
+ProcessGuid		Process GUID of the process that conducted reading operations from the drive
+ProcessId		Process ID used by the OS to identify the process that conducted reading operations from the drive
+Image			File path of the process that conducted reading operations from the drive
+Device			Target device
+User			Name of the account that accessed the disk. It usually contains domain name and username
+
+
+
+
+Event ID 11 - File create- Event data fields and description
+
+Field			Description
+_______________________________________________________________________________________________________
+UtcTime			Time in UTC when event was created
+ProcessGuid		Process GUID of the process that created the file
+ProcessId		Process ID used by the OS to identify the process that created the file (child)
+Image			File path of the process that created the file
+TargetFilename		Name of the file that was created
+Creation		UtcTime	File creation time
+User			Name of the account that created the file. It usually contains domain name and username

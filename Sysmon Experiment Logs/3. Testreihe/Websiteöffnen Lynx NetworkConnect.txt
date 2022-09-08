@@ -1,0 +1,342 @@
+Lynx Terminal Webbrowser : erzeugt Eintrag NetworkConnect  (IP, lynx in image)
+
+
+
+=================================================================================================================================================
+HTTP/Load Distribution:
+Topic / Item                      Count         Average       Min val       Max val       Rate (ms)     Percent       Burst rate    Burst start  
+-------------------------------------------------------------------------------------------------------------------------------------------------
+HTTP Requests by Server           1                                                                     100%          0,0100        0,249        
+ HTTP Requests by Server Address  1                                                                     100,00%       0,0100        0,249        
+  45.33.49.119                    1                                                                     100,00%       0,0100        0,249        
+   nmap.org                       1                                                                     100,00%       0,0100        0,249        
+ HTTP Requests by HTTP Host       1                                                                     100,00%       0,0100        0,249        
+  nmap.org                        1                                                                     100,00%       0,0100        0,249        
+   45.33.49.119                   1                                                                     100,00%       0,0100        0,249        
+HTTP Responses by Server Address  0                                                                     100%          -             -            
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+lynx nmap.org
+
+nmap.org  IP: 45.33.49.119 
+
+NETWORK Connect:
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 667131
+RuleName            : -
+UtcTime             : 2022-08-29 14:25:09.752
+ProcessGuid         : {5ce29752-cc45-630c-2525-458be7550000}
+ProcessId           : 28431
+Image               : /usr/bin/lynx			%%lynx browser
+User                : linuxuser
+Protocol            : udp
+Initiated           : false
+SourceIsIpv6        : false
+SourceIp            : 127.0.0.53
+SourceHostname      : -
+SourcePort          : 53
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 127.0.0.1
+DestinationHostname : -
+DestinationPort     : 34900
+DestinationPortName : -
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 667133
+RuleName            : -
+UtcTime             : 2022-08-29 14:25:09.929
+ProcessGuid         : {5ce29752-cc45-630c-2525-458be7550000}
+ProcessId           : 28427
+Image               : /usr/bin/lynx		
+User                : linuxuser
+Protocol            : tcp
+Initiated           : true			%%tcp connection initiated by process
+SourceIsIpv6        : false
+SourceIp            : 10.0.2.15
+SourceHostname      : -
+SourcePort          : 49240
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 45.33.49.119		%%nmap IP
+DestinationHostname : -
+DestinationPort     : 80
+DestinationPortName : -
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 667134
+RuleName            : -
+UtcTime             : 2022-08-29 14:25:12.117
+ProcessGuid         : {5ce29752-cc48-630c-2525-458be7550000}
+ProcessId           : 28432
+Image               : /usr/bin/lynx
+User                : linuxuser
+Protocol            : udp
+Initiated           : true
+SourceIsIpv6        : false
+SourceIp            : 127.0.0.1
+SourceHostname      : -
+SourcePort          : 41800
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 127.0.0.53
+DestinationHostname : -
+DestinationPort     : 53
+DestinationPortName : -
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 667135
+RuleName            : -
+UtcTime             : 2022-08-29 14:25:12.118
+ProcessGuid         : {5ce29752-a4cd-630c-9123-5bedb3550000}
+ProcessId           : 514
+Image               : /usr/lib/systemd/systemd-resolved
+User                : systemd-resolve
+Protocol            : udp
+Initiated           : true
+SourceIsIpv6        : false
+SourceIp            : 127.0.0.53
+SourceHostname      : -
+SourcePort          : 53
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 127.0.0.1
+DestinationHostname : -
+DestinationPort     : 41800
+DestinationPortName : -
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 667136
+RuleName            : -
+UtcTime             : 2022-08-29 14:25:12.120
+ProcessGuid         : {5ce29752-cc48-630c-2525-458be7550000}
+ProcessId           : 28432
+Image               : /usr/bin/lynx
+User                : linuxuser
+Protocol            : udp
+Initiated           : false
+SourceIsIpv6        : false
+SourceIp            : 127.0.0.53
+SourceHostname      : -
+SourcePort          : 53
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 127.0.0.1
+DestinationHostname : -
+DestinationPort     : 41800
+DestinationPortName : -
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 667138
+RuleName            : -
+UtcTime             : 2022-08-29 14:25:12.297
+ProcessGuid         : {5ce29752-cc45-630c-2525-458be7550000}
+ProcessId           : 28427
+Image               : /usr/bin/lynx
+User                : linuxuser
+Protocol            : tcp
+Initiated           : true
+SourceIsIpv6        : false
+SourceIp            : 10.0.2.15
+SourceHostname      : -
+SourcePort          : 33458
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 45.33.49.119
+DestinationHostname : -
+DestinationPort     : 443
+DestinationPortName : -
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 667157
+RuleName            : -
+UtcTime             : 2022-08-29 14:26:56.391
+ProcessGuid         : {5ce29752-cc91-630c-bd6d-fead8c550000}
+ProcessId           : 28441
+Image               : /opt/microsoft/powershell/7/pwsh
+User                : linuxuser
+Protocol            : udp
+Initiated           : true
+SourceIsIpv6        : false
+SourceIp            : 127.0.0.1
+SourceHostname      : -
+SourcePort          : 41310
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 127.0.0.53
+DestinationHostname : -
+DestinationPort     : 53
+DestinationPortName : -
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 667158
+RuleName            : -
+UtcTime             : 2022-08-29 14:26:56.392
+ProcessGuid         : {5ce29752-a4cd-630c-9123-5bedb3550000}
+ProcessId           : 514
+Image               : /usr/lib/systemd/systemd-resolved
+User                : systemd-resolve
+Protocol            : udp
+Initiated           : true
+SourceIsIpv6        : false
+SourceIp            : 10.0.2.15
+SourceHostname      : -
+SourcePort          : 48473
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 194.239.134.83
+DestinationHostname : -
+DestinationPort     : 53
+DestinationPortName : -
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 667159
+RuleName            : -
+UtcTime             : 2022-08-29 14:26:56.395
+ProcessGuid         : {5ce29752-a4cd-630c-9123-5bedb3550000}
+ProcessId           : 514
+Image               : /usr/lib/systemd/systemd-resolved
+User                : systemd-resolve
+Protocol            : udp
+Initiated           : true
+SourceIsIpv6        : false
+SourceIp            : 10.0.2.15
+SourceHostname      : -
+SourcePort          : 49496
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 194.239.134.83
+DestinationHostname : -
+DestinationPort     : 53
+DestinationPortName : -
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 667160
+RuleName            : -
+UtcTime             : 2022-08-29 14:26:56.413
+ProcessGuid         : {5ce29752-a4cd-630c-9123-5bedb3550000}
+ProcessId           : 514
+Image               : /usr/lib/systemd/systemd-resolved
+User                : systemd-resolve
+Protocol            : udp
+Initiated           : true
+SourceIsIpv6        : false
+SourceIp            : 10.0.2.15
+SourceHostname      : -
+SourcePort          : 39344
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 194.239.134.83
+DestinationHostname : -
+DestinationPort     : 53
+DestinationPortName : -
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 667161
+RuleName            : -
+UtcTime             : 2022-08-29 14:26:56.414
+ProcessGuid         : {5ce29752-a4cd-630c-9123-5bedb3550000}
+ProcessId           : 514
+Image               : /usr/lib/systemd/systemd-resolved
+User                : systemd-resolve
+Protocol            : udp
+Initiated           : true
+SourceIsIpv6        : false
+SourceIp            : 127.0.0.53
+SourceHostname      : -
+SourcePort          : 53
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 127.0.0.1
+DestinationHostname : -
+DestinationPort     : 41310
+DestinationPortName : -
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 667162
+RuleName            : -
+UtcTime             : 2022-08-29 14:26:56.416
+ProcessGuid         : {5ce29752-cc91-630c-bd6d-fead8c550000}
+ProcessId           : 28441
+Image               : /opt/microsoft/powershell/7/pwsh
+User                : linuxuser
+Protocol            : udp
+Initiated           : false
+SourceIsIpv6        : false
+SourceIp            : 127.0.0.53
+SourceHostname      : -
+SourcePort          : 53
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 127.0.0.1
+DestinationHostname : -
+DestinationPort     : 41310
+DestinationPortName : -
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 667163
+RuleName            : -
+UtcTime             : 2022-08-29 14:26:56.475
+ProcessGuid         : {5ce29752-cc91-630c-bd6d-fead8c550000}
+ProcessId           : 28441
+Image               : /opt/microsoft/powershell/7/pwsh
+User                : linuxuser
+Protocol            : tcp
+Initiated           : true
+SourceIsIpv6        : true
+SourceIp            : 0:0:0:0:0:ffff:a00:20f
+SourceHostname      : -
+SourcePort          : 52588
+SourcePortName      : -
+DestinationIsIpv6   : true
+DestinationIp       : 0:0:0:0:0:ffff:d45:6ad3
+DestinationHostname : -
+DestinationPort     : 443
+DestinationPortName : -
+
+
+PS /home/linuxuser> 
+
+

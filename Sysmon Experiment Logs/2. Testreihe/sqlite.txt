@@ -1,0 +1,70 @@
+vor browser start:
+- md5sum places.sqlite
+
+erstelle lesezeichen:
+- md5sum places.sqlite
+	> was hat sich verändert
+
+	> können die veränderungen der dateien in sysmon erkannt werden?
+(wichtig: das sich was verändert hat, nicht "was")
+
+
+---------
+Tiefere Untersuchung:
+install hashdeep
+> command md5deep
+
+
+---------
+
+
+$ find ~/.mozilla/firefox -name "*.sqlite"
+
+/home/linuxuser/.mozilla/firefox/9oppmce4.default-release/storage.sqlite
+/home/linuxuser/.mozilla/firefox/9oppmce4.default-release/protections.sqlite
+/home/linuxuser/.mozilla/firefox/9oppmce4.default-release/permissions.sqlite
+/home/linuxuser/.mozilla/firefox/9oppmce4.default-release/storage/default/https+++www.google.com^partitionKey=%28http%2Cwhiterocksoftware.com%29/ls/data.sqlite
+/home/linuxuser/.mozilla/firefox/9oppmce4.default-release/storage/default/https+++www.digitalocean.com/ls/data.sqlite
+/home/linuxuser/.mozilla/firefox/9oppmce4.default-release/storage/default/https+++www.youtube.com^partitionKey=%28http%2Cwhiterocksoftware.com%29/ls/data.sqlite
+/home/linuxuser/.mozilla/firefox/9oppmce4.default-release/storage/default/https+++www.youtube.com^partitionKey=%28http%2Cwhiterocksoftware.com%29/idb/2195964447LCo7g%sCD7a%tda3b1a7s.sqlite
+/home/linuxuser/.mozilla/firefox/9oppmce4.default-release/storage/default/https+++www.youtube.com^partitionKey=%28http%2Cwhiterocksoftware.com%29/idb/2800576813LCo7g%sCD7a%t1a0beaas.sqlite
+/home/linuxuser/.mozilla/firefox/9oppmce4.default-release/storage/default/https+++www.youtube.com^partitionKey=%28http%2Cwhiterocksoftware.com%29/idb/692372135LCo7g%sCD7a%t8a6b9aes.sqlite
+/home/linuxuser/.mozilla/firefox/9oppmce4.default-release/storage/default/https+++www.youtube.com^partitionKey=%28http%2Cwhiterocksoftware.com%29/idb/2171031483YattIedMb.sqlite
+/home/linuxuser/.mozilla/firefox/9oppmce4.default-release/storage/default/https+++www.varonis.com/ls/data.sqlite
+/home/linuxuser/.mozilla/firefox/9oppmce4.default-release/storage/default/https+++www.darkoperator.com/ls/data.sqlite
+/home/linuxuser/.mozilla/firefox/9oppmce4.default-release/storage/default/moz-extension+++d745ba50-2390-4173-86b7-6fb64a57e048^userContextId=4294967295/idb/3647222921wleabcEoxlt-eengsairo.sqlite
+/home/linuxuser/.mozilla/firefox/9oppmce4.default-release/storage/default/https+++www.youtube.com/cache/caches.sqlite
+/home/linuxuser/.mozilla/firefox/9oppmce4.default-release/storage/default/https+++www.youtube.com/ls/data.sqlite
+/home/linuxuser/.mozilla/firefox/9oppmce4.default-release/storage/default/https+++www.youtube.com/idb/4028075010yCt7-%iCd7b%-4pdrae6f.sqlite
+/home/linuxuser/.mozilla/firefox/9oppmce4.default-release/storage/default/https+++www.youtube.com/idb/2232182701SeesravbiacteaWDosrgk.sqlite
+/home/linuxuser/.mozilla/firefox/9oppmce4.default-release/storage/default/https+++www.youtube.com/idb/1822533438LCo7g%sCD7a%t4adbaa6s.sqlite
+/home/linuxuser/.mozilla/firefox/9oppmce4.default-release/storage/default/https+++www.youtube.com/idb/358715546yCt7-%pCl7a%y4edra-6l.sqlite
+/home/linuxuser/.mozilla/firefox/9oppmce4.default-release/storage/default/https+++www.youtube.com/idb/3211250388sbwdpsunsohintoatciif.sqlite
+/home/linuxuser/.mozilla/firefox/9oppmce4.default-release/storage/default/https+++www.youtube.com/idb/1231819609PCe7r%sCi7s%t4ednat6E.sqlite
+/home/linuxuser/.mozilla/firefox/9oppmce4.default-release/storage/default/https+++www.youtube.com/idb/2171031483YattIedMb.sqlite
+/home/linuxuser/.mozilla/firefox/9oppmce4.default-release/storage/default/https+++www.youtube.com/idb/944839799yCt7-%iCt7-%r4edsap6o.sqlite
+/home/linuxuser/.mozilla/firefox/9oppmce4.default-release/storage/default/https+++www.google.com/ls/data.sqlite
+/home/linuxuser/.mozilla/firefox/9oppmce4.default-release/storage/default/https+++grundschuleundbasteln.de/ls/data.sqlite
+/home/linuxuser/.mozilla/firefox/9oppmce4.default-release/storage/default/https+++stackoverflow.com/ls/data.sqlite
+/home/linuxuser/.mozilla/firefox/9oppmce4.default-release/storage/ls-archive.sqlite
+/home/linuxuser/.mozilla/firefox/9oppmce4.default-release/storage/permanent/chrome/idb/2823318777ntouromlalnodry--naod.sqlite
+/home/linuxuser/.mozilla/firefox/9oppmce4.default-release/storage/permanent/chrome/idb/1451318868ntouromlalnodry--epcr.sqlite
+/home/linuxuser/.mozilla/firefox/9oppmce4.default-release/storage/permanent/chrome/idb/3561288849sdhlie.sqlite
+/home/linuxuser/.mozilla/firefox/9oppmce4.default-release/storage/permanent/chrome/idb/1657114595AmcateirvtiSty.sqlite
+/home/linuxuser/.mozilla/firefox/9oppmce4.default-release/storage/permanent/chrome/idb/3870112724rsegmnoittet-es.sqlite
+/home/linuxuser/.mozilla/firefox/9oppmce4.default-release/storage/permanent/chrome/idb/2918063365piupsah.sqlite
+/home/linuxuser/.mozilla/firefox/9oppmce4.default-release/favicons.sqlite
+/home/linuxuser/.mozilla/firefox/9oppmce4.default-release/webappsstore.sqlite
+/home/linuxuser/.mozilla/firefox/9oppmce4.default-release/content-prefs.sqlite
+/home/linuxuser/.mozilla/firefox/9oppmce4.default-release/cookies.sqlite
+$$$$$$$$$    /home/linuxuser/.mozilla/firefox/9oppmce4.default-release/places.sqlite
+/home/linuxuser/.mozilla/firefox/9oppmce4.default-release/formhistory.sqlite
+
+
+$$$$ linuxuser@linuxuser-VirtualBox:~/.mozilla/firefox$ find ~/.mozilla/firefox/ -name "places.sqlite"
+AUSGABE: 	/home/linuxuser/.mozilla/firefox/9oppmce4.default-release/places.sqlite
+
+Nach Erstellung eines neuen Lesezeichens: Eintrag bleibt unverändert
+
+>>>> no traces in sysmon						(mistake?) 
+

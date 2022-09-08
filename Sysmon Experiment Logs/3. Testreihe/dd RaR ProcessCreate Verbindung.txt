@@ -1,0 +1,33 @@
+command: sudo dd if=/dev/sda5 of=test.dd bs=512 count=1
+[sudo] password for linuxuser: 
+1+0 records in
+1+0 records out
+512 bytes copied, 0,014838 s, 34,5 kB/s
+
+
+%% RAW ACCESS READ
+EventId       : 9
+Version       : 2
+EventType     : FileDelete  		%%falscher eventtype
+Computer      : linuxuser-VirtualBox
+EventRecordID : 527207			%% nach PROCESS CREATE IDs
+RuleName      : -
+UtcTime       : 2022-08-02 13:40:08.771
+ProcessGuid   : {5ce29752-2938-62e9-8191-b9482e560000}
+ProcessId     : 2270			%% nach PROCESS CREATE IDs (2264,2268,2270)
+Image         : /usr/bin/dd		%%dd im image
+Device        : /dev/sda5		%%sda5 - bezeichnung des USBs
+User          : root			%%superuser
+
+
+
+RawAccessRead:
+
+image (dd) + device (sd5) (+ user)
+
+in Verbindung mit der ProcessCreate 
+
+Commandline: (sudo) dd if=/dev/sda5 of=test.dd bs=512 count=1
+
+
+eher "weiches" Kriterium, jedoch einzige eindeutige Verknüpfung

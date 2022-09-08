@@ -1,0 +1,16 @@
+echo test > newfile
+echo here is test 2 > newfile
+ 
+Process Create / File Create:
+- keine logs
+- weder für erstellung von newfile noch änderung des inhalts
+
+
+Gegentesten: which echo
+which cat
+
+
+
+finde command um built-ins zu listen:
+
+> werden process create events erstellt? falls nicht, starten built-ins keine neuen prozesse = no event.

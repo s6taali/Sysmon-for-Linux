@@ -1,0 +1,71 @@
+linuxuser@linuxuser-VirtualBox:~$ nano NewNanoFile // erstelle datei mit inhalt
+
+
+FILE CREATE: no logs
+
+PROCESS CREATE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 468701
+RuleName          : -
+UtcTime           : 2022-07-31 17:27:01.916
+ProcessGuid       : {5ce29752-bb65-62e6-0500-5d778d550000}
+ProcessId         : 3309
+Image             : /usr/bin/nano		%%nano im image
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : nano NewNanoFile		%%command to create new file
+CurrentDirectory  : /home/linuxuser
+User              : linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000000000000}
+LogonId           : 1000
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-b6f8-62e6-d586-a76b18560000}
+ParentProcessId   : 2923
+ParentImage       : /usr/bin/bash
+ParentCommandLine : bash
+ParentUser        : linuxuser
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+linuxuser@linuxuser-VirtualBox:~$ nano NewNanoFile // bearbeite inhalt
+%% analoger eintrag für Veränderung von NewNanoFile
+
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 468817
+RuleName          : -
+UtcTime           : 2022-07-31 17:31:04.232
+ProcessGuid       : {5ce29752-bc58-62e6-0500-f19568550000}
+ProcessId         : 3401
+Image             : /usr/bin/nano
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : nano NewNanoFile
+CurrentDirectory  : /home/linuxuser
+User              : linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000000000000}
+LogonId           : 1000
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-b6f8-62e6-d586-a76b18560000}
+ParentProcessId   : 2923
+ParentImage       : /usr/bin/bash
+ParentCommandLine : bash
+ParentUser        : linuxuser
+
+

@@ -1,0 +1,1703 @@
+ERSTELLE ZIP DATEI:
+
+
+      
+
+PS /home/linuxuser> Get-SysmonLinuxFileCreate:  
+(keine filecreate ausgaben nach zeitstempel; kompletter inhalt s.u.)
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545130
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:31.756
+ProcessGuid     : {5ce29752-61c7-630b-150d-eb25e1550000}
+ProcessId       : 1185
+Image           : /usr/libexec/tracker-store
+TargetFilename  : /var/lib/gdm3/.local/share/tracker/data/.meta.isrunning
+CreationUtcTime : 2022-08-28 12:38:31.756
+User            : gdm
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545135
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:32.483
+ProcessGuid     : {5ce29752-61b2-630b-c51a-585217560000}
+ProcessId       : 633
+Image           : /usr/lib/systemd/systemd-logind
+TargetFilename  : /run/systemd/sessions/systemd/sessions/.#c1eCoPV3
+CreationUtcTime : 2022-08-28 12:38:32.483
+User            : root
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545136
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:32.491
+ProcessGuid     : {5ce29752-61b2-630b-c51a-585217560000}
+ProcessId       : 633
+Image           : /usr/lib/systemd/systemd-logind
+TargetFilename  : /run/systemd/sessions/systemd/sessions/.#c1iMvzy5
+CreationUtcTime : 2022-08-28 12:38:32.491
+User            : root
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545137
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:32.497
+ProcessGuid     : {5ce29752-61b2-630b-c51a-585217560000}
+ProcessId       : 633
+Image           : /usr/lib/systemd/systemd-logind
+TargetFilename  : /run/systemd/sessions/systemd/sessions/.#c1QsHSS2
+CreationUtcTime : 2022-08-28 12:38:32.497
+User            : root
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545138
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:32.503
+ProcessGuid     : {5ce29752-61b2-630b-c51a-585217560000}
+ProcessId       : 633
+Image           : /usr/lib/systemd/systemd-logind
+TargetFilename  : /run/systemd/sessions/systemd/sessions/.#c1eBywK2
+CreationUtcTime : 2022-08-28 12:38:32.503
+User            : root
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545139
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:32.567
+ProcessGuid     : {5ce29752-61b2-630b-c51a-585217560000}
+ProcessId       : 633
+Image           : /usr/lib/systemd/systemd-logind
+TargetFilename  : /run/systemd/sessions/systemd/sessions/.#c1nOyZR2
+CreationUtcTime : 2022-08-28 12:38:32.567
+User            : root
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545140
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:32.580
+ProcessGuid     : {5ce29752-61b2-630b-c51a-585217560000}
+ProcessId       : 633
+Image           : /usr/lib/systemd/systemd-logind
+TargetFilename  : /run/systemd/sessions/systemd/sessions/.#c1zlt0c5
+CreationUtcTime : 2022-08-28 12:38:32.580
+User            : root
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545141
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:32.593
+ProcessGuid     : {5ce29752-61b2-630b-c51a-585217560000}
+ProcessId       : 633
+Image           : /usr/lib/systemd/systemd-logind
+TargetFilename  : /run/systemd/sessions/systemd/sessions/.#c17mCWA3
+CreationUtcTime : 2022-08-28 12:38:32.593
+User            : root
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545142
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:32.657
+ProcessGuid     : {5ce29752-61c6-630b-c517-c7c524560000}
+ProcessId       : 1149
+Image           : /usr/bin/gnome-shell
+TargetFilename  : /tmp/.X1024-lock
+CreationUtcTime : 2022-08-28 12:38:32.657
+User            : gdm
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545143
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:32.657
+ProcessGuid     : {5ce29752-61c6-630b-c517-c7c524560000}
+ProcessId       : 1149
+Image           : /usr/bin/gnome-shell
+TargetFilename  : /tmp/.X1025-lock
+CreationUtcTime : 2022-08-28 12:38:32.657
+User            : gdm
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545144
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:32.658
+ProcessGuid     : {5ce29752-61c6-630b-c517-c7c524560000}
+ProcessId       : 1149
+Image           : /usr/bin/gnome-shell
+TargetFilename  : /run/user/125/.mutter-Xwaylandauth.2ER9Q1
+CreationUtcTime : 2022-08-28 12:38:32.658
+User            : gdm
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545145
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:32.658
+ProcessGuid     : {5ce29752-61c6-630b-c517-c7c524560000}
+ProcessId       : 1149
+Image           : /usr/bin/gnome-shell
+TargetFilename  : /run/user/125/wayland-0.lock
+CreationUtcTime : 2022-08-28 12:38:32.658
+User            : gdm
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545169
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:33.619
+ProcessGuid     : {5ce29752-61ad-630b-5537-de5af9550000}
+ProcessId       : 226
+Image           : /usr/lib/systemd/systemd-journald
+TargetFilename  : /run/systemd/journal/streams/.#8:31255DXFaMg
+CreationUtcTime : 2022-08-28 12:38:33.619
+User            : root
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545173
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:33.798
+ProcessGuid     : {5ce29752-61c9-630b-d51a-8247cb550000}
+ProcessId       : 1212
+Image           : /usr/bin/ibus-daemon
+TargetFilename  : /var/lib/gdm3/.config/ibus/bus/5ce2975229324c11a9639a4902b0c8bb-unix-wayland-0
+CreationUtcTime : 2022-08-28 12:38:33.798
+User            : gdm
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545175
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:33.808
+ProcessGuid     : {5ce29752-61ad-630b-5537-de5af9550000}
+ProcessId       : 226
+Image           : /usr/lib/systemd/systemd-journald
+TargetFilename  : /run/systemd/journal/streams/.#8:31452PcBTig
+CreationUtcTime : 2022-08-28 12:38:33.808
+User            : root
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545185
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:34.651
+ProcessGuid     : {5ce29752-61ad-630b-5537-de5af9550000}
+ProcessId       : 226
+Image           : /usr/lib/systemd/systemd-journald
+TargetFilename  : /run/systemd/journal/streams/.#8:31681qvTDZi
+CreationUtcTime : 2022-08-28 12:38:34.651
+User            : root
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545186
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:34.745
+ProcessGuid     : {5ce29752-61ad-630b-5537-de5af9550000}
+ProcessId       : 226
+Image           : /usr/lib/systemd/systemd-journald
+TargetFilename  : /run/systemd/journal/streams/.#8:31829eYEURf
+CreationUtcTime : 2022-08-28 12:38:34.745
+User            : root
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545190
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:34.872
+ProcessGuid     : {5ce29752-61c6-630b-c517-c7c524560000}
+ProcessId       : 1149
+Image           : /usr/bin/gnome-shell
+TargetFilename  : /run/user/125/gnome-shell-disable-extensions
+CreationUtcTime : 2022-08-28 12:38:34.872
+User            : gdm
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545200
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:34.972
+ProcessGuid     : {5ce29752-61ad-630b-5537-de5af9550000}
+ProcessId       : 226
+Image           : /usr/lib/systemd/systemd-journald
+TargetFilename  : /run/systemd/journal/streams/.#8:31957T1fEOf
+CreationUtcTime : 2022-08-28 12:38:34.972
+User            : root
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545201
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:34.973
+ProcessGuid     : {5ce29752-61ad-630b-5537-de5af9550000}
+ProcessId       : 226
+Image           : /usr/lib/systemd/systemd-journald
+TargetFilename  : /run/systemd/journal/streams/.#8:31960vZM9zi
+CreationUtcTime : 2022-08-28 12:38:34.973
+User            : root
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545204
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:34.993
+ProcessGuid     : {5ce29752-61ad-630b-5537-de5af9550000}
+ProcessId       : 226
+Image           : /usr/lib/systemd/systemd-journald
+TargetFilename  : /run/systemd/journal/streams/.#8:31983WWqC2f
+CreationUtcTime : 2022-08-28 12:38:34.993
+User            : root
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545205
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:34.995
+ProcessGuid     : {5ce29752-61ad-630b-5537-de5af9550000}
+ProcessId       : 226
+Image           : /usr/lib/systemd/systemd-journald
+TargetFilename  : /run/systemd/journal/streams/.#8:31987KcMq0f
+CreationUtcTime : 2022-08-28 12:38:34.995
+User            : root
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545208
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:35.036
+ProcessGuid     : {5ce29752-61ad-630b-5537-de5af9550000}
+ProcessId       : 226
+Image           : /usr/lib/systemd/systemd-journald
+TargetFilename  : /run/systemd/journal/streams/.#8:32023F9Zp5f
+CreationUtcTime : 2022-08-28 12:38:35.036
+User            : root
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545209
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:35.037
+ProcessGuid     : {5ce29752-61ad-630b-5537-de5af9550000}
+ProcessId       : 226
+Image           : /usr/lib/systemd/systemd-journald
+TargetFilename  : /run/systemd/journal/streams/.#8:32032gbpIEg
+CreationUtcTime : 2022-08-28 12:38:35.037
+User            : root
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545212
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:35.067
+ProcessGuid     : {5ce29752-61ad-630b-5537-de5af9550000}
+ProcessId       : 226
+Image           : /usr/lib/systemd/systemd-journald
+TargetFilename  : /run/systemd/journal/streams/.#8:320685G3QEh
+CreationUtcTime : 2022-08-28 12:38:35.067
+User            : root
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545213
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:35.068
+ProcessGuid     : {5ce29752-61ad-630b-5537-de5af9550000}
+ProcessId       : 226
+Image           : /usr/lib/systemd/systemd-journald
+TargetFilename  : /run/systemd/journal/streams/.#8:32077lNPovg
+CreationUtcTime : 2022-08-28 12:38:35.068
+User            : root
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545216
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:35.111
+ProcessGuid     : {5ce29752-61ad-630b-5537-de5af9550000}
+ProcessId       : 226
+Image           : /usr/lib/systemd/systemd-journald
+TargetFilename  : /run/systemd/journal/streams/.#8:32112SUBORj
+CreationUtcTime : 2022-08-28 12:38:35.111
+User            : root
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545217
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:35.113
+ProcessGuid     : {5ce29752-61ad-630b-5537-de5af9550000}
+ProcessId       : 226
+Image           : /usr/lib/systemd/systemd-journald
+TargetFilename  : /run/systemd/journal/streams/.#8:321150kbf5i
+CreationUtcTime : 2022-08-28 12:38:35.113
+User            : root
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545219
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:35.132
+ProcessGuid     : {5ce29752-61ad-630b-5537-de5af9550000}
+ProcessId       : 226
+Image           : /usr/lib/systemd/systemd-journald
+TargetFilename  : /run/systemd/journal/streams/.#8:32141C2Y77j
+CreationUtcTime : 2022-08-28 12:38:35.132
+User            : root
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545221
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:35.133
+ProcessGuid     : {5ce29752-61ad-630b-5537-de5af9550000}
+ProcessId       : 226
+Image           : /usr/lib/systemd/systemd-journald
+TargetFilename  : /run/systemd/journal/streams/.#8:32144ipUxch
+CreationUtcTime : 2022-08-28 12:38:35.133
+User            : root
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545224
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:35.159
+ProcessGuid     : {5ce29752-61ad-630b-5537-de5af9550000}
+ProcessId       : 226
+Image           : /usr/lib/systemd/systemd-journald
+TargetFilename  : /run/systemd/journal/streams/.#8:321679WXe7i
+CreationUtcTime : 2022-08-28 12:38:35.159
+User            : root
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545225
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:35.164
+ProcessGuid     : {5ce29752-61ad-630b-5537-de5af9550000}
+ProcessId       : 226
+Image           : /usr/lib/systemd/systemd-journald
+TargetFilename  : /run/systemd/journal/streams/.#8:32172yQ0h4g
+CreationUtcTime : 2022-08-28 12:38:35.164
+User            : root
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545228
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:35.187
+ProcessGuid     : {5ce29752-61ad-630b-5537-de5af9550000}
+ProcessId       : 226
+Image           : /usr/lib/systemd/systemd-journald
+TargetFilename  : /run/systemd/journal/streams/.#8:32196IHAqSj
+CreationUtcTime : 2022-08-28 12:38:35.187
+User            : root
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545229
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:35.191
+ProcessGuid     : {5ce29752-61ad-630b-5537-de5af9550000}
+ProcessId       : 226
+Image           : /usr/lib/systemd/systemd-journald
+TargetFilename  : /run/systemd/journal/streams/.#8:32200REj06i
+CreationUtcTime : 2022-08-28 12:38:35.191
+User            : root
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545232
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:35.211
+ProcessGuid     : {5ce29752-61ad-630b-5537-de5af9550000}
+ProcessId       : 226
+Image           : /usr/lib/systemd/systemd-journald
+TargetFilename  : /run/systemd/journal/streams/.#8:32240FYGDUf
+CreationUtcTime : 2022-08-28 12:38:35.211
+User            : root
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545233
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:35.213
+ProcessGuid     : {5ce29752-61ad-630b-5537-de5af9550000}
+ProcessId       : 226
+Image           : /usr/lib/systemd/systemd-journald
+TargetFilename  : /run/systemd/journal/streams/.#8:32243JcAzAi
+CreationUtcTime : 2022-08-28 12:38:35.213
+User            : root
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545237
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:35.244
+ProcessGuid     : {5ce29752-61ad-630b-5537-de5af9550000}
+ProcessId       : 226
+Image           : /usr/lib/systemd/systemd-journald
+TargetFilename  : /run/systemd/journal/streams/.#8:32269ws2Toi
+CreationUtcTime : 2022-08-28 12:38:35.244
+User            : root
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545238
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:35.244
+ProcessGuid     : {5ce29752-61ad-630b-5537-de5af9550000}
+ProcessId       : 226
+Image           : /usr/lib/systemd/systemd-journald
+TargetFilename  : /run/systemd/journal/streams/.#8:322729WDO0g
+CreationUtcTime : 2022-08-28 12:38:35.244
+User            : root
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545241
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:35.275
+ProcessGuid     : {5ce29752-61ad-630b-5537-de5af9550000}
+ProcessId       : 226
+Image           : /usr/lib/systemd/systemd-journald
+TargetFilename  : /run/systemd/journal/streams/.#8:32301RDMrrj
+CreationUtcTime : 2022-08-28 12:38:35.275
+User            : root
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545242
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:35.276
+ProcessGuid     : {5ce29752-61ad-630b-5537-de5af9550000}
+ProcessId       : 226
+Image           : /usr/lib/systemd/systemd-journald
+TargetFilename  : /run/systemd/journal/streams/.#8:32305gRJzij
+CreationUtcTime : 2022-08-28 12:38:35.276
+User            : root
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545245
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:35.311
+ProcessGuid     : {5ce29752-61ad-630b-5537-de5af9550000}
+ProcessId       : 226
+Image           : /usr/lib/systemd/systemd-journald
+TargetFilename  : /run/systemd/journal/streams/.#8:32336dpyMOh
+CreationUtcTime : 2022-08-28 12:38:35.311
+User            : root
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545246
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:35.313
+ProcessGuid     : {5ce29752-61ad-630b-5537-de5af9550000}
+ProcessId       : 226
+Image           : /usr/lib/systemd/systemd-journald
+TargetFilename  : /run/systemd/journal/streams/.#8:32340wTttBi
+CreationUtcTime : 2022-08-28 12:38:35.313
+User            : root
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545249
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:35.339
+ProcessGuid     : {5ce29752-61ad-630b-5537-de5af9550000}
+ProcessId       : 226
+Image           : /usr/lib/systemd/systemd-journald
+TargetFilename  : /run/systemd/journal/streams/.#8:32367mNWJCj
+CreationUtcTime : 2022-08-28 12:38:35.339
+User            : root
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545250
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:35.340
+ProcessGuid     : {5ce29752-61ad-630b-5537-de5af9550000}
+ProcessId       : 226
+Image           : /usr/lib/systemd/systemd-journald
+TargetFilename  : /run/systemd/journal/streams/.#8:32373p9nPNg
+CreationUtcTime : 2022-08-28 12:38:35.340
+User            : root
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545252
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:35.351
+ProcessGuid     : {5ce29752-61cb-630b-f550-a08243560000}
+ProcessId       : 1255
+Image           : /usr/libexec/gsd-keyboard
+TargetFilename  : /run/user/125/dconf/user
+CreationUtcTime : 2022-08-28 12:38:35.351
+User            : gdm
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545254
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:35.367
+ProcessGuid     : {5ce29752-61ad-630b-5537-de5af9550000}
+ProcessId       : 226
+Image           : /usr/lib/systemd/systemd-journald
+TargetFilename  : /run/systemd/journal/streams/.#8:32399vSocoi
+CreationUtcTime : 2022-08-28 12:38:35.367
+User            : root
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545255
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:35.369
+ProcessGuid     : {5ce29752-61ad-630b-5537-de5af9550000}
+ProcessId       : 226
+Image           : /usr/lib/systemd/systemd-journald
+TargetFilename  : /run/systemd/journal/streams/.#8:324025Fmcih
+CreationUtcTime : 2022-08-28 12:38:35.369
+User            : root
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545257
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:35.384
+ProcessGuid     : {5ce29752-61cb-630b-f556-bc54b3550000}
+ProcessId       : 1260
+Image           : /usr/libexec/gsd-smartcard
+TargetFilename  : /run/user/125/dconf/user
+CreationUtcTime : 2022-08-28 12:38:35.384
+User            : gdm
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545260
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:35.478
+ProcessGuid     : {5ce29752-61cb-630b-e546-425dd3550000}
+ProcessId       : 1254
+Image           : /usr/libexec/gsd-color
+TargetFilename  : /run/user/125/dconf/user
+CreationUtcTime : 2022-08-28 12:38:35.478
+User            : gdm
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545265
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:35.632
+ProcessGuid     : {5ce29752-61cb-630b-3519-fd66ec550000}
+ProcessId       : 1283
+Image           : /usr/libexec/gsd-housekeeping
+TargetFilename  : /run/user/125/dconf/user
+CreationUtcTime : 2022-08-28 12:38:35.632
+User            : gdm
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545266
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:35.635
+ProcessGuid     : {5ce29752-61cb-630b-a56c-328553560000}
+ProcessId       : 1270
+Image           : /usr/libexec/gsd-sound
+TargetFilename  : /run/user/125/dconf/user
+CreationUtcTime : 2022-08-28 12:38:35.635
+User            : gdm
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545267
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:35.638
+ProcessGuid     : {5ce29752-61cb-630b-3513-ef7a12560000}
+ProcessId       : 1278
+Image           : /usr/libexec/gsd-a11y-settings
+TargetFilename  : /run/user/125/dconf/user
+CreationUtcTime : 2022-08-28 12:38:35.638
+User            : gdm
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545268
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:35.661
+ProcessGuid     : {5ce29752-61cb-630b-a5aa-c5dd5a550000}
+ProcessId       : 1287
+Image           : /usr/libexec/gsd-power
+TargetFilename  : /run/user/125/dconf/user
+CreationUtcTime : 2022-08-28 12:38:35.661
+User            : gdm
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545269
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:35.683
+ProcessGuid     : {5ce29752-61cb-630b-0511-e924f4550000}
+ProcessId       : 1263
+Image           : /usr/libexec/gsd-datetime
+TargetFilename  : /run/user/125/dconf/user
+CreationUtcTime : 2022-08-28 12:38:35.683
+User            : gdm
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545283
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:36.291
+ProcessGuid     : {5ce29752-61cc-630b-d5fc-2ba176550000}
+ProcessId       : 1341
+Image           : /usr/bin/xkbcomp
+TargetFilename  : -
+CreationUtcTime : 2022-08-28 12:38:36.291
+User            : gdm
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545287
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:36.294
+ProcessGuid     : {5ce29752-61c8-630b-851d-610263550000}
+ProcessId       : 1210
+Image           : /usr/bin/Xwayland
+TargetFilename  : /run/user/125/xwayland-shared-e6p5ZF
+CreationUtcTime : 2022-08-28 12:38:36.294
+User            : gdm
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545289
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:36.449
+ProcessGuid     : {5ce29752-61ad-630b-5537-de5af9550000}
+ProcessId       : 226
+Image           : /usr/lib/systemd/systemd-journald
+TargetFilename  : /run/systemd/journal/streams/.#8:32788JhYoBh
+CreationUtcTime : 2022-08-28 12:38:36.449
+User            : root
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545309
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:36.723
+ProcessGuid     : {5ce29752-61cc-630b-d58a-1e6516560000}
+ProcessId       : 1353
+Image           : /usr/bin/ibus-daemon
+TargetFilename  : /var/lib/gdm3/.config/ibus/bus/5ce2975229324c11a9639a4902b0c8bb-unix-wayland-0
+CreationUtcTime : 2022-08-28 12:38:36.723
+User            : gdm
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545324
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:37.165
+ProcessGuid     : {5ce29752-61b2-630b-c51a-585217560000}
+ProcessId       : 633
+Image           : /usr/lib/systemd/systemd-logind
+TargetFilename  : /run/systemd/inhibit/systemd/inhibit/.#5wg9KC3
+CreationUtcTime : 2022-08-28 12:38:37.165
+User            : root
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545325
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:37.170
+ProcessGuid     : {5ce29752-61b2-630b-c51a-585217560000}
+ProcessId       : 633
+Image           : /usr/lib/systemd/systemd-logind
+TargetFilename  : /run/systemd/inhibit/systemd/inhibit/.#63fsgH5
+CreationUtcTime : 2022-08-28 12:38:37.170
+User            : root
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545326
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:37.236
+ProcessGuid     : {5ce29752-61b2-630b-a5d0-d5242d560000}
+ProcessId       : 587
+Image           : /usr/lib/accountsservice/accounts-daemon
+TargetFilename  : /var/lib/AccountsService/users/gdm.OXMIR1
+CreationUtcTime : 2022-08-28 12:38:37.236
+User            : root
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545327
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:37.270
+ProcessGuid     : {5ce29752-61ad-630b-5537-de5af9550000}
+ProcessId       : 226
+Image           : /usr/lib/systemd/systemd-journald
+TargetFilename  : /run/systemd/journal/streams/.#8:33178bvYBCj
+CreationUtcTime : 2022-08-28 12:38:37.270
+User            : root
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545332
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:37.516
+ProcessGuid     : {5ce29752-61ad-630b-5537-de5af9550000}
+ProcessId       : 226
+Image           : /usr/lib/systemd/systemd-journald
+TargetFilename  : /run/systemd/journal/streams/.#8:33226lkt1ui
+CreationUtcTime : 2022-08-28 12:38:37.516
+User            : root
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545333
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:37.518
+ProcessGuid     : {5ce29752-61ad-630b-5537-de5af9550000}
+ProcessId       : 226
+Image           : /usr/lib/systemd/systemd-journald
+TargetFilename  : /run/systemd/journal/streams/.#8:33229WsCihi
+CreationUtcTime : 2022-08-28 12:38:37.518
+User            : root
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545340
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:37.638
+ProcessGuid     : {5ce29752-61ad-630b-5537-de5af9550000}
+ProcessId       : 226
+Image           : /usr/lib/systemd/systemd-journald
+TargetFilename  : /run/systemd/journal/streams/.#8:33283YkfFpi
+CreationUtcTime : 2022-08-28 12:38:37.638
+User            : root
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545341
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:37.639
+ProcessGuid     : {5ce29752-61ad-630b-5537-de5af9550000}
+ProcessId       : 226
+Image           : /usr/lib/systemd/systemd-journald
+TargetFilename  : /run/systemd/journal/streams/.#8:33285882uej
+CreationUtcTime : 2022-08-28 12:38:37.639
+User            : root
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545347
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:37.726
+ProcessGuid     : {5ce29752-61c6-630b-c517-c7c524560000}
+ProcessId       : 1149
+Image           : /usr/bin/gnome-shell
+TargetFilename  : /var/lib/gdm3/.cache/mesa_shader_cache/a7/86b9c363bbef96f1c4a051615327ebeb7ac633.tmp
+CreationUtcTime : 2022-08-28 12:38:37.726
+User            : gdm
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545350
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:37.844
+ProcessGuid     : {5ce29752-61b2-630b-c51a-585217560000}
+ProcessId       : 633
+Image           : /usr/lib/systemd/systemd-logind
+TargetFilename  : /run/systemd/inhibit/systemd/inhibit/.#7Crg2k2
+CreationUtcTime : 2022-08-28 12:38:37.844
+User            : root
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545352
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:37.913
+ProcessGuid     : {5ce29752-61c6-630b-c517-c7c524560000}
+ProcessId       : 1149
+Image           : /usr/bin/gnome-shell
+TargetFilename  : /tmp/mutter-shared-0B8ER1
+CreationUtcTime : 2022-08-28 12:38:37.913
+User            : gdm
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545354
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:37.915
+ProcessGuid     : {5ce29752-61c6-630b-c517-c7c524560000}
+ProcessId       : 1149
+Image           : /usr/bin/gnome-shell
+TargetFilename  : /tmp/mutter-shared-FS9ER1
+CreationUtcTime : 2022-08-28 12:38:37.915
+User            : gdm
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545356
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:37.915
+ProcessGuid     : {5ce29752-61c6-630b-c517-c7c524560000}
+ProcessId       : 1149
+Image           : /usr/bin/gnome-shell
+TargetFilename  : /tmp/mutter-shared-JX9ER1
+CreationUtcTime : 2022-08-28 12:38:37.915
+User            : gdm
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545358
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:37.916
+ProcessGuid     : {5ce29752-61c6-630b-c517-c7c524560000}
+ProcessId       : 1149
+Image           : /usr/bin/gnome-shell
+TargetFilename  : /tmp/mutter-shared-AVAFR1
+CreationUtcTime : 2022-08-28 12:38:37.916
+User            : gdm
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545360
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:37.918
+ProcessGuid     : {5ce29752-61c6-630b-c517-c7c524560000}
+ProcessId       : 1149
+Image           : /usr/bin/gnome-shell
+TargetFilename  : /tmp/mutter-shared-IPBFR1
+CreationUtcTime : 2022-08-28 12:38:37.918
+User            : gdm
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545362
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:37.919
+ProcessGuid     : {5ce29752-61c6-630b-c517-c7c524560000}
+ProcessId       : 1149
+Image           : /usr/bin/gnome-shell
+TargetFilename  : /tmp/mutter-shared-G5CFR1
+CreationUtcTime : 2022-08-28 12:38:37.919
+User            : gdm
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545366
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:37.964
+ProcessGuid     : {5ce29752-61cd-630b-d5ec-31c21b560000}
+ProcessId       : 1389
+Image           : /usr/bin/xkbcomp
+TargetFilename  : -
+CreationUtcTime : 2022-08-28 12:38:37.964
+User            : gdm
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545379
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:38.017
+ProcessGuid     : {5ce29752-61ad-630b-5537-de5af9550000}
+ProcessId       : 226
+Image           : /usr/lib/systemd/systemd-journald
+TargetFilename  : /run/systemd/journal/streams/.#8:33595oHYYXj
+CreationUtcTime : 2022-08-28 12:38:38.017
+User            : root
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545384
+RuleName        : -
+UtcTime         : 2022-08-28 12:38:38.034
+ProcessGuid     : {5ce29752-61ad-630b-5537-de5af9550000}
+ProcessId       : 226
+Image           : /usr/lib/systemd/systemd-journald
+TargetFilename  : /run/systemd/journal/streams/.#8:33770eDbBvj
+CreationUtcTime : 2022-08-28 12:38:38.034
+User            : root
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 545863
+RuleName        : -
+UtcTime         : 2022-08-28 12:39:57.465
+ProcessGuid     : {5ce29752-621d-630b-95b0-07da3c560000}
+ProcessId       : 1670
+Image           : /usr/libexec/gnome-session-binary
+TargetFilename  : /run/user/1000/ICEauthority-c
+CreationUtcTime : 2022-08-28 12:39:57.465
+User            : linuxuser
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 546049
+RuleName        : -
+UtcTime         : 2022-08-28 12:40:03.310
+ProcessGuid     : {5ce29752-6222-630b-05e1-aa2639560000}
+ProcessId       : 1818
+Image           : /usr/libexec/gsd-datetime
+TargetFilename  : /run/user/1000/dconf/user
+CreationUtcTime : 2022-08-28 12:40:03.310
+User            : linuxuser
+
+%%%%%%%%%% 
+%%%%%%%%%% 
+%%%%%%%%%% 
+%%%%%%%%%% 
+%%%%%%%%%% 
+%%%%%%%%%% 
+%%%%%%%%%% 
+%%%%%%%%%% 
+%%%%%%%%%% 
+%%%%%%%%%% 
+%%%%%%%%%% 
+%%%%%%%%%% 
+%%%%%%%%%% 
+%%%%%%%%%% 
+%%%%%%%%%% 
+%%%%%%%%%%
+%%%%%%%%%% 
+%%%%%%%%%% 
+%%%%%%%%%% 
+%%%%%%%%%% 
+%%%%%%%%%% 
+%%%%%%%%%% 
+%%%%%%%%%% 
+
+
+%%%%%%%%%% ProcessCreate   (12:41:43.340 timestamp)
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 547327
+RuleName          : -
+UtcTime           : 2022-08-28 12:41:43.340
+ProcessGuid       : {5ce29752-6287-630b-8c1d-43e65c550000}
+ProcessId         : 2361
+Image             : /usr/bin/zip
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : zip archiv.zip newfile2 NormalerUserDatei.txt test.dd
+CurrentDirectory  : /home/linuxuser
+User              : linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000000000000}
+LogonId           : 1000
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-6231-630b-d596-16f2df550000}
+ParentProcessId   : 2044
+ParentImage       : /usr/bin/bash
+ParentCommandLine : bash
+ParentUser        : linuxuser
+
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 547330
+RuleName          : -
+UtcTime           : 2022-08-28 12:41:43.353
+ProcessGuid       : {5ce29752-6287-630b-15bd-dbc4ac550000}
+ProcessId         : 2363
+Image             : /usr/libexec/tracker-store
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : /usr/libexec/tracker-store
+CurrentDirectory  : /home/linuxuser
+User              : linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000000000000}
+LogonId           : 1000
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-6219-630b-65de-4e27cf550000}
+ParentProcessId   : 1417
+ParentImage       : /usr/lib/systemd/systemd
+ParentCommandLine : /lib/systemd/systemd
+ParentUser        : linuxuser
+
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 547345
+RuleName          : -
+UtcTime           : 2022-08-28 12:42:13.993
+ProcessGuid       : {5ce29752-62a5-630b-7545-c8cd19560000}
+ProcessId         : 2372
+Image             : /usr/bin/nautilus
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : /usr/bin/nautilus --gapplication-service
+CurrentDirectory  : /home/linuxuser
+User              : linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000000000000}
+LogonId           : 1000
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {00000000-0000-0000-0000-000000000000}
+ParentProcessId   : 2371
+ParentImage       : -
+ParentCommandLine : -
+ParentUser        : -
+
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 547348
+RuleName          : -
+UtcTime           : 2022-08-28 12:42:15.190
+ProcessGuid       : {5ce29752-62a7-630b-c545-3736af550000}
+ProcessId         : 2382
+Image             : /usr/lib/systemd/systemd-hostnamed
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : /lib/systemd/systemd-hostnamed
+CurrentDirectory  : /
+User              : root
+LogonGuid         : {5ce29752-0000-0000-0000-000000000000}
+LogonId           : 0
+TerminalSessionId : 4294967295
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {00000000-0000-0000-0000-000000000000}
+ParentProcessId   : 1
+ParentImage       : -
+ParentCommandLine : -
+ParentUser        : -
+
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 547352
+RuleName          : -
+UtcTime           : 2022-08-28 12:42:29.333
+ProcessGuid       : {5ce29752-62b5-630b-551b-fc3b25560000}
+ProcessId         : 2386
+Image             : /usr/lib/snapd/snap-device-helper
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : /usr/lib/snapd/snap-device-helper change 
+                    snap_snap-store_snap-store 
+                    /devices/pci0000:00/0000:00:02.0/drm/card0 226:0
+CurrentDirectory  : /
+User              : root
+LogonGuid         : {5ce29752-0000-0000-0000-000000000000}
+LogonId           : 0
+TerminalSessionId : 4294967295
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {00000000-0000-0000-0000-000000000000}
+ParentProcessId   : 2385
+ParentImage       : -
+ParentCommandLine : -
+ParentUser        : -
+
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 547354
+RuleName          : -
+UtcTime           : 2022-08-28 12:42:29.344
+ProcessGuid       : {5ce29752-62b5-630b-551b-2708c6550000}
+ProcessId         : 2387
+Image             : /usr/lib/snapd/snap-device-helper
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : /usr/lib/snapd/snap-device-helper change 
+                    snap_snap-store_ubuntu-software 
+                    /devices/pci0000:00/0000:00:02.0/drm/card0 226:0
+CurrentDirectory  : /
+User              : root
+LogonGuid         : {5ce29752-0000-0000-0000-000000000000}
+LogonId           : 0
+TerminalSessionId : 4294967295
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {00000000-0000-0000-0000-000000000000}
+ParentProcessId   : 2385
+ParentImage       : -
+ParentCommandLine : -
+ParentUser        : -
+
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 547356
+RuleName          : -
+UtcTime           : 2022-08-28 12:42:29.355
+ProcessGuid       : {5ce29752-62b5-630b-557b-ecee8e550000}
+ProcessId         : 2388
+Image             : /usr/lib/snapd/snap-device-helper
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : /usr/lib/snapd/snap-device-helper change 
+                    snap_snap-store_ubuntu-software-local-file 
+                    /devices/pci0000:00/0000:00:02.0/drm/card0 226:0
+CurrentDirectory  : /
+User              : root
+LogonGuid         : {5ce29752-0000-0000-0000-000000000000}
+LogonId           : 0
+TerminalSessionId : 4294967295
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {00000000-0000-0000-0000-000000000000}
+ParentProcessId   : 2385
+ParentImage       : -
+ParentCommandLine : -
+ParentUser        : -
+
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 547376
+RuleName          : -
+UtcTime           : 2022-08-28 12:42:37.008
+ProcessGuid       : {5ce29752-62bd-630b-d5e6-c462bd550000}
+ProcessId         : 2397
+Image             : /usr/bin/bash
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : bash
+CurrentDirectory  : /home/linuxuser
+User              : linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000001000000}
+LogonId           : 1000
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {00000000-0000-0000-0000-000000000000}
+ParentProcessId   : 2036
+ParentImage       : -
+ParentCommandLine : -
+ParentUser        : -
+
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 547377
+RuleName          : -
+UtcTime           : 2022-08-28 12:42:37.015
+ProcessGuid       : {5ce29752-62bd-630b-f5e7-227ced550000}
+ProcessId         : 2398
+Image             : /usr/bin/dash
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : /bin/sh /usr/bin/lesspipe
+CurrentDirectory  : /home/linuxuser
+User              : linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000001000000}
+LogonId           : 1000
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-62bd-630b-d5e6-c462bd550000}
+ParentProcessId   : 2397
+ParentImage       : /usr/bin/bash
+ParentCommandLine : bash
+ParentUser        : linuxuser
+
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 547378
+RuleName          : -
+UtcTime           : 2022-08-28 12:42:37.022
+ProcessGuid       : {5ce29752-62bd-630b-71a9-cc3b4e560000}
+ProcessId         : 2399
+Image             : /usr/bin/basename
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : basename /usr/bin/lesspipe
+CurrentDirectory  : /home/linuxuser
+User              : linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000001000000}
+LogonId           : 1000
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-62bd-630b-f5e7-227ced550000}
+ParentProcessId   : 2398
+ParentImage       : /usr/bin/dash
+ParentCommandLine : /bin/sh
+ParentUser        : linuxuser
+
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 547380
+RuleName          : -
+UtcTime           : 2022-08-28 12:42:37.024
+ProcessGuid       : {5ce29752-62bd-630b-31f8-aee7a2550000}
+ProcessId         : 2401
+Image             : /usr/bin/dirname
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : dirname /usr/bin/lesspipe
+CurrentDirectory  : /home/linuxuser
+User              : linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000001000000}
+LogonId           : 1000
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {00000000-0000-0000-0000-000000000000}
+ParentProcessId   : 2400
+ParentImage       : -
+ParentCommandLine : -
+ParentUser        : -
+
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 547384
+RuleName          : -
+UtcTime           : 2022-08-28 12:42:37.028
+ProcessGuid       : {5ce29752-62bd-630b-31b9-d19d2b560000}
+ProcessId         : 2402
+Image             : /usr/bin/dircolors
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : dircolors -b
+CurrentDirectory  : /home/linuxuser
+User              : linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000001000000}
+LogonId           : 1000
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-62bd-630b-d5e6-c462bd550000}
+ParentProcessId   : 2397
+ParentImage       : /usr/bin/bash
+ParentCommandLine : bash
+ParentUser        : linuxuser
+
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 547387
+RuleName          : -
+UtcTime           : 2022-08-28 12:42:39.372
+ProcessGuid       : {5ce29752-62bf-630b-bd5d-5d7e06560000}
+ProcessId         : 2403
+Image             : /opt/microsoft/powershell/7/pwsh
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : pwsh
+CurrentDirectory  : /home/linuxuser
+User              : linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000001000000}
+LogonId           : 1000
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-62bd-630b-d5e6-c462bd550000}
+ParentProcessId   : 2397
+ParentImage       : /usr/bin/bash
+ParentCommandLine : bash
+ParentUser        : linuxuser
+
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 547410
+RuleName          : -
+UtcTime           : 2022-08-28 12:42:48.305
+ProcessGuid       : {5ce29752-62c8-630b-d546-1c7272550000}
+ProcessId         : 2423
+Image             : /usr/bin/bash
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : bash
+CurrentDirectory  : /home/linuxuser
+User              : linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000002000000}
+LogonId           : 1000
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {00000000-0000-0000-0000-000000000000}
+ParentProcessId   : 2036
+ParentImage       : -
+ParentCommandLine : -
+ParentUser        : -
+
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 547411
+RuleName          : -
+UtcTime           : 2022-08-28 12:42:48.322
+ProcessGuid       : {5ce29752-62c8-630b-f577-214fd6550000}
+ProcessId         : 2424
+Image             : /usr/bin/dash
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : /bin/sh /usr/bin/lesspipe
+CurrentDirectory  : /home/linuxuser
+User              : linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000002000000}
+LogonId           : 1000
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-62c8-630b-d546-1c7272550000}
+ParentProcessId   : 2423
+ParentImage       : /usr/bin/bash
+ParentCommandLine : bash
+ParentUser        : linuxuser
+
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 547412
+RuleName          : -
+UtcTime           : 2022-08-28 12:42:48.326
+ProcessGuid       : {5ce29752-62c8-630b-71f9-fae547560000}
+ProcessId         : 2425
+Image             : /usr/bin/basename
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : basename /usr/bin/lesspipe
+CurrentDirectory  : /home/linuxuser
+User              : linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000002000000}
+LogonId           : 1000
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-62c8-630b-f577-214fd6550000}
+ParentProcessId   : 2424
+ParentImage       : /usr/bin/dash
+ParentCommandLine : /bin/sh
+ParentUser        : linuxuser
+
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 547414
+RuleName          : -
+UtcTime           : 2022-08-28 12:42:48.336
+ProcessGuid       : {5ce29752-62c8-630b-3188-d3acde550000}
+ProcessId         : 2427
+Image             : /usr/bin/dirname
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : dirname /usr/bin/lesspipe
+CurrentDirectory  : /home/linuxuser
+User              : linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000002000000}
+LogonId           : 1000
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {00000000-0000-0000-0000-000000000000}
+ParentProcessId   : 2426
+ParentImage       : -
+ParentCommandLine : -
+ParentUser        : -
+
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 547418
+RuleName          : -
+UtcTime           : 2022-08-28 12:42:48.350
+ProcessGuid       : {5ce29752-62c8-630b-31a9-9beb44560000}
+ProcessId         : 2428
+Image             : /usr/bin/dircolors
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : dircolors -b
+CurrentDirectory  : /home/linuxuser
+User              : linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000002000000}
+LogonId           : 1000
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-62c8-630b-d546-1c7272550000}
+ParentProcessId   : 2423
+ParentImage       : /usr/bin/bash
+ParentCommandLine : bash
+ParentUser        : linuxuser
+
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 547420
+RuleName          : -
+UtcTime           : 2022-08-28 12:42:50.477
+ProcessGuid       : {5ce29752-62ca-630b-bd3d-59b597550000}
+ProcessId         : 2429
+Image             : /opt/microsoft/powershell/7/pwsh
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : pwsh
+CurrentDirectory  : /home/linuxuser
+User              : linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000002000000}
+LogonId           : 1000
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-62c8-630b-d546-1c7272550000}
+ParentProcessId   : 2423
+ParentImage       : /usr/bin/bash
+ParentCommandLine : bash
+ParentUser        : linuxuser
+
+
+PS /home/linuxuser> 
+

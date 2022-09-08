@@ -1,0 +1,162 @@
+echo test > newfile
+echo here is test 2 > newfile
+ 
+Process Create / File Create:
+- keine logs
+- weder für erstellung von newfile noch änderung des inhalts
+
+------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------
+Gegentesten: 
+which echo
+which cat
+
+
+linuxuser@linuxuser-VirtualBox:~$ which cat
+/usr/bin/cat
+
+linuxuser@linuxuser-VirtualBox:~$ which echo
+/usr/bin/echo
+
+
+finde command um built-ins zu listen:
+
+> werden process create events erstellt? falls nicht, starten built-ins keine neuen prozesse = no event.
+------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------
+
+
+-> Built Ins erstellen keine ProcessCreate Einträge
+->starten keinen neuen Prozess
+-> werden nicht geloggt
+
+
+-display all built in commands
+
+linuxuser@linuxuser-VirtualBox:~$ compgen -b    
+				  %% oder "man builtins" für manual mit erklärung zu jedem built in command
+.
+:
+[
+alias
+bg
+bind
+break
+builtin
+caller
+cd
+command
+compgen
+complete
+compopt
+continue
+declare
+dirs
+disown
+echo   %%Built in echo 
+enable
+eval
+exec
+exit
+export
+false
+fc
+fg
+getopts
+hash
+help
+history %%history command keeps a list of all the other commands that have been run from that terminal session
+jobs
+kill
+let
+local
+logout
+mapfile
+popd
+printf	%%used to display given string, number or any other format specifier on the terminal window (like in C)
+pushd
+pwd
+read
+readarray
+readonly
+return
+set
+shift
+shopt
+source
+suspend
+test
+times
+trap
+true
+type
+typeset
+ulimit
+umask
+unalias
+unset
+wait
+
+
+letzter eintrag in ProcessCreate:
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 580183
+RuleName          : -
+UtcTime           : 2022-08-29 11:52:30.178
+ProcessGuid       : {5ce29752-a87e-630c-bd4d-bed95c550000}
+ProcessId         : 2447
+Image             : /opt/microsoft/powershell/7/pwsh
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : pwsh
+CurrentDirectory  : /home/linuxuser
+User              : linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000001000000}
+LogonId           : 1000
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-a87b-630c-d5e6-87a02c560000}
+ParentProcessId   : 2441
+ParentImage       : /usr/bin/bash
+ParentCommandLine : bash
+ParentUser        : linuxuser
+
+
+
+
+"history"  -> display command history
+linuxuser@linuxuser-VirtualBox:~$ history
+    1  sudo apt update
+    2  sudo apt install build-essentail dkms linux-headers-$(uname -r)
+    3  sudo apt install build-essenta
+    4  sudo apt install build-essentail dkms linux-headers-$(uname -r)
+    5  sudo apt update 
+[...]
+-> Kein Eintrag in Process Create
+
+
+
+"printf"  -> display given string
+linuxuser@linuxuser-VirtualBox:~$ printf "%s\n" "Hello, World!"
+Hello, World!
+-> Kein Eintrag in Process Create
+
+
+
+"cd"     -> current directory
+linuxuser@linuxuser-VirtualBox:~$ cd /
+-> Kein Eintrag in Process Create
+
+
+
+"pwd"   -> current locationo
+linuxuser@linuxuser-VirtualBox:~$ pwd
+/home/linuxuser
+-> Kein Eintrag in Process Create

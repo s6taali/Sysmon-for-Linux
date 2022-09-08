@@ -1,0 +1,304 @@
+Vermutung wäre, dass Sysmon hier das Event nur bei
+unlink-ähnlichen Syscalls generiert.
+
+
+
+strace shred index.html  %%%%% shred wurde nicht gelogged
+.
+.
+.
+execve("/usr/bin/shred", ["shred", "index.html"], 0x7ffc7ebf86d8 /* 64 vars */) = 0
+brk(NULL)                               = 0x562525630000
+arch_prctl(0x3001 /* ARCH_??? */, 0x7ffd809a3ec0) = -1 EINVAL (Invalid argument)
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=67156, ...}) = 0
+mmap(NULL, 67156, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fae52074000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300A\2\0\0\0\0\0"..., 832) = 832
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+pread64(3, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32, 848) = 32
+pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\30x\346\264ur\f|Q\226\236i\253-'o"..., 68, 880) = 68
+fstat(3, {st_mode=S_IFREG|0755, st_size=2029592, ...}) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fae52072000
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+pread64(3, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32, 848) = 32
+pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\30x\346\264ur\f|Q\226\236i\253-'o"..., 68, 880) = 68
+mmap(NULL, 2037344, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fae51e80000
+mmap(0x7fae51ea2000, 1540096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x22000) = 0x7fae51ea2000
+mmap(0x7fae5201a000, 319488, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19a000) = 0x7fae5201a000
+mmap(0x7fae52068000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e7000) = 0x7fae52068000
+mmap(0x7fae5206e000, 13920, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fae5206e000
+close(3)                                = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fae51e7e000
+arch_prctl(ARCH_SET_FS, 0x7fae520735c0) = 0
+mprotect(0x7fae52068000, 16384, PROT_READ) = 0
+mprotect(0x562524a8b000, 4096, PROT_READ) = 0
+mprotect(0x7fae520b2000, 4096, PROT_READ) = 0
+munmap(0x7fae52074000, 67156)           = 0
+brk(NULL)                               = 0x562525630000
+brk(0x562525651000)                     = 0x562525651000
+openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=6044320, ...}) = 0
+mmap(NULL, 6044320, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fae518ba000
+close(3)                                = 0
+openat(AT_FDCWD, "/dev/urandom", O_RDONLY) = 3
+read(3, "}d\224\"`?\215\243N=\3555\177\31k\221\316:\315\223^\21\341 2\t\232S\2%\246\241"..., 2048) = 2048
+close(3)                                = 0
+openat(AT_FDCWD, "index.html", O_WRONLY|O_NOCTTY) = 3
+fstat(3, {st_mode=S_IFREG|0664, st_size=13839, ...}) = 0
+lseek(3, 0, SEEK_SET)                   = 0
+write(3, "\221\16\206\273\373#\32Mf\22\356\34\333S\355]\7\374\306H \253F4\302>\240\r\22\371\306`"..., 16384) = 16384
+fdatasync(3)                            = 0
+lseek(3, 0, SEEK_SET)                   = 0
+write(3, "<\345\320\276\267\301\267@\255\320\264\230YS7\f\331,Vw\344;?J\355\316P\241\20\361D\231"..., 16384) = 16384
+fdatasync(3)                            = 0
+lseek(3, 0, SEEK_SET)                   = 0
+write(3, "h\311\\\241fa\35\336\2406\343\37Cf!=7\316\16\37.\210\233\326\351:\273V-\376UT"..., 16384) = 16384
+fdatasync(3)                            = 0
+close(3)                                = 0
+close(1)                                = 0
+close(2)                                = 0
+exit_group(0)                           = ?
++++ exited with 0 +++
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-------------------------------------------------------
+
+linuxuser@linuxuser-VirtualBox:~$ strace shred -fu DATENBANKDATEI
+execve("/usr/bin/shred", ["shred", "-fu", "DATENBANKDATEI"], 0x7ffcaf5ff250 /* 64 vars */) = 0
+brk(NULL)                               = 0x5651eb935000
+arch_prctl(0x3001 /* ARCH_??? */, 0x7ffef47310b0) = -1 EINVAL (Invalid argument)
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=67156, ...}) = 0
+mmap(NULL, 67156, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f658a9ef000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300A\2\0\0\0\0\0"..., 832) = 832
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+pread64(3, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32, 848) = 32
+pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\30x\346\264ur\f|Q\226\236i\253-'o"..., 68, 880) = 68
+fstat(3, {st_mode=S_IFREG|0755, st_size=2029592, ...}) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f658a9ed000
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+pread64(3, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32, 848) = 32
+pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\30x\346\264ur\f|Q\226\236i\253-'o"..., 68, 880) = 68
+mmap(NULL, 2037344, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f658a7fb000
+mmap(0x7f658a81d000, 1540096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x22000) = 0x7f658a81d000
+mmap(0x7f658a995000, 319488, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19a000) = 0x7f658a995000
+mmap(0x7f658a9e3000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e7000) = 0x7f658a9e3000
+mmap(0x7f658a9e9000, 13920, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f658a9e9000
+close(3)                                = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f658a7f9000
+arch_prctl(ARCH_SET_FS, 0x7f658a9ee5c0) = 0
+mprotect(0x7f658a9e3000, 16384, PROT_READ) = 0
+mprotect(0x5651eb6db000, 4096, PROT_READ) = 0
+mprotect(0x7f658aa2d000, 4096, PROT_READ) = 0
+munmap(0x7f658a9ef000, 67156)           = 0
+brk(NULL)                               = 0x5651eb935000
+brk(0x5651eb956000)                     = 0x5651eb956000
+openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=6044320, ...}) = 0
+mmap(NULL, 6044320, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f658a235000
+close(3)                                = 0
+openat(AT_FDCWD, "/dev/urandom", O_RDONLY) = 3
+read(3, "\327\202\6\377\20\376)\36\36\32J\262~o\330*\216\25A\326yy\205\335Qz\34\223m\353\273\23"..., 2048) = 2048
+close(3)                                = 0
+openat(AT_FDCWD, "DATENBANKDATEI", O_WRONLY|O_NOCTTY) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+ftruncate(3, 0)                         = 0
+close(3)                                = 0
+openat(AT_FDCWD, ".", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY) = 3
+renameat2(AT_FDCWD, "DATENBANKDATEI", AT_FDCWD, "00000000000000", RENAME_NOREPLACE) = 0
+fdatasync(3)                            = 0
+renameat2(AT_FDCWD, "00000000000000", AT_FDCWD, "0000000000000", RENAME_NOREPLACE) = 0
+fdatasync(3)                            = 0
+renameat2(AT_FDCWD, "0000000000000", AT_FDCWD, "000000000000", RENAME_NOREPLACE) = 0
+fdatasync(3)                            = 0
+renameat2(AT_FDCWD, "000000000000", AT_FDCWD, "00000000000", RENAME_NOREPLACE) = 0
+fdatasync(3)                            = 0
+renameat2(AT_FDCWD, "00000000000", AT_FDCWD, "0000000000", RENAME_NOREPLACE) = 0
+fdatasync(3)                            = 0
+renameat2(AT_FDCWD, "0000000000", AT_FDCWD, "000000000", RENAME_NOREPLACE) = 0
+fdatasync(3)                            = 0
+renameat2(AT_FDCWD, "000000000", AT_FDCWD, "00000000", RENAME_NOREPLACE) = 0
+fdatasync(3)                            = 0
+renameat2(AT_FDCWD, "00000000", AT_FDCWD, "0000000", RENAME_NOREPLACE) = 0
+fdatasync(3)                            = 0
+renameat2(AT_FDCWD, "0000000", AT_FDCWD, "000000", RENAME_NOREPLACE) = 0
+fdatasync(3)                            = 0
+renameat2(AT_FDCWD, "000000", AT_FDCWD, "00000", RENAME_NOREPLACE) = 0
+fdatasync(3)                            = 0
+renameat2(AT_FDCWD, "00000", AT_FDCWD, "0000", RENAME_NOREPLACE) = 0
+fdatasync(3)                            = 0
+renameat2(AT_FDCWD, "0000", AT_FDCWD, "000", RENAME_NOREPLACE) = 0
+fdatasync(3)                            = 0
+renameat2(AT_FDCWD, "000", AT_FDCWD, "00", RENAME_NOREPLACE) = 0
+fdatasync(3)                            = 0
+renameat2(AT_FDCWD, "00", AT_FDCWD, "0", RENAME_NOREPLACE) = 0
+fdatasync(3)                            = 0
+
+
+unlink("0")                             = 0   	  %%%%%%% shred -fu wurde in file delete gelogged
+
+
+fdatasync(3)                            = 0
+close(3)                                = 0
+close(1)                                = 0
+close(2)                                = 0
+exit_group(0)                           = ?
++++ exited with 0 +++
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-------------------------------------------------------
+strace shred -fuz index.html
+execve("/usr/bin/shred", ["shred", "-fuz", "index.html"], 0x7ffe6a4e9e50 /* 64 vars */) = 0
+brk(NULL)                               = 0x557c54ade000
+arch_prctl(0x3001 /* ARCH_??? */, 0x7ffe15b02790) = -1 EINVAL (Invalid argument)
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=67156, ...}) = 0
+mmap(NULL, 67156, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f9582874000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300A\2\0\0\0\0\0"..., 832) = 832
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+pread64(3, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32, 848) = 32
+pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\30x\346\264ur\f|Q\226\236i\253-'o"..., 68, 880) = 68
+fstat(3, {st_mode=S_IFREG|0755, st_size=2029592, ...}) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f9582872000
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+pread64(3, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32, 848) = 32
+pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\30x\346\264ur\f|Q\226\236i\253-'o"..., 68, 880) = 68
+mmap(NULL, 2037344, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f9582680000
+mmap(0x7f95826a2000, 1540096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x22000) = 0x7f95826a2000
+mmap(0x7f958281a000, 319488, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19a000) = 0x7f958281a000
+mmap(0x7f9582868000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e7000) = 0x7f9582868000
+mmap(0x7f958286e000, 13920, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f958286e000
+close(3)                                = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f958267e000
+arch_prctl(ARCH_SET_FS, 0x7f95828735c0) = 0
+mprotect(0x7f9582868000, 16384, PROT_READ) = 0
+mprotect(0x557c52d84000, 4096, PROT_READ) = 0
+mprotect(0x7f95828b2000, 4096, PROT_READ) = 0
+munmap(0x7f9582874000, 67156)           = 0
+brk(NULL)                               = 0x557c54ade000
+brk(0x557c54aff000)                     = 0x557c54aff000
+openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=6044320, ...}) = 0
+mmap(NULL, 6044320, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f95820ba000
+close(3)                                = 0
+openat(AT_FDCWD, "/dev/urandom", O_RDONLY) = 3
+read(3, "~1\v\5\206\235P\254g\225\2341\313)>\304|\205:\1+\336\\\266!\266\306\214P\355\242\261"..., 2048) = 2048
+close(3)                                = 0
+openat(AT_FDCWD, "index.html", O_WRONLY|O_NOCTTY) = 3
+fstat(3, {st_mode=S_IFREG|0664, st_size=16384, ...}) = 0
+lseek(3, 0, SEEK_SET)                   = 0
+write(3, "\226\260\207}\33=\347\370!\244\244!j\375K\212*\t\277E\370.\340\3763\250\376\245]\257\201\316"..., 16384) = 16384
+fdatasync(3)                            = 0
+lseek(3, 0, SEEK_SET)                   = 0
+write(3, "]-\203r\22}\17u\273\234\251#\224p~\3255n\237v\2241\223\224\7I\214\24\243Y\316h"..., 16384) = 16384
+fdatasync(3)                            = 0
+lseek(3, 0, SEEK_SET)                   = 0
+write(3, "\321{\321\373\332\310^\24\223k\"jd\326\35U\241\260\1\376\3\10\312\314\312\345[\22\235'\371\351"..., 16384) = 16384
+fdatasync(3)                            = 0
+lseek(3, 0, SEEK_SET)                   = 0
+write(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 16384) = 16384
+fdatasync(3)                            = 0
+ftruncate(3, 0)                         = 0
+close(3)                                = 0
+openat(AT_FDCWD, ".", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY) = 3
+renameat2(AT_FDCWD, "index.html", AT_FDCWD, "0000000000", RENAME_NOREPLACE) = 0
+fdatasync(3)                            = 0
+renameat2(AT_FDCWD, "0000000000", AT_FDCWD, "000000000", RENAME_NOREPLACE) = 0
+fdatasync(3)                            = 0
+renameat2(AT_FDCWD, "000000000", AT_FDCWD, "00000000", RENAME_NOREPLACE) = 0
+fdatasync(3)                            = 0
+renameat2(AT_FDCWD, "00000000", AT_FDCWD, "0000000", RENAME_NOREPLACE) = 0
+fdatasync(3)                            = 0
+renameat2(AT_FDCWD, "0000000", AT_FDCWD, "000000", RENAME_NOREPLACE) = 0
+fdatasync(3)                            = 0
+renameat2(AT_FDCWD, "000000", AT_FDCWD, "00000", RENAME_NOREPLACE) = 0
+fdatasync(3)                            = 0
+renameat2(AT_FDCWD, "00000", AT_FDCWD, "0000", RENAME_NOREPLACE) = 0
+fdatasync(3)                            = 0
+renameat2(AT_FDCWD, "0000", AT_FDCWD, "000", RENAME_NOREPLACE) = 0
+fdatasync(3)                            = 0
+renameat2(AT_FDCWD, "000", AT_FDCWD, "00", RENAME_NOREPLACE) = 0
+fdatasync(3)                            = 0
+renameat2(AT_FDCWD, "00", AT_FDCWD, "0", RENAME_NOREPLACE) = 0
+fdatasync(3)                            = 0
+
+unlink("0")                             = 0	 %%%%%%%%% UNLINK, wurde in file delete gelogged
+
+
+fdatasync(3)                            = 0
+close(3)                                = 0
+close(1)                                = 0
+close(2)                                = 0
+exit_group(0)                           = ?
++++ exited with 0 +++
+linuxuser@linuxuser-VirtualBox:~$ 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-------------------------------------------------------
+
+
+strace rm NewNanoFile
+.
+.
+.
+execve("/usr/bin/rm", ["rm", "NewNanoFile"], 0x7ffc3ce6b2a8 /* 64 vars */) = 0
+brk(NULL)                               = 0x558fcc534000
+arch_prctl(0x3001 /* ARCH_??? */, 0x7ffeeeb2af70) = -1 EINVAL (Invalid argument)
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=67156, ...}) = 0
+mmap(NULL, 67156, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f44fe25c000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300A\2\0\0\0\0\0"..., 832) = 832
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+pread64(3, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32, 848) = 32
+pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\30x\346\264ur\f|Q\226\236i\253-'o"..., 68, 880) = 68
+fstat(3, {st_mode=S_IFREG|0755, st_size=2029592, ...}) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f44fe25a000
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+pread64(3, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32, 848) = 32
+pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\30x\346\264ur\f|Q\226\236i\253-'o"..., 68, 880) = 68
+mmap(NULL, 2037344, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f44fe068000
+mmap(0x7f44fe08a000, 1540096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x22000) = 0x7f44fe08a000
+mmap(0x7f44fe202000, 319488, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19a000) = 0x7f44fe202000
+mmap(0x7f44fe250000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e7000) = 0x7f44fe250000
+mmap(0x7f44fe256000, 13920, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f44fe256000
+close(3)                                = 0
+arch_prctl(ARCH_SET_FS, 0x7f44fe25b580) = 0
+mprotect(0x7f44fe250000, 16384, PROT_READ) = 0
+mprotect(0x558fcbc39000, 4096, PROT_READ) = 0
+mprotect(0x7f44fe29a000, 4096, PROT_READ) = 0
+munmap(0x7f44fe25c000, 67156)           = 0
+brk(NULL)                               = 0x558fcc534000
+brk(0x558fcc555000)                     = 0x558fcc555000
+openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=6044320, ...}) = 0
+mmap(NULL, 6044320, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f44fdaa4000
+close(3)                                = 0
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+newfstatat(AT_FDCWD, "NewNanoFile", {st_mode=S_IFREG|0664, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+geteuid()                               = 1000
+newfstatat(AT_FDCWD, "NewNanoFile", {st_mode=S_IFREG|0664, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+faccessat(AT_FDCWD, "NewNanoFile", W_OK) = 0
+
+
+unlinkat(AT_FDCWD, "NewNanoFile", 0)    = 0 %%%%%%%%% UNLINK, wurde in file delete gelogged
+
+
+
+lseek(0, 0, SEEK_CUR)                   = -1 ESPIPE (Illegal seek)
+close(0)                                = 0
+close(1)                                = 0
+close(2)                                = 0
+exit_group(0)                           = ?
++++ exited with 0 +++

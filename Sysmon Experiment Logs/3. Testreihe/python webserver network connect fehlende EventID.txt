@@ -1,0 +1,58 @@
+Fehlende Event IDs in Network Connect 
+
+550081
+550084
+
+
+550106, in PROCESS CREATE  ; einziger Eintrag zu fehlender Event ID aus NETWORK CONNECT
+EventId           : 1 
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 550106
+RuleName          : -
+UtcTime           : 2022-08-28 14:22:27.421
+ProcessGuid       : {5ce29752-7a23-630b-bd8b-15c061550000}
+ProcessId         : 3741
+Image             : /usr/lib/firefox/firefox
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : /usr/lib/firefox/firefox -contentproc -childID 2 -isForBrowser -prefsLen 31790 -prefMapSize 223918 -jsInitLen 267752 -parentBuildID 20220718155818 -appDir 
+                    /usr/lib/firefox/browser 3583 true tab
+CurrentDirectory  : /
+User              : linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000000000000}
+LogonId           : 1000
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-7a1d-630b-bd8b-a31dd5550000}
+ParentProcessId   : 3583
+ParentImage       : /usr/lib/firefox/firefox
+ParentCommandLine : /usr/lib/firefox/firefox http://0.0.0.0:8000/
+ParentUser        : linuxuser
+
+550107
+550108
+550119
+550120
+------------------------ ab hier sourceport 33424 /destinationport 8000
+
+550123
+550124
+550127
+550130
+550133
+550134
+------------------------ am ende fehlt v
+550137
+
+
+
+
+
+
+

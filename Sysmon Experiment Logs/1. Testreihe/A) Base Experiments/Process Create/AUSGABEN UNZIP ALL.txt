@@ -1,0 +1,449 @@
+// ALL CurrentDirectory  : /home/linuxuser/Downloads 
+
+
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 51161
+RuleName          : -
+UtcTime           : 2022-07-08 11:46:11.835
+ProcessGuid       : {5ce29752-1903-62c8-6510-2661df550000}
+ProcessId         : 2798
+Image             : /usr/bin/unzip
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : unzip KompriDatei.zip
+CurrentDirectory  : /home/linuxuser/Downloads
+User              : linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000000000000}
+LogonId           : 1000
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-187c-62c8-05e7-be0ceb550000}
+ParentProcessId   : 2776
+ParentImage       : /usr/bin/bash
+ParentCommandLine : bash
+ParentUser        : linuxuser
+
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 51167
+RuleName          : -
+UtcTime           : 2022-07-08 11:46:11.870
+ProcessGuid       : {5ce29752-1903-62c8-15bd-0b66f1550000}
+ProcessId         : 2803
+Image             : /usr/libexec/tracker-store
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : /usr/libexec/tracker-store
+CurrentDirectory  : /home/linuxuser
+User              : linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000000000000}
+LogonId           : 1000
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-0b93-62c8-659c-c8040a560000}
+ParentProcessId   : 1424
+ParentImage       : /usr/lib/systemd/systemd
+ParentCommandLine : /lib/systemd/systemd
+ParentUser        : linuxuser
+
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 51172
+RuleName          : -
+UtcTime           : 2022-07-08 11:46:12.157
+ProcessGuid       : {5ce29752-1904-62c8-f523-0d7055550000}
+ProcessId         : 2809
+Image             : /usr/bin/bwrap
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : bwrap --ro-bind /usr /usr --ro-bind /etc/ld.so.cache /etc/ld.so.cache --symlink /usr//bin /bin --symlink /usr//lib64 /lib64 --symlink /usr//lib /lib --symlink /usr//sbin 
+                    /sbin --ro-bind-try /var/cache/fontconfig /var/cache/fontconfig --ro-bind-try /etc/alternatives /etc/alternatives --proc /proc --dev /dev --chdir / --setenv GIO_USE_VFS 
+                    local --unshare-all --die-with-parent --bind /tmp/gnome-desktop-thumbnailer-EEN3O1 /tmp --ro-bind /home/linuxuser/Downloads/Screenshot_1.png /tmp/Screenshot_1.png 
+                    --seccomp 34 /usr/bin/gdk-pixbuf-thumbnailer -s 256 file:///tmp/Screenshot_1.png /tmp/gnome-desktop-thumbnailer.png
+CurrentDirectory  : /home/linuxuser
+User              : linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000000000000}
+LogonId           : 1000
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-1862-62c8-7505-0b1315560000}
+ParentProcessId   : 2751
+ParentImage       : /usr/bin/nautilus
+ParentCommandLine : /usr/bin/nautilus --gapplication-service
+ParentUser        : linuxuser
+
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 51181
+RuleName          : -
+UtcTime           : 2022-07-08 11:46:12.205
+ProcessGuid       : {5ce29752-1904-62c8-c54a-16b3cb550000}
+ProcessId         : 2811
+Image             : /newroot/usr/usr/bin/gdk-pixbuf-thumbnailer
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : /usr/bin/gdk-pixbuf-thumbnailer -s 256 file:///tmp/Screenshot_1.png /tmp/gnome-desktop-thumbnailer.png
+CurrentDirectory  : /newroot
+User              : linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000000000000}
+LogonId           : 1000
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-1904-62c8-f523-0d7055550000}
+ParentProcessId   : 2810
+ParentImage       : /usr/bin/bwrap
+ParentCommandLine : bwrap --ro-bind /usr /usr --ro-bind /etc/ld.so.cache /etc/ld.so.cache --symlink /usr//bin /bin --symlink /usr//lib64 /lib64 --symlink /usr//lib /lib --symlink /usr//sbin 
+                    /sbin --ro-bind-try /var/cache/fontconfig /var/cache/fontconfig --ro-bind-try /etc/alternatives /etc/alternatives --proc /proc --dev /dev --chdir / --setenv GIO_USE_VFS 
+                    local --unshare-all --die-with-parent --bind /tmp/gnome-desktop-thumbnailer-EEN3O1 /tmp --ro-bind /home/linuxuser/Downloads/Screenshot_1.png /tmp/Screenshot_1.png 
+                    --seccomp 34 /usr/bin/gdk-pixbuf-thumbnailer -s 256 file:///tmp/Screenshot_1.png /tmp/gnome-desktop-thumbnailer.png
+ParentUser        : linuxuser
+
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 51193
+RuleName          : -
+UtcTime           : 2022-07-08 11:46:12.338
+ProcessGuid       : {5ce29752-1904-62c8-8546-53edc8550000}
+ProcessId         : 2816
+Image             : /usr/libexec/tracker-extract
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : /usr/libexec/tracker-extract
+CurrentDirectory  : /home/linuxuser
+User              : linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000000000000}
+LogonId           : 1000
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-0b93-62c8-659c-c8040a560000}
+ParentProcessId   : 1424
+ParentImage       : /usr/lib/systemd/systemd
+ParentCommandLine : /lib/systemd/systemd
+ParentUser        : linuxuser
+
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 51195
+RuleName          : -
+UtcTime           : 2022-07-08 11:46:12.350
+ProcessGuid       : {5ce29752-1904-62c8-f563-d1cc7b550000}
+ProcessId         : 2817
+Image             : /usr/bin/bwrap
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : bwrap --ro-bind /usr /usr --ro-bind /etc/ld.so.cache /etc/ld.so.cache --symlink /usr//bin /bin --symlink /usr//lib64 /lib64 --symlink /usr//lib /lib --symlink /usr//sbin 
+                    /sbin --ro-bind-try /var/cache/fontconfig /var/cache/fontconfig --ro-bind-try /etc/alternatives /etc/alternatives --proc /proc --dev /dev --chdir / --setenv GIO_USE_VFS 
+                    local --unshare-all --die-with-parent --bind /tmp/gnome-desktop-thumbnailer-ARU7O1 /tmp --ro-bind /home/linuxuser/Downloads/Sysmon Linux Table.pdf /tmp/Sysmon Linux 
+                    Table.pdf --seccomp 34 evince-thumbnailer -s 256 file:///tmp/Sysmon%20Linux%20Table.pdf /tmp/gnome-desktop-thumbnailer.png
+CurrentDirectory  : /home/linuxuser
+User              : linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000000000000}
+LogonId           : 1000
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-1862-62c8-7505-0b1315560000}
+ParentProcessId   : 2751
+ParentImage       : /usr/bin/nautilus
+ParentCommandLine : /usr/bin/nautilus --gapplication-service
+ParentUser        : linuxuser
+
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 51204
+RuleName          : -
+UtcTime           : 2022-07-08 11:46:12.382
+ProcessGuid       : {5ce29752-1904-62c8-c5be-09efff550000}
+ProcessId         : 2819
+Image             : /newroot/usr/usr/bin/evince-thumbnailer
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : evince-thumbnailer -s 256 file:///tmp/Sysmon%20Linux%20Table.pdf /tmp/gnome-desktop-thumbnailer.png
+CurrentDirectory  : /newroot
+User              : linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000000000000}
+LogonId           : 1000
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-1904-62c8-f563-d1cc7b550000}
+ParentProcessId   : 2818
+ParentImage       : /usr/bin/bwrap
+ParentCommandLine : bwrap --ro-bind /usr /usr --ro-bind /etc/ld.so.cache /etc/ld.so.cache --symlink /usr//bin /bin --symlink /usr//lib64 /lib64 --symlink /usr//lib /lib --symlink /usr//sbin 
+                    /sbin --ro-bind-try /var/cache/fontconfig /var/cache/fontconfig --ro-bind-try /etc/alternatives /etc/alternatives --proc /proc --dev /dev --chdir / --setenv GIO_USE_VFS 
+                    local --unshare-all --die-with-parent --bind /tmp/gnome-desktop-thumbnailer-ARU7O1 /tmp --ro-bind /home/linuxuser/Downloads/Sysmon Linux Table.pdf /tmp/Sysmon Linux 
+                    Table.pdf --seccomp 34 evince-thumbnailer -s 256 file:///tmp/Sysmon%20Linux%20Table.pdf /tmp/gnome-desktop-thumbnailer.png
+ParentUser        : linuxuser
+
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 51224
+RuleName          : -
+UtcTime           : 2022-07-08 11:46:17.761
+ProcessGuid       : {5ce29752-1909-62c8-f537-406119560000}
+ProcessId         : 2841
+Image             : /usr/bin/dash
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : /bin/sh /usr/lib/snapd/snap-device-helper change snap_snap-store_snap-store /devices/pci0000:00/0000:00:02.0/drm/card0 226:0
+CurrentDirectory  : /
+User              : root
+LogonGuid         : {5ce29752-0000-0000-0000-000000000000}
+LogonId           : 0
+TerminalSessionId : 4294967295
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-1909-62c8-81f1-10c315560000}
+ParentProcessId   : 2840
+ParentImage       : /usr/lib/systemd/systemd-udevd
+ParentCommandLine : /lib/systemd/systemd-udevd
+ParentUser        : root
+
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 51226
+RuleName          : -
+UtcTime           : 2022-07-08 11:46:17.981
+ProcessGuid       : {5ce29752-1909-62c8-f597-b8fe73550000}
+ProcessId         : 2842
+Image             : /usr/bin/dash
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : /bin/sh /usr/lib/snapd/snap-device-helper change snap_snap-store_ubuntu-software /devices/pci0000:00/0000:00:02.0/drm/card0 226:0
+CurrentDirectory  : /
+User              : root
+LogonGuid         : {5ce29752-0000-0000-0000-000000000000}
+LogonId           : 0
+TerminalSessionId : 4294967295
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-1909-62c8-81f1-10c315560000}
+ParentProcessId   : 2840
+ParentImage       : /usr/lib/systemd/systemd-udevd
+ParentCommandLine : /lib/systemd/systemd-udevd
+ParentUser        : root
+
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 51228
+RuleName          : -
+UtcTime           : 2022-07-08 11:46:17.991
+ProcessGuid       : {5ce29752-1909-62c8-f5e7-963c5a550000}
+ProcessId         : 2843
+Image             : /usr/bin/dash
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : /bin/sh /usr/lib/snapd/snap-device-helper change snap_snap-store_ubuntu-software-local-file /devices/pci0000:00/0000:00:02.0/drm/card0 226:0
+CurrentDirectory  : /
+User              : root
+LogonGuid         : {5ce29752-0000-0000-0000-000000000000}
+LogonId           : 0
+TerminalSessionId : 4294967295
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-1909-62c8-81f1-10c315560000}
+ParentProcessId   : 2840
+ParentImage       : /usr/lib/systemd/systemd-udevd
+ParentCommandLine : /lib/systemd/systemd-udevd
+ParentUser        : root
+
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 51275
+RuleName          : -
+UtcTime           : 2022-07-08 11:47:15.049
+ProcessGuid       : {5ce29752-1943-62c8-0577-4551ef550000}
+ProcessId         : 2855
+Image             : /usr/bin/bash
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : bash
+CurrentDirectory  : /home/linuxuser/Downloads
+User              : linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000001000000}
+LogonId           : 1000
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {00000000-0000-0000-0000-000000000000}
+ParentProcessId   : 2067
+ParentImage       : -
+ParentCommandLine : -
+ParentUser        : -
+
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 51277
+RuleName          : -
+UtcTime           : 2022-07-08 11:47:15.071
+ProcessGuid       : {5ce29752-1943-62c8-f507-10a5db550000}
+ProcessId         : 2856
+Image             : /usr/bin/dash
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : /bin/sh /usr/bin/lesspipe
+CurrentDirectory  : /home/linuxuser/Downloads
+User              : linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000001000000}
+LogonId           : 1000
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-1943-62c8-0577-4551ef550000}
+ParentProcessId   : 2855
+ParentImage       : /usr/bin/bash
+ParentCommandLine : bash
+ParentUser        : linuxuser
+
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 51278
+RuleName          : -
+UtcTime           : 2022-07-08 11:47:15.075
+ProcessGuid       : {5ce29752-1943-62c8-7169-45befb550000}
+ProcessId         : 2857
+Image             : /usr/bin/basename
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : basename /usr/bin/lesspipe
+CurrentDirectory  : /home/linuxuser/Downloads
+User              : linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000001000000}
+LogonId           : 1000
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-1943-62c8-f507-10a5db550000}
+ParentProcessId   : 2856
+ParentImage       : /usr/bin/dash
+ParentCommandLine : /bin/sh
+ParentUser        : linuxuser
+
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 51280
+RuleName          : -
+UtcTime           : 2022-07-08 11:47:15.086
+ProcessGuid       : {5ce29752-1943-62c8-31c8-7a5f46560000}
+ProcessId         : 2859
+Image             : /usr/bin/dirname
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : dirname /usr/bin/lesspipe
+CurrentDirectory  : /home/linuxuser/Downloads
+User              : linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000001000000}
+LogonId           : 1000
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {00000000-0000-0000-0000-000000000000}
+ParentProcessId   : 2858
+ParentImage       : -
+ParentCommandLine : -
+ParentUser        : -
+
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 51284
+RuleName          : -
+UtcTime           : 2022-07-08 11:47:15.094
+ProcessGuid       : {5ce29752-1943-62c8-3139-de0d26560000}
+ProcessId         : 2860
+Image             : /usr/bin/dircolors
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : dircolors -b
+CurrentDirectory  : /home/linuxuser/Downloads
+User              : linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000001000000}
+LogonId           : 1000
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-1943-62c8-0577-4551ef550000}
+ParentProcessId   : 2855
+ParentImage       : /usr/bin/bash
+ParentCommandLine : bash
+ParentUser        : linuxuser

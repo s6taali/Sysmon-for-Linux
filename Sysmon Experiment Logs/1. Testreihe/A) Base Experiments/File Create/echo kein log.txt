@@ -1,0 +1,38 @@
+linuxuser@linuxuser-VirtualBox:~$ echo ''newfile'' 
+newfile 		//analog touch, KEINE Einträge 
+
+
+PS /home/linuxuser> Get-SysmonLinuxFileCreate
+[....]
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 324853
+RuleName        : -
+UtcTime         : 2022-07-08 14:16:15.747
+ProcessGuid     : {5ce29752-3c2f-62c8-f533-baf773550000}
+ProcessId       : 102050
+Image           : /usr/bin/bwrap
+TargetFilename  : /newroot/newroot/dev/tty
+CreationUtcTime : 2022-07-08 14:16:15.747
+User            : linuxuser
+
+EventId         : 11
+Version         : 2
+EventType       : FileCreate
+Computer        : linuxuser-VirtualBox
+EventRecordID   : 324854
+RuleName        : -
+UtcTime         : 2022-07-08 14:16:15.748
+ProcessGuid     : {5ce29752-3c2f-62c8-f533-baf773550000}
+ProcessId       : 102050
+Image           : /usr/bin/bwrap
+TargetFilename  : /newroot/newroot/tmp/tmp/gnome-desktop-thumbnailer-CLFQO1/Tux.png
+CreationUtcTime : 2022-07-08 14:16:15.748
+User            : linuxuser
+// letzter Eintrag: touch newfile wurde nicht gelogged
+// TargetFilename ''Tux.png'' wurde wärend cURL -o download gelogged
+// dannach keine weiteren logs 
+
+PS /home/linuxuser> Get-SysmonLinuxFileCreate  // 2. Aufruf analog

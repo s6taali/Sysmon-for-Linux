@@ -1,0 +1,1035 @@
+Websiteaufrauf über GOOGLE CHROME Browser: -> Erstellt Eintrag in NetworkConnect!  (= wie curl)
+
+
+Wireshark to capture website IP
+=================================================================================================================================================
+HTTP/Load Distribution:
+Topic / Item                      Count         Average       Min val       Max val       Rate (ms)     Percent       Burst rate    Burst start  
+-------------------------------------------------------------------------------------------------------------------------------------------------
+HTTP Requests by Server           80                                                      0,0001        100%          0,0200        2,059        
+ HTTP Requests by Server Address  80                                                      0,0001        100,00%       0,0200        2,059        
+  95.166.126.161                  4                                                       0,0000        5,00%         0,0100        0,567        
+   r3.o.lencr.org                 4                                                       0,0000        100,00%       0,0100        0,567        
+  93.184.220.29                   4                                                       0,0000        5,00%         0,0200        2,059        
+   ocsp.digicert.com              4                                                       0,0000        100,00%       0,0200        2,059        
+  35.232.111.17                   2                                                       0,0000        2,50%         0,0100        931,722      
+   connectivity-check.ubuntu.com  2                                                       0,0000        100,00%       0,0100        931,722      
+  34.122.121.32                   5                                                       0,0000        6,25%         0,0100        295,666      
+   connectivity-check.ubuntu.com  5                                                       0,0000        100,00%       0,0100        295,666      
+  34.107.221.82                   2                                                       0,0000        2,50%         0,0100        0,163        
+   detectportal.firefox.com       2                                                       0,0000        100,00%       0,0100        0,163        
+  34.104.35.123                   16                                                      0,0000        20,00%        0,0100        1110,199     
+   edgedl.me.gvt1.com             16                                                      0,0000        100,00%       0,0100        1110,199     
+  239.255.255.250                 40                                                      0,0000        50,00%        0,0100        36,627       
+   239.255.255.250:1900           40                                                      0,0000        100,00%       0,0100        36,627       
+  192.124.249.22                  1                                                       0,0000        1,25%         0,0100        10,420       
+   ocsp.starfieldtech.com         1                                                       0,0000        100,00%       0,0100        10,420       
+  142.250.74.99                   2                                                       0,0000        2,50%         0,0100        3,117        
+   ocsp.pki.goog                  2                                                       0,0000        100,00%       0,0100        3,117        
+  134.119.24.29                   1                                                       0,0000        1,25%         0,0100        8,108        
+   wikipedia.de                   1                                                       0,0000        100,00%       0,0100        8,108        
+  131.220.250.29                  1                                                       0,0000        1,25%         0,0100        1164,762     
+   www.uni-bonn.de                1                                                       0,0000        100,00%       0,0100        1164,762     
+  131.220.250.13                  2                                                       0,0000        2,50%         0,0100        1164,168     
+   www.unibonn.de                 1                                                       0,0000        50,00%        0,0100        1164,583     
+   unibonn.de                     1                                                       0,0000        50,00%        0,0100        1164,168     
+ HTTP Requests by HTTP Host       80                                                      0,0001        100,00%       0,0200        2,059        
+  www.unibonn.de                  1                                                       0,0000        1,25%         0,0100        1164,583     
+   131.220.250.13                 1                                                       0,0000        100,00%       0,0100        1164,583     
+  www.uni-bonn.de                 1                                                       0,0000        1,25%         0,0100        1164,762     
+   131.220.250.29                 1                                                       0,0000        100,00%       0,0100        1164,762     
+  wikipedia.de                    1                                                       0,0000        1,25%         0,0100        8,108        
+   134.119.24.29                  1                                                       0,0000        100,00%       0,0100        8,108        
+  unibonn.de                      1                                                       0,0000        1,25%         0,0100        1164,168     
+   131.220.250.13                 1                                                       0,0000        100,00%       0,0100        1164,168     
+  r3.o.lencr.org                  4                                                       0,0000        5,00%         0,0100        0,567        
+   95.166.126.161                 4                                                       0,0000        100,00%       0,0100        0,567        
+  ocsp.starfieldtech.com          1                                                       0,0000        1,25%         0,0100        10,420       
+   192.124.249.22                 1                                                       0,0000        100,00%       0,0100        10,420       
+  ocsp.pki.goog                   2                                                       0,0000        2,50%         0,0100        3,117        
+   142.250.74.99                  2                                                       0,0000        100,00%       0,0100        3,117        
+  ocsp.digicert.com               4                                                       0,0000        5,00%         0,0200        2,059        
+   93.184.220.29                  4                                                       0,0000        100,00%       0,0200        2,059        
+  edgedl.me.gvt1.com              16                                                      0,0000        20,00%        0,0100        1110,199     
+   34.104.35.123                  16                                                      0,0000        100,00%       0,0100        1110,199     
+  detectportal.firefox.com        2                                                       0,0000        2,50%         0,0100        0,163        
+   34.107.221.82                  2                                                       0,0000        100,00%       0,0100        0,163        
+  connectivity-check.ubuntu.com   7                                                       0,0000        8,75%         0,0100        295,666      
+   35.232.111.17                  2                                                       0,0000        28,57%        0,0100        931,722      
+   34.122.121.32                  5                                                       0,0000        71,43%        0,0100        295,666      
+  239.255.255.250:1900            40                                                      0,0000        50,00%        0,0100        36,627       
+   239.255.255.250                40                                                      0,0000        100,00%       0,0100        36,627       
+HTTP Responses by Server Address  0                                                       0,0000        100%          -             -            
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Besuch der website:
+unibonn.de                               
+IP:  131.220.250.13
+
+
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 647989
+RuleName            : -
+UtcTime             : 2022-08-29 12:36:41.916
+ProcessGuid         : {5ce29752-ad0a-630c-3075-3dfc88550000}
+ProcessId           : 2822
+Image               : /opt/google/chrome/chrome		%%chrome als browser (analog zu firefox)
+User                : linuxuser
+Protocol            : tcp				
+Initiated           : true				%%tcp verbindung wurde vom process initiated
+SourceIsIpv6        : false
+SourceIp            : 10.0.2.15				%%eigene iP
+SourceHostname      : -	
+SourcePort          : 36902
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 131.220.250.13			%%unibonn.de IP
+DestinationHostname : -
+DestinationPort     : 443
+DestinationPortName : -
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 647993
+RuleName            : -
+UtcTime             : 2022-08-29 12:36:42.037
+ProcessGuid         : {5ce29752-ad0a-630c-3075-3dfc88550000}
+ProcessId           : 2822
+Image               : /opt/google/chrome/chrome
+User                : linuxuser
+Protocol            : tcp
+Initiated           : true
+SourceIsIpv6        : false
+SourceIp            : 10.0.2.15
+SourceHostname      : -
+SourcePort          : 36904
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 131.220.250.13
+DestinationHostname : -
+DestinationPort     : 443
+DestinationPortName : -
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 648028
+RuleName            : -
+UtcTime             : 2022-08-29 12:36:43.379
+ProcessGuid         : {5ce29752-ad0a-630c-3075-3dfc88550000}
+ProcessId           : 2822
+Image               : /opt/google/chrome/chrome
+User                : linuxuser
+Protocol            : tcp
+Initiated           : true
+SourceIsIpv6        : false
+SourceIp            : 10.0.2.15
+SourceHostname      : -
+SourcePort          : 38034
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 131.220.250.13
+DestinationHostname : -
+DestinationPort     : 80
+DestinationPortName : -
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 648029
+RuleName            : -
+UtcTime             : 2022-08-29 12:36:43.384
+ProcessGuid         : {5ce29752-ad0a-630c-3075-3dfc88550000}
+ProcessId           : 2822
+Image               : /opt/google/chrome/chrome
+User                : linuxuser
+Protocol            : tcp
+Initiated           : true
+SourceIsIpv6        : false
+SourceIp            : 10.0.2.15
+SourceHostname      : -
+SourcePort          : 38036
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 131.220.250.13
+DestinationHostname : -
+DestinationPort     : 80
+DestinationPortName : -
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 648038
+RuleName            : -
+UtcTime             : 2022-08-29 12:36:43.759
+ProcessGuid         : {5ce29752-ad0a-630c-3075-3dfc88550000}
+ProcessId           : 2822
+Image               : /opt/google/chrome/chrome
+User                : linuxuser
+Protocol            : udp
+Initiated           : true
+SourceIsIpv6        : false
+SourceIp            : 127.0.0.1
+SourceHostname      : -
+SourcePort          : 48414
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 127.0.0.53
+DestinationHostname : -
+DestinationPort     : 53
+DestinationPortName : -
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 648039
+RuleName            : -
+UtcTime             : 2022-08-29 12:36:43.761
+ProcessGuid         : {5ce29752-a4cd-630c-9123-5bedb3550000}
+ProcessId           : 514
+Image               : /usr/lib/systemd/systemd-resolved
+User                : systemd-resolve
+Protocol            : udp
+Initiated           : true
+SourceIsIpv6        : false
+SourceIp            : 10.0.2.15
+SourceHostname      : -
+SourcePort          : 56915
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 193.162.153.164
+DestinationHostname : -
+DestinationPort     : 53
+DestinationPortName : -
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 648040
+RuleName            : -
+UtcTime             : 2022-08-29 12:36:43.822
+ProcessGuid         : {5ce29752-a4cd-630c-9123-5bedb3550000}
+ProcessId           : 514
+Image               : /usr/lib/systemd/systemd-resolved
+User                : systemd-resolve
+Protocol            : udp
+Initiated           : true
+SourceIsIpv6        : false
+SourceIp            : 127.0.0.53
+SourceHostname      : -
+SourcePort          : 53
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 127.0.0.1
+DestinationHostname : -
+DestinationPort     : 48414
+DestinationPortName : -
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 648044
+RuleName            : -
+UtcTime             : 2022-08-29 12:36:43.910
+ProcessGuid         : {5ce29752-ad0a-630c-3075-3dfc88550000}
+ProcessId           : 2822
+Image               : /opt/google/chrome/chrome
+User                : linuxuser
+Protocol            : tcp
+Initiated           : true
+SourceIsIpv6        : false
+SourceIp            : 10.0.2.15
+SourceHostname      : -
+SourcePort          : 38038
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 131.220.250.13
+DestinationHostname : -
+DestinationPort     : 80
+DestinationPortName : -
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 648045
+RuleName            : -
+UtcTime             : 2022-08-29 12:36:43.971
+ProcessGuid         : {5ce29752-ad0a-630c-3075-3dfc88550000}
+ProcessId           : 2822
+Image               : /opt/google/chrome/chrome
+User                : linuxuser
+Protocol            : udp
+Initiated           : true
+SourceIsIpv6        : false
+SourceIp            : 127.0.0.1
+SourceHostname      : -
+SourcePort          : 55056
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 127.0.0.53
+DestinationHostname : -
+DestinationPort     : 53
+DestinationPortName : -
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 648046
+RuleName            : -
+UtcTime             : 2022-08-29 12:36:43.973
+ProcessGuid         : {5ce29752-a4cd-630c-9123-5bedb3550000}
+ProcessId           : 514
+Image               : /usr/lib/systemd/systemd-resolved
+User                : systemd-resolve
+Protocol            : udp
+Initiated           : true
+SourceIsIpv6        : false
+SourceIp            : 10.0.2.15
+SourceHostname      : -
+SourcePort          : 59805
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 193.162.153.164
+DestinationHostname : -
+DestinationPort     : 53
+DestinationPortName : -
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 648047
+RuleName            : -
+UtcTime             : 2022-08-29 12:36:44.043
+ProcessGuid         : {5ce29752-a4cd-630c-9123-5bedb3550000}
+ProcessId           : 514
+Image               : /usr/lib/systemd/systemd-resolved
+User                : systemd-resolve
+Protocol            : udp
+Initiated           : true
+SourceIsIpv6        : false
+SourceIp            : 127.0.0.53
+SourceHostname      : -
+SourcePort          : 53
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 127.0.0.1
+DestinationHostname : -
+DestinationPort     : 55056
+DestinationPortName : -
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 648052
+RuleName            : -
+UtcTime             : 2022-08-29 12:36:44.094
+ProcessGuid         : {5ce29752-ad0a-630c-3075-3dfc88550000}
+ProcessId           : 2822
+Image               : /opt/google/chrome/chrome
+User                : linuxuser
+Protocol            : tcp
+Initiated           : true
+SourceIsIpv6        : false
+SourceIp            : 10.0.2.15
+SourceHostname      : -
+SourcePort          : 36422
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 131.220.250.29
+DestinationHostname : -
+DestinationPort     : 80
+DestinationPortName : -
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 648058
+RuleName            : -
+UtcTime             : 2022-08-29 12:36:44.298
+ProcessGuid         : {5ce29752-ad0a-630c-3075-3dfc88550000}
+ProcessId           : 2822
+Image               : /opt/google/chrome/chrome
+User                : linuxuser
+Protocol            : tcp
+Initiated           : true
+SourceIsIpv6        : false
+SourceIp            : 10.0.2.15
+SourceHostname      : -
+SourcePort          : 58426
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 131.220.250.29
+DestinationHostname : -
+DestinationPort     : 443
+DestinationPortName : -
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 648097
+RuleName            : -
+UtcTime             : 2022-08-29 12:36:46.058
+ProcessGuid         : {5ce29752-ad0a-630c-3075-3dfc88550000}
+ProcessId           : 2822
+Image               : /opt/google/chrome/chrome
+User                : linuxuser
+Protocol            : tcp
+Initiated           : true
+SourceIsIpv6        : false
+SourceIp            : 10.0.2.15
+SourceHostname      : -
+SourcePort          : 58430
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 131.220.250.29
+DestinationHostname : -
+DestinationPort     : 443
+DestinationPortName : -
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 648098
+RuleName            : -
+UtcTime             : 2022-08-29 12:36:46.059
+ProcessGuid         : {5ce29752-ad0a-630c-3075-3dfc88550000}
+ProcessId           : 2822
+Image               : /opt/google/chrome/chrome
+User                : linuxuser
+Protocol            : tcp
+Initiated           : true
+SourceIsIpv6        : false
+SourceIp            : 10.0.2.15
+SourceHostname      : -
+SourcePort          : 58428
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 131.220.250.29
+DestinationHostname : -
+DestinationPort     : 443
+DestinationPortName : -
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 648099
+RuleName            : -
+UtcTime             : 2022-08-29 12:36:46.074
+ProcessGuid         : {5ce29752-ad0a-630c-3075-3dfc88550000}
+ProcessId           : 2822
+Image               : /opt/google/chrome/chrome
+User                : linuxuser
+Protocol            : tcp
+Initiated           : true
+SourceIsIpv6        : false
+SourceIp            : 10.0.2.15
+SourceHostname      : -
+SourcePort          : 58434
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 131.220.250.29
+DestinationHostname : -
+DestinationPort     : 443
+DestinationPortName : -
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 648102
+RuleName            : -
+UtcTime             : 2022-08-29 12:36:46.184
+ProcessGuid         : {5ce29752-ad0a-630c-3075-3dfc88550000}
+ProcessId           : 2822
+Image               : /opt/google/chrome/chrome
+User                : linuxuser
+Protocol            : tcp
+Initiated           : true
+SourceIsIpv6        : false
+SourceIp            : 10.0.2.15
+SourceHostname      : -
+SourcePort          : 58438
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 131.220.250.29
+DestinationHostname : -
+DestinationPort     : 443
+DestinationPortName : -
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 648103
+RuleName            : -
+UtcTime             : 2022-08-29 12:36:46.185
+ProcessGuid         : {5ce29752-ad0a-630c-3075-3dfc88550000}
+ProcessId           : 2822
+Image               : /opt/google/chrome/chrome
+User                : linuxuser
+Protocol            : tcp
+Initiated           : true
+SourceIsIpv6        : false
+SourceIp            : 10.0.2.15
+SourceHostname      : -
+SourcePort          : 58436
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 131.220.250.29
+DestinationHostname : -
+DestinationPort     : 443
+DestinationPortName : -
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 648147
+RuleName            : -
+UtcTime             : 2022-08-29 12:36:50.074
+ProcessGuid         : {5ce29752-ad0a-630c-3075-3dfc88550000}
+ProcessId           : 2822
+Image               : /opt/google/chrome/chrome
+User                : linuxuser
+Protocol            : udp
+Initiated           : true
+SourceIsIpv6        : false
+SourceIp            : 127.0.0.1
+SourceHostname      : -
+SourcePort          : 46228
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 127.0.0.53
+DestinationHostname : -
+DestinationPort     : 53
+DestinationPortName : -
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 648148
+RuleName            : -
+UtcTime             : 2022-08-29 12:36:50.076
+ProcessGuid         : {5ce29752-a4cd-630c-9123-5bedb3550000}
+ProcessId           : 514
+Image               : /usr/lib/systemd/systemd-resolved
+User                : systemd-resolve
+Protocol            : udp
+Initiated           : true
+SourceIsIpv6        : false
+SourceIp            : 10.0.2.15
+SourceHostname      : -
+SourcePort          : 37330
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 193.162.153.164
+DestinationHostname : -
+DestinationPort     : 53
+DestinationPortName : -
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 648149
+RuleName            : -
+UtcTime             : 2022-08-29 12:36:50.151
+ProcessGuid         : {5ce29752-a4cd-630c-9123-5bedb3550000}
+ProcessId           : 514
+Image               : /usr/lib/systemd/systemd-resolved
+User                : systemd-resolve
+Protocol            : udp
+Initiated           : true
+SourceIsIpv6        : false
+SourceIp            : 127.0.0.53
+SourceHostname      : -
+SourcePort          : 53
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 127.0.0.1
+DestinationHostname : -
+DestinationPort     : 46228
+DestinationPortName : -
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 648154
+RuleName            : -
+UtcTime             : 2022-08-29 12:36:50.415
+ProcessGuid         : {5ce29752-ad0a-630c-3075-3dfc88550000}
+ProcessId           : 2822
+Image               : /opt/google/chrome/chrome
+User                : linuxuser
+Protocol            : tcp
+Initiated           : true
+SourceIsIpv6        : false
+SourceIp            : 10.0.2.15
+SourceHostname      : -
+SourcePort          : 60184
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 131.220.42.69
+DestinationHostname : -
+DestinationPort     : 443
+DestinationPortName : -
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 648158
+RuleName            : -
+UtcTime             : 2022-08-29 12:36:50.459
+ProcessGuid         : {5ce29752-ad0a-630c-3075-3dfc88550000}
+ProcessId           : 2822
+Image               : /opt/google/chrome/chrome
+User                : linuxuser
+Protocol            : tcp
+Initiated           : true
+SourceIsIpv6        : false
+SourceIp            : 10.0.2.15
+SourceHostname      : -
+SourcePort          : 60186
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 131.220.42.69
+DestinationHostname : -
+DestinationPort     : 443
+DestinationPortName : -
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 648333
+RuleName            : -
+UtcTime             : 2022-08-29 12:36:58.108
+ProcessGuid         : {5ce29752-ad0a-630c-3075-3dfc88550000}
+ProcessId           : 2822
+Image               : /opt/google/chrome/chrome
+User                : linuxuser
+Protocol            : udp
+Initiated           : true
+SourceIsIpv6        : false
+SourceIp            : 127.0.0.1
+SourceHostname      : -
+SourcePort          : 60841
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 127.0.0.53
+DestinationHostname : -
+DestinationPort     : 53
+DestinationPortName : -
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 648334
+RuleName            : -
+UtcTime             : 2022-08-29 12:36:58.110
+ProcessGuid         : {5ce29752-a4cd-630c-9123-5bedb3550000}
+ProcessId           : 514
+Image               : /usr/lib/systemd/systemd-resolved
+User                : systemd-resolve
+Protocol            : udp
+Initiated           : true
+SourceIsIpv6        : false
+SourceIp            : 127.0.0.53
+SourceHostname      : -
+SourcePort          : 53
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 127.0.0.1
+DestinationHostname : -
+DestinationPort     : 60841
+DestinationPortName : -
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 648335
+RuleName            : -
+UtcTime             : 2022-08-29 12:36:58.144
+ProcessGuid         : {5ce29752-ad0a-630c-3075-3dfc88550000}
+ProcessId           : 2822
+Image               : /opt/google/chrome/chrome
+User                : linuxuser
+Protocol            : tcp
+Initiated           : true
+SourceIsIpv6        : false
+SourceIp            : 10.0.2.15
+SourceHostname      : -
+SourcePort          : 51636
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 34.104.35.123
+DestinationHostname : -
+DestinationPort     : 80
+DestinationPortName : -
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 648430
+RuleName            : -
+UtcTime             : 2022-08-29 12:37:01.471
+ProcessGuid         : {5ce29752-ad0a-630c-3075-3dfc88550000}
+ProcessId           : 2822
+Image               : /opt/google/chrome/chrome
+User                : linuxuser
+Protocol            : udp
+Initiated           : true
+SourceIsIpv6        : false
+SourceIp            : 127.0.0.1
+SourceHostname      : -
+SourcePort          : 38779
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 127.0.0.53
+DestinationHostname : -
+DestinationPort     : 53
+DestinationPortName : -
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 648431
+RuleName            : -
+UtcTime             : 2022-08-29 12:37:01.473
+ProcessGuid         : {5ce29752-a4cd-630c-9123-5bedb3550000}
+ProcessId           : 514
+Image               : /usr/lib/systemd/systemd-resolved
+User                : systemd-resolve
+Protocol            : udp
+Initiated           : true
+SourceIsIpv6        : false
+SourceIp            : 10.0.2.15
+SourceHostname      : -
+SourcePort          : 40489
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 193.162.153.164
+DestinationHostname : -
+DestinationPort     : 53
+DestinationPortName : -
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 648435
+RuleName            : -
+UtcTime             : 2022-08-29 12:37:01.499
+ProcessGuid         : {5ce29752-a4cd-630c-9123-5bedb3550000}
+ProcessId           : 514
+Image               : /usr/lib/systemd/systemd-resolved
+User                : systemd-resolve
+Protocol            : udp
+Initiated           : true
+SourceIsIpv6        : false
+SourceIp            : 127.0.0.53
+SourceHostname      : -
+SourcePort          : 53
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 127.0.0.1
+DestinationHostname : -
+DestinationPort     : 38779
+DestinationPortName : -
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 649672
+RuleName            : -
+UtcTime             : 2022-08-29 12:37:50.900
+ProcessGuid         : {5ce29752-a4cd-630c-9123-5bedb3550000}
+ProcessId           : 514
+Image               : /usr/lib/systemd/systemd-resolved
+User                : systemd-resolve
+Protocol            : udp
+Initiated           : true
+SourceIsIpv6        : false
+SourceIp            : 10.0.2.15
+SourceHostname      : -
+SourcePort          : 44033
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 193.162.153.164
+DestinationHostname : -
+DestinationPort     : 53
+DestinationPortName : -
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 649675
+RuleName            : -
+UtcTime             : 2022-08-29 12:37:51.065
+ProcessGuid         : {5ce29752-a4ce-630c-751a-2a9888550000}
+ProcessId           : 558
+Image               : /usr/sbin/NetworkManager
+User                : -
+Protocol            : tcp
+Initiated           : true
+SourceIsIpv6        : false
+SourceIp            : 10.0.2.15
+SourceHostname      : -
+SourcePort          : 56216
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 35.232.111.17
+DestinationHostname : -
+DestinationPort     : 80
+DestinationPortName : -
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 654795
+RuleName            : -
+UtcTime             : 2022-08-29 12:40:22.968
+ProcessGuid         : {5ce29752-a4cd-630c-9123-5bedb3550000}
+ProcessId           : 514
+Image               : /usr/lib/systemd/systemd-resolved
+User                : systemd-resolve
+Protocol            : udp
+Initiated           : true
+SourceIsIpv6        : false
+SourceIp            : 10.0.2.15
+SourceHostname      : -
+SourcePort          : 36948
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 193.162.153.164
+DestinationHostname : -
+DestinationPort     : 53
+DestinationPortName : -
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 654796
+RuleName            : -
+UtcTime             : 2022-08-29 12:40:22.999
+ProcessGuid         : {5ce29752-a4ce-630c-751a-2a9888550000}
+ProcessId           : 558
+Image               : /usr/sbin/NetworkManager
+User                : root
+Protocol            : udp
+Initiated           : true
+SourceIsIpv6        : false
+SourceIp            : 127.0.0.1
+SourceHostname      : -
+SourcePort          : 41079
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 127.0.0.53
+DestinationHostname : -
+DestinationPort     : 53
+DestinationPortName : -
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 654797
+RuleName            : -
+UtcTime             : 2022-08-29 12:40:23.001
+ProcessGuid         : {5ce29752-a4cd-630c-9123-5bedb3550000}
+ProcessId           : 514
+Image               : /usr/lib/systemd/systemd-resolved
+User                : systemd-resolve
+Protocol            : udp
+Initiated           : false
+SourceIsIpv6        : false
+SourceIp            : 0.0.0.0
+SourceHostname      : -
+SourcePort          : 0
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 127.0.0.53
+DestinationHostname : -
+DestinationPort     : 53
+DestinationPortName : -
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 654798
+RuleName            : -
+UtcTime             : 2022-08-29 12:40:23.002
+ProcessGuid         : {5ce29752-a4cd-630c-9123-5bedb3550000}
+ProcessId           : 514
+Image               : /usr/lib/systemd/systemd-resolved
+User                : systemd-resolve
+Protocol            : udp
+Initiated           : true
+SourceIsIpv6        : false
+SourceIp            : 10.0.2.15
+SourceHostname      : -
+SourcePort          : 53939
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 193.162.153.164
+DestinationHostname : -
+DestinationPort     : 53
+DestinationPortName : -
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 654799
+RuleName            : -
+UtcTime             : 2022-08-29 12:40:23.023
+ProcessGuid         : {5ce29752-a4cd-630c-9123-5bedb3550000}
+ProcessId           : 514
+Image               : /usr/lib/systemd/systemd-resolved
+User                : systemd-resolve
+Protocol            : udp
+Initiated           : true
+SourceIsIpv6        : false
+SourceIp            : 127.0.0.53
+SourceHostname      : -
+SourcePort          : 53
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 127.0.0.1
+DestinationHostname : -
+DestinationPort     : 41079
+DestinationPortName : -
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 654800
+RuleName            : -
+UtcTime             : 2022-08-29 12:40:23.024
+ProcessGuid         : {5ce29752-a4ce-630c-751a-2a9888550000}
+ProcessId           : 558
+Image               : /usr/sbin/NetworkManager
+User                : root
+Protocol            : udp
+Initiated           : false
+SourceIsIpv6        : false
+SourceIp            : 127.0.0.53
+SourceHostname      : -
+SourcePort          : 53
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 127.0.0.1
+DestinationHostname : -
+DestinationPort     : 34849
+DestinationPortName : -
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 654801
+RuleName            : -
+UtcTime             : 2022-08-29 12:40:23.024
+ProcessGuid         : {5ce29752-a4ce-630c-751a-2a9888550000}
+ProcessId           : 558
+Image               : /usr/sbin/NetworkManager
+User                : root
+Protocol            : udp
+Initiated           : true
+SourceIsIpv6        : false
+SourceIp            : 127.0.0.1
+SourceHostname      : -
+SourcePort          : 34849
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 127.0.0.53
+DestinationHostname : -
+DestinationPort     : 53
+DestinationPortName : -
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 654802
+RuleName            : -
+UtcTime             : 2022-08-29 12:40:23.025
+ProcessGuid         : {5ce29752-a4cd-630c-9123-5bedb3550000}
+ProcessId           : 514
+Image               : /usr/lib/systemd/systemd-resolved
+User                : systemd-resolve
+Protocol            : udp
+Initiated           : true
+SourceIsIpv6        : false
+SourceIp            : 10.0.2.15
+SourceHostname      : -
+SourcePort          : 46460
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 193.162.153.164
+DestinationHostname : -
+DestinationPort     : 53
+DestinationPortName : -
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 654805
+RuleName            : -
+UtcTime             : 2022-08-29 12:40:23.082
+ProcessGuid         : {5ce29752-a4cd-630c-9123-5bedb3550000}
+ProcessId           : 514
+Image               : /usr/lib/systemd/systemd-resolved
+User                : systemd-resolve
+Protocol            : udp
+Initiated           : true
+SourceIsIpv6        : false
+SourceIp            : 127.0.0.53
+SourceHostname      : -
+SourcePort          : 53
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 127.0.0.1
+DestinationHostname : -
+DestinationPort     : 34849
+DestinationPortName : -
+
+
+PS /home/linuxuser> 
+

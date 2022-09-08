@@ -1,0 +1,286 @@
+Nginx - Verfügbar in Standart-Repository von Ubuntu 
+
+Am Ende des Installationsprozesses startet Ubuntu 20.04 Nginx.
+Der Webserver sollte bereits ausgeführt werden.
+Überprüfung mit dem Init-System systemd durchführen
+
+Output
+● nginx.service - A high performance web server and a reverse proxy server
+   Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: enabled)
+   Active: active (running) since Fri 2020-04-20 16:08:19 UTC; 3 days ago
+     Docs: man:nginx(8)
+ Main PID: 2369 (nginx)
+    Tasks: 2 (limit: 1153)
+   Memory: 3.5M
+   CGroup: /system.slice/nginx.service
+           ├─2369 nginx: master process /usr/sbin/nginx -g daemon on; master_process on;
+           └─2380 nginx: worker process
+
+Jul 31 13:11:58 linuxuser-VirtualBox systemd[1]: Starting A high performance web server an>
+Jul 31 13:11:58 linuxuser-VirtualBox systemd[1]: Started A high performance web server and
+
+
+
+Procress Create ################
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 462251
+RuleName          : -
+UtcTime           : 2022-07-31 11:13:13.380
+ProcessGuid       : {5ce29752-63c9-62e6-d58b-2f7be1550000}
+ProcessId         : 5187
+Image             : /usr/bin/sudo
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : sudo ufw allow Nginx HTTP 		%%%Aktiviere nginX mit dieser Eingabe
+CurrentDirectory  : /home/linuxuser
+User              : linuxuser				%%% user = linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000000000000}
+LogonId           : 1000
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-62e3-62e6-d576-694307560000}
+ParentProcessId   : 3401
+ParentImage       : /usr/bin/bash
+ParentCommandLine : bash				%%% bash parentcommandline
+ParentUser        : linuxuser
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 462252
+RuleName          : -
+UtcTime           : 2022-07-31 11:13:13.399
+ProcessGuid       : {5ce29752-63c9-62e6-0574-6b0000000000}
+ProcessId         : 5188
+Image             : /usr/bin/python3.8				%%python3 im image
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : /usr/bin/python3 /usr/sbin/ufw allow Nginx HTTP  	%%%%%Aktiviere nginX mit dieser Eingabe	
+CurrentDirectory  : /home/linuxuser
+User              : root						%%%root user
+LogonGuid         : {5ce29752-0000-0000-0000-000000000000}
+LogonId           : 0
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-63c9-62e6-d58b-2f7be1550000}
+ParentProcessId   : 5187
+ParentImage       : /usr/bin/sudo
+ParentCommandLine : sudo		%%% sudo im parentcommandline und image statt bash
+ParentUser        : linuxuser
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 462367
+RuleName          : -
+UtcTime           : 2022-07-31 11:14:44.029
+ProcessGuid       : {5ce29752-6424-62e6-9d3b-c47f5e550000}
+ProcessId         : 5243
+Image             : /usr/bin/systemctl
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : systemctl status nginx   %%to check if nginx is active
+CurrentDirectory  : /home/linuxuser
+User              : linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000000000000}
+LogonId           : 1000
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-62e3-62e6-d576-694307560000}
+ParentProcessId   : 3401
+ParentImage       : /usr/bin/bash
+ParentCommandLine : bash
+ParentUser        : linuxuser
+
+
+NETWORK CONNECT %%%% Keine Logs bei start des servers
+
+
+1. Finde die IP-Adresse Ihres Servers mit curl -4 icanhazip.com
+87.123.195.60
+ 
+Versuche diese Commands um IP zu finden
+-	ifconfig
+-	ip a s 
+- 	127.0.0.1
+-	localhost
+
+2. in browser: http://87.123.195.60   // mozilla firefox timed out , why?
+
+
+NetworkConnect: keine ausgaben >> due to no connect   //!!!! eigenens Experiment, gescheiterte Verbindungsversuche werden nicht geloggt ??
+
+
+ProcessCREATE %%%%%%%%%%%%%%%%%%%%
+
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 464143
+RuleName          : -
+UtcTime           : 2022-07-31 12:27:36.070
+ProcessGuid       : {5ce29752-7538-62e6-f5e7-f2bd35560000}
+ProcessId         : 6284
+Image             : /usr/bin/dash
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : /bin/sh -e -u -c export GIO_LAUNCHED_DESKTOP_FILE_PID=$$; 
+                    exec "$@" sh firefox http://87.123.195.60/			%%%tried executing http://87.123.195.60
+CurrentDirectory  : /
+User              : linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000000000000}
+LogonId           : 1000
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-5956-62e6-65be-a29ce5550000}
+ParentProcessId   : 1436
+ParentImage       : /usr/lib/systemd/systemd
+ParentCommandLine : /lib/systemd/systemd
+ParentUser        : linuxuser
+--------------------------------------------------------------------------------------
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 464144
+RuleName          : -
+UtcTime           : 2022-07-31 12:27:36.070
+ProcessGuid       : {5ce29752-7538-62e6-f5e7-872afb550000}
+ProcessId         : 6284
+Image             : /usr/bin/dash
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : /bin/sh /usr/bin/firefox http://87.123.195.60/	%%executing http://87.123.195.60
+CurrentDirectory  : /
+User              : linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000000000000}
+LogonId           : 1000
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-5956-62e6-65be-a29ce5550000}
+ParentProcessId   : 1436
+ParentImage       : /usr/lib/systemd/systemd
+ParentCommandLine : /lib/systemd/systemd
+ParentUser        : linuxuser
+--------------------------------------------------------------------------------------
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 464145
+RuleName          : -
+UtcTime           : 2022-07-31 12:27:36.091
+ProcessGuid       : {5ce29752-7538-62e6-f5f7-f2351e560000}
+ProcessId         : 6287
+Image             : /usr/bin/dash
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : /bin/sh /usr/bin/which /usr/bin/firefox		%%executing http://87.123.195.60
+CurrentDirectory  : /
+User              : linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000000000000}
+LogonId           : 1000
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-7538-62e6-f5e7-f2bd35560000}
+ParentProcessId   : 6284
+ParentImage       : /usr/bin/dash
+ParentCommandLine : /bin/sh
+ParentUser        : linuxuser
+--------------------------------------------------------------------------------------
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 464147
+RuleName          : -
+UtcTime           : 2022-07-31 12:27:36.070
+ProcessGuid       : {5ce29752-7538-62e6-bd8b-ae56a2550000}
+ProcessId         : 6284
+Image             : /usr/lib/firefox/firefox
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : /usr/lib/firefox/firefox http://87.123.195.60/	%%executing http://87.123.195.60
+CurrentDirectory  : /
+User              : linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000000000000}
+LogonId           : 1000
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-5956-62e6-65be-a29ce5550000}
+ParentProcessId   : 1436
+ParentImage       : /usr/lib/systemd/systemd
+ParentCommandLine : /lib/systemd/systemd
+ParentUser        : linuxuser
+--------------------------------------------------------------------------------------
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 464159
+RuleName          : -
+UtcTime           : 2022-07-31 12:27:37.688
+ProcessGuid       : {5ce29752-7539-62e6-bddb-67f7d1550000}
+ProcessId         : 6299
+Image             : /usr/lib/firefox/firefox
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : /usr/lib/firefox/firefox -contentproc -childID 7 
+                    -isForBrowser -prefsLen 37604 -prefMapSize 218300 
+                    -jsInitLen 277276 -parentBuildID 20220623063721 -appDir 
+                    /usr/lib/firefox/browser 5939 true tab			%%executing http://87.123.195.60
+CurrentDirectory  : /home/linuxuser
+User              : linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000000000000}
+LogonId           : 1000
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {00000000-0000-0000-0000-000000000000}
+ParentProcessId   : 5939
+ParentImage       : -
+ParentCommandLine : -
+ParentUser        : -
+
+
+

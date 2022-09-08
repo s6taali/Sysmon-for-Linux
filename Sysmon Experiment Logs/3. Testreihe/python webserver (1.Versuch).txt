@@ -1,0 +1,165 @@
+Network Connect 
+
+%% Webserver mit Python starten
+
+1. im terminal: linuxuser@linuxuser-VirtualBox:~$ python3 -m http.server
+	
+	Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+
+
+PROCESS CREATE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 452536
+RuleName          : -
+UtcTime           : 2022-07-31 10:33:45.341
+ProcessGuid       : {5ce29752-5a89-62e6-0574-6b0000000000}
+ProcessId         : 2382
+Image             : /usr/bin/python3.8
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : python3 -m http.server
+CurrentDirectory  : /home/linuxuser
+User              : linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000000000000}
+LogonId           : 1000
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-5974-62e6-d5f6-b4e2b3550000}
+ParentProcessId   : 2060
+ParentImage       : /usr/bin/bash
+ParentCommandLine : bash
+ParentUser        : linuxuser
+
+
+NETWORK CONNECT  		%% KEINE LOGS ZU SERVER START
+around same time stamp 10:33:45.341 : X
+http: X
+image python3: X
+port8000: X
+
+---------------------------------------------------------------------------
+---------------------------------------------------------------------------
+
+2. press on link // browser: (http://0.0.0.0:8000/) %%connect with port8000 
+%%"you are not securely connected on this site"; ändert aber nicht an der Tatsache, dass eine Verbindung stattfand
+
+PROCESS CREATE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 453576
+RuleName          : -
+UtcTime           : 2022-07-31 10:47:45.701
+ProcessGuid       : {5ce29752-5dd1-62e6-f547-d2e5cc550000}
+ProcessId         : 3089
+Image             : /usr/bin/dash
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : /bin/sh -e -u -c export GIO_LAUNCHED_DESKTOP_FILE_PID=$$; exec "$@" sh firefox http://0.0.0.0:8000/  % Port listed in commandline
+CurrentDirectory  : /
+User              : linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000000000000}
+LogonId           : 1000
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-5dd1-62e6-0000-000000000000}
+ParentProcessId   : 3088
+ParentImage       : -
+ParentCommandLine : 
+ParentUser        : linuxuser
+---------------------------------------------------------------------------
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 453577
+RuleName          : -
+UtcTime           : 2022-07-31 10:47:45.701
+ProcessGuid       : {5ce29752-5dd1-62e6-f597-c85c09560000}
+ProcessId         : 3089
+Image             : /usr/bin/dash
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : /bin/sh /usr/bin/firefox http://0.0.0.0:8000/  %%Port in commandline
+CurrentDirectory  : /
+User              : linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000000000000}
+LogonId           : 1000
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-5956-62e6-65be-a29ce5550000}
+ParentProcessId   : 1436
+ParentImage       : /usr/lib/systemd/systemd
+ParentCommandLine : /lib/systemd/systemd
+ParentUser        : linuxuser
+
+
+NETWORK CONNECT  %%%%%%%%  PORT ÖFFNEN WIRD NUR IN PROCESS CREATE ANGEZEIGT, NIE IN NETWORK CONNECT, logs erst nachdem verbindung stattfand
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 453587
+RuleName            : -
+UtcTime             : 2022-07-31 10:47:46.273
+ProcessGuid         : {5ce29752-5dc3-62e6-bddb-3623b2550000}
+ProcessId           : 2893
+Image               : /usr/lib/firefox/firefox  %%browser
+User                : linuxuser
+Protocol            : tcp
+Initiated           : true
+SourceIsIpv6        : false
+SourceIp            : 127.0.0.1
+SourceHostname      : -
+SourcePort          : 37574
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 127.0.0.1
+DestinationHostname : -
+DestinationPort     : 8000   %% open port
+DestinationPortName : -
+
+EventId             : 3
+Version             : 5
+EventType           : NetworkConnect
+Computer            : linuxuser-VirtualBox
+EventRecordID       : 453588
+RuleName            : -
+UtcTime             : 2022-07-31 10:47:46.273
+ProcessGuid         : {5ce29752-5a89-62e6-0574-6b0000000000}
+ProcessId           : 2382
+Image               : /usr/bin/python3.8    %% python server
+User                : linuxuser
+Protocol            : tcp
+Initiated           : false
+SourceIsIpv6        : false
+SourceIp            : 127.0.0.1
+SourceHostname      : -
+SourcePort          : 37574
+SourcePortName      : -
+DestinationIsIpv6   : false
+DestinationIp       : 127.0.0.1
+DestinationHostname : -
+DestinationPort     : 8000    %% open port
+DestinationPortName : -
+
+
+

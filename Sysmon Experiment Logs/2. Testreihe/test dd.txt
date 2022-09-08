@@ -1,0 +1,141 @@
+linuxuser@linuxuser-VirtualBox:~$ lsblk
+NAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
+loop0    7:0    0     4K  1 loop /snap/bare/5
+loop1    7:1    0    62M  1 loop /snap/core20/1587
+loop2    7:2    0  55,6M  1 loop /snap/core18/2538
+loop3    7:3    0  55,5M  1 loop /snap/core18/2409
+loop4    7:4    0  61,9M  1 loop /snap/core20/1518
+loop5    7:5    0   219M  1 loop /snap/gnome-3-34-1804/77
+loop6    7:6    0   219M  1 loop /snap/gnome-3-34-1804/66
+loop7    7:7    0 400,8M  1 loop /snap/gnome-3-38-2004/112
+loop8    7:8    0  64,8M  1 loop /snap/gtk-common-themes/1514
+loop9    7:9    0  91,7M  1 loop /snap/gtk-common-themes/1535
+loop10   7:10   0    51M  1 loop /snap/snap-store/518
+loop11   7:11   0  54,2M  1 loop /snap/snap-store/558
+loop12   7:12   0    47M  1 loop /snap/snapd/16010
+loop13   7:13   0    47M  1 loop /snap/snapd/16292
+sda      8:0    0    16G  0 disk 
+├─sda1   8:1    0   512M  0 part /boot/efi
+├─sda2   8:2    0     1K  0 part 
+└─sda5   8:5    0  15,5G  0 part /
+sr0     11:0    1  58,3M  0 rom  /media/linuxuser/VBox_GAs_6.1.26
+
+
+%%% lese datei aus sda5 und schreibe bytes in output file (test.dd)
+
+command: sudo dd if=/dev/sda5 of=test.dd bs=512 count=1
+[sudo] password for linuxuser: 
+1+0 records in
+1+0 records out
+512 bytes copied, 0,014838 s, 34,5 kB/s
+
+
+%% RAW ACCESS READ
+EventId       : 9
+Version       : 2
+EventType     : FileDelete  		%%falscher eventtype
+Computer      : linuxuser-VirtualBox
+EventRecordID : 527207
+RuleName      : -
+UtcTime       : 2022-08-02 13:40:08.771
+ProcessGuid   : {5ce29752-2938-62e9-8191-b9482e560000}
+ProcessId     : 2270
+Image         : /usr/bin/dd		%%dd im image
+Device        : /dev/sda5		%%sda5 - bezeichnung des USBs
+User          : root			%%superuser
+
+
+%% Process Create
+
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 527187
+RuleName          : -
+UtcTime           : 2022-08-02 13:39:46.875
+ProcessGuid       : {5ce29752-2922-62e9-8181-60bfc4550000}
+ProcessId         : 2264
+Image             : /usr/bin/dd					%%dd im image
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : dd if=/dev/sda5 of=test.dd bs=512 count=1	%%Befehl
+CurrentDirectory  : /home/linuxuser
+User              : linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000000000000}
+LogonId           : 1000
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-283e-62e9-d5d6-7c7801560000}
+ParentProcessId   : 1996
+ParentImage       : /usr/bin/bash
+ParentCommandLine : bash
+ParentUser        : linuxuser
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 527196
+RuleName          : -
+UtcTime           : 2022-08-02 13:40:02.281
+ProcessGuid       : {5ce29752-2932-62e9-d52b-7f6e21560000}
+ProcessId         : 2268
+Image             : /usr/bin/sudo				%%root im image
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : sudo dd if=/dev/sda5 of=test.dd bs=512 count=1	%%command
+CurrentDirectory  : /home/linuxuser
+User              : linuxuser
+LogonGuid         : {5ce29752-0000-0000-e803-000000000000}
+LogonId           : 1000
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-283e-62e9-d5d6-7c7801560000}
+ParentProcessId   : 1996
+ParentImage       : /usr/bin/bash
+ParentCommandLine : bash
+ParentUser        : linuxuser
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+EventId           : 1
+Version           : 5
+EventType         : ProcessCreate
+Computer          : linuxuser-VirtualBox
+EventRecordID     : 527206
+RuleName          : -
+UtcTime           : 2022-08-02 13:40:08.769
+ProcessGuid       : {5ce29752-2938-62e9-8191-b9482e560000}
+ProcessId         : 2270
+Image             : /usr/bin/dd					%%dd im image
+FileVersion       : -
+Description       : -
+Product           : -
+Company           : -
+OriginalFileName  : -
+CommandLine       : dd if=/dev/sda5 of=test.dd bs=512 count=1	%%command
+CurrentDirectory  : /home/linuxuser
+User              : root					%%superuser
+LogonGuid         : {5ce29752-0000-0000-0000-000000000000}
+LogonId           : 0
+TerminalSessionId : 3
+IntegrityLevel    : no level
+Hashes            : -
+ParentProcessGuid : {5ce29752-2932-62e9-d52b-7f6e21560000}
+ParentProcessId   : 2268
+ParentImage       : /usr/bin/sudo				%%parent image superuser
+ParentCommandLine : sudo					%%parent cmdline - " -
+ParentUser        : linuxuser
+
+
+
+// no file create
